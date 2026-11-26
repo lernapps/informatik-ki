@@ -48,9 +48,10 @@
 <h2>Context: the page “Training the machine”</h2>
 <p>The training bag: the machine looks for the most similar example and gives its label.</p>
 <h3>At the animal shelter: dog or cat?</h3>
-<p>Picture: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top. Caption: The training bag of class 6b. Each card in it is an example with a label.</p>
-<p>In the card game you found a rule yourselves. Now a machine gets the training bag. It should tell the
-animal shelter whether a new animal is a dog or a cat.</p>
+<p>Picture: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top. Caption: The training bag of class 6b with animal cards.</p>
+<p>In the card game you found a rule yourselves. Each card in the bag is an <strong>example</strong>: an animal with a
+<strong>label</strong>, dog or cat. Each card shows four <strong>features</strong>: ears, snout, size and pupils. Now a machine gets
+the training bag. It should tell the animal shelter whether a new animal is a dog or a cat.</p>
 <p>On this page you learn how the machine decides from the cards in the bag. Then you fill the bag yourself
 so that it decides correctly.</p>
 <ul>
@@ -71,8 +72,10 @@ is the most similar example. The machine gives the new animal the label of that 
 </ul>
 <p>Luna is the most similar example. So the machine says: <strong>cat</strong>. That is wrong, Krümel is a dog. The machine
 did not count wrong. The bag is just missing an example like Krümel: a small dog with pointed ears.</p>
+<p>Sometimes a cat and a dog in the bag are equally similar. Then the machine does not know which label to
+take.</p>
 <ul>
-<li><strong>nearest neighbour</strong>: The example in the bag that is most similar to a new animal. A machine that decides like this uses the “nearest neighbour” method.</li>
+<li><strong>nearest neighbour</strong>: The example in the bag that is most similar to a new animal. It is the closest one, like the person who sits next to you in class. A machine that decides like this uses the “nearest neighbour” method.</li>
 </ul>
 <p><strong>Remember: Remember</strong></p>
 <ul>
@@ -83,9 +86,9 @@ only from what is in the bag.</li>
 <h3>Try it: put cards into the bag</h3>
 <p>With <strong>Put in bag</strong> you put a card in, with <strong>Take out</strong> you take it out again. At <strong>New animal</strong> you choose
 the animal the machine should recognise. The table shows, for each card in the bag, the features in common
-with the new animal. The star ★ marks the most similar example.</p>
-<p>Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out and put Tiger
-in.</p>
+with the new animal. The star ★ marks the most similar example, or several if there is a tie.</p>
+<p>Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out. Last, put the
+cat Tiger in: does the answer stay the same?</p>
 <p>Interactive: With JavaScript you can put animal cards into the training bag here and choose a new animal. For each card in the bag the machine counts the features in common and gives the new animal the label of the most similar card. At the start the bag holds Luna (cat) and Bruno (dog), and the new animal is Krümel (dog: pointed ears, short snout, small, round pupils). Luna has 3 features in common, Bruno 1: the machine says “cat”. If you add Sammy (dog: pointed ears, short snout, big, round pupils), Sammy also has 3: the machine does not know. If you take Luna out and put Tiger in (cat: pointed ears, short snout, big, narrow pupils), Tiger has 2 and Sammy 3: the machine says “dog”.</p>
 <h3>Practice</h3>
 <ul>
@@ -114,21 +117,21 @@ missing examples it makes mistakes.</p>
 </ul>
 </li>
 <li>Solution: Luna</li>
-<li>Explanation: Krümel is more similar to Luna. But Krümel is a dog! Remember this, it comes back soon.</li>
+<li>Explanation: Krümel is more similar to Luna. But Krümel is a dog! Keep this in mind: it matters in a moment.</li>
 <li>Link: <a href="../?via=tutor#wer-ist-aehnlicher">../?via=tutor#wer-ist-aehnlicher</a></li>
 </ul>
 <h3>Exercise gleiche-merkmale-zaehlen</h3>
 <ul>
-<li>Task: „Two cards from the shelter. {a.name}: {a.merkmale}. {b.name}: {b.merkmale}. How many features are the same?“</li>
+<li>Task: „Two cards from the shelter. {a.name}: {a.merkmale}. {b.name}: {b.merkmale}. How many features do they have in common?“</li>
 <li>Answer format: type a number</li>
 <li>The app&#39;s hint: „Go through the four features one by one: ears, snout, size, pupils. Make a mark for each feature that is the same.“</li>
 <li>Steps of the solution:<ul>
 <li>Compare feature by feature. {a.name}: {a.merkmale}. {b.name}: {b.merkmale}.</li>
-<li>{answer} of the 4 features are the same.</li>
+<li>Features in common: {answer} of 4.</li>
 </ul>
 </li>
 <li>Typical mistakes and what the app says:<ul>
-<li>F1: „You counted the features that are different. The question asks for the ones that are the same.“</li>
+<li>F1: „You counted the features that are different. The question asks for the ones they have in common.“</li>
 </ul>
 </li>
 <li>Link to number n: <code>../?gleiche-merkmale-zaehlen=n&amp;via=tutor#gleiche-merkmale-zaehlen</code></li>
@@ -209,8 +212,8 @@ missing examples it makes mistakes.</p>
 <li>Answer format: choose one answer</li>
 <li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
 <li>✓ I don&#39;t know. – Tiger and Rex each have 3 features in common with Sammy. A cat and a dog are equally similar.</li>
-<li>✗ cat – Tiger has 3 features in common, but so does Rex. No single example is the most similar.</li>
-<li>✗ dog – Rex has 3 features in common, but so does Tiger. The machine does not know that Sammy is a dog: it only sees the features.</li>
+<li>✗ Cat – Tiger has 3 features in common, but so does Rex. No single example is the most similar.</li>
+<li>✗ Dog – Rex has 3 features in common, but so does Tiger. The machine does not know that Sammy is a dog: it only sees the features.</li>
 </ul>
 </li>
 <li>Solution: I don&#39;t know.</li>
@@ -220,7 +223,7 @@ missing examples it makes mistakes.</p>
 <h3>Exercise beutel-aufgabe</h3>
 <ul>
 <li>What to do: Three test animals from the animal shelter are given. The child puts at most 4 of the other animal cards into the training bag and presses “Check”. For each test animal the machine looks for the card in the bag with the most features in common (ears, snout, size, pupils) and gives its label.</li>
-<li>Task: „The shelter tests the machine with three animals. Put at most 4 of the other cards into the bag so that the machine recognises all three correctly. Test animals: {testtiere}“</li>
+<li>Task: „The shelter tests the machine with three test animals (dashed frame). They do not go into the bag. Put at most 4 of the other cards into the bag so that the machine recognises all three correctly. Tip: you can test your bag first in “Try it” above. Test animals: {testtiere}“</li>
 <li>Answer format: The cards in the bag; which ones does not matter, as long as the machine names all three test animals correctly.</li>
 <li>What counts as right: Right if the bag holds 1 to 4 cards and the machine labels every test animal correctly as a dog or a cat, with no tie.</li>
 <li>Typical mistakes (the app&#39;s message fits one of them):<ul>
@@ -306,7 +309,7 @@ missing examples it makes mistakes.</p>
 <li>Task: The bag holds only cats. Even so, the machine can recognise a dog as a dog.</li>
 <li>Answer format: choose “true” or “false”</li>
 <li>Solution: The statement is false.</li>
-<li>Explanation: False. The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out.</li>
+<li>Explanation: The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out.</li>
 <li>Link: <a href="../?via=tutor#nur-katzen-im-beutel">../?via=tutor#nur-katzen-im-beutel</a></li>
 </ul>
 </main>

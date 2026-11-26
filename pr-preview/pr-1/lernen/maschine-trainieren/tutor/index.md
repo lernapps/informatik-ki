@@ -43,10 +43,12 @@ Der Trainingsbeutel: Die Maschine sucht das ähnlichste Beispiel und gibt sein E
 
 ### Im Tierheim: Hund oder Katze?
 
-Bild: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus. Bildunterschrift: Der Trainingsbeutel der Klasse 6b. Jede Karte darin ist ein Beispiel mit Etikett.
+Bild: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus. Bildunterschrift: Der Trainingsbeutel der Klasse 6b mit Tierkarten.
 
-Beim Kartenspiel habt ihr selbst eine Regel gefunden. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie
-soll für das Tierheim sagen, ob ein neues Tier ein Hund oder eine Katze ist.
+Beim Kartenspiel habt ihr selbst eine Regel gefunden. Jede Karte im Beutel ist ein **Beispiel**: ein Tier mit
+einem **Etikett**, Hund oder Katze. Auf jeder Karte stehen vier **Merkmale**: Ohren, Schnauze, Größe und
+Pupillen. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen, ob ein neues
+Tier ein Hund oder eine Katze ist.
 
 Auf dieser Seite lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Danach füllst du den
 Beutel selbst so, dass sie richtig entscheidet.
@@ -71,7 +73,10 @@ Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Das ist fa
 Maschine hat nichts falsch gerechnet. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
 spitzen Ohren.
 
-- **nächster Nachbar**: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
+Manchmal sind eine Katze und ein Hund im Beutel gleich ähnlich. Dann weiß die Maschine nicht, welches Etikett
+sie nehmen soll.
+
+- **nächster Nachbar**: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Es steht ihm am nächsten, so wie dein Sitznachbar dir am nächsten sitzt. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
 
 **Merke: Merke**
 
@@ -83,10 +88,10 @@ spitzen Ohren.
 
 Mit **In den Beutel** legst du eine Karte hinein, mit **Heraus** nimmst du sie wieder heraus. Bei **Neues
 Tier** wählst du das Tier, das die Maschine erkennen soll. Die Tabelle zeigt für jede Karte im Beutel die
-gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel.
+gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel, bei Gleichstand mehrere.
 
-Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus und
-lege Tiger hinein.
+Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus. Lege
+zum Schluss die Katze Tiger hinein: Bleibt die Antwort gleich?
 
 Interaktiv: Hier kannst du mit JavaScript Tierkarten in den Trainingsbeutel legen und ein neues Tier wählen. Die Maschine zählt für jede Karte im Beutel die gleichen Merkmale und gibt dem neuen Tier das Etikett der ähnlichsten Karte. Am Anfang liegen Luna (Katze) und Bruno (Hund) im Beutel, das neue Tier ist Krümel (Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen). Luna hat 3 gleiche Merkmale, Bruno 1: Die Maschine sagt „Katze“. Legst du Sammy (Hund: spitze Ohren, kurze Schnauze, groß, runde Pupillen) dazu, hat auch Sammy 3 gleiche Merkmale: Die Maschine weiß es nicht. Nimmst du Luna heraus und legst Tiger (Katze: spitze Ohren, kurze Schnauze, groß, schmale Pupillen) hinein, hat Tiger 2 und Sammy 3: Die Maschine sagt „Hund“.
 
@@ -117,7 +122,7 @@ mit fehlenden Beispielen macht sie Fehler.
   - ✗ Bruno – Mit Bruno hat Krümel nur ein Merkmal gleich: die runden Pupillen.
   - ✗ beiden gleich – Zähl nach: Mit Luna sind es drei gleiche Merkmale, mit Bruno nur eins.
 - Lösung: Luna
-- Erklärung: Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Merk dir das, es kommt gleich wieder.
+- Erklärung: Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Das ist gleich wichtig.
 - Link: [../?via=tutor#wer-ist-aehnlicher](../?via=tutor#wer-ist-aehnlicher)
 
 ### Aufgabe gleiche-merkmale-zaehlen
@@ -127,7 +132,7 @@ mit fehlenden Beispielen macht sie Fehler.
 - Tipp der App: „Geh die vier Merkmale der Reihe nach durch: Ohren, Schnauze, Größe, Pupillen. Mach für jedes gleiche Merkmal einen Strich.“
 - Lösungsweg:
   - Vergleiche Merkmal für Merkmal. {a.name}: {a.merkmale}. {b.name}: {b.merkmale}.
-  - Gleich sind {answer} von 4 Merkmalen.
+  - Anzahl der gleichen Merkmale: {answer} von 4.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen.“
 - Link zu Nummer n: `../?gleiche-merkmale-zaehlen=n&via=tutor#gleiche-merkmale-zaehlen`
@@ -219,7 +224,7 @@ Nr. | a.name | a.merkmale | b.name | b.merkmale | Lösung | F1
 ### Aufgabe beutel-aufgabe
 
 - Was zu tun ist: Drei Testtiere aus dem Tierheim sind gegeben. Das Kind legt höchstens 4 der anderen Tierkarten in den Trainingsbeutel und drückt „Prüfen“. Die Maschine sucht für jedes Testtier die Karte im Beutel mit den meisten gleichen Merkmalen (Ohren, Schnauze, Größe, Pupille) und gibt ihr Etikett.
-- Aufgabe: „Das Tierheim testet die Maschine mit drei Tieren. Lege höchstens 4 der anderen Karten in den Beutel, sodass die Maschine alle drei richtig erkennt. Testtiere: {testtiere}“
+- Aufgabe: „Das Tierheim testet die Maschine mit drei Testtieren (gestrichelter Rahmen). Sie kommen nicht in den Beutel. Lege höchstens 4 der anderen Karten in den Beutel, sodass die Maschine alle drei richtig erkennt. Tipp: Oben bei „Ausprobieren“ kannst du deinen Beutel vorher testen. Testtiere: {testtiere}“
 - Antwortformat: Die Karten im Beutel; welche es sind, ist egal, solange die Maschine alle drei Testtiere richtig benennt.
 - Was als richtig zählt: Richtig, wenn 1 bis 4 Karten im Beutel sind und die Maschine jedes Testtier richtig als Hund oder Katze erkennt, ohne Gleichstand.
 - Typische Fehler (die Meldung der App passt zu einem davon):
@@ -305,5 +310,5 @@ Nr. | testtiere | Lösung | F1 | F2
 - Aufgabe: Im Beutel liegen nur Katzen. Trotzdem kann die Maschine einen Hund als Hund erkennen.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Falsch. Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt.
+- Erklärung: Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt.
 - Link: [../?via=tutor#nur-katzen-im-beutel](../?via=tutor#nur-katzen-im-beutel)
