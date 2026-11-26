@@ -79,33 +79,27 @@ blocks:
             is the most similar example. The machine gives the new animal the label of that card.
       - type: table
         caption:
-          de: "Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krümel."
-          en: "Krümel compared with the cards in the bag. ✓ means: the same as Krümel."
+          de: "Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krümel, ✗ heißt: anders."
+          en: "Krümel compared with the cards in the bag. ✓ means: the same as Krümel, ✗ means: different."
         header:
-          - { de: Merkmal, en: Feature }
-          - { de: Krümel, en: Krümel }
+          - { de: Krümel hat, en: Krümel has }
           - { de: Luna, en: Luna }
           - { de: Bruno, en: Bruno }
         rowHeaders: true
         rows:
-          - - { de: Ohren, en: ears }
-            - { de: spitz, en: pointed }
-            - { de: spitz ✓, en: pointed ✓ }
-            - { de: hängend, en: floppy }
-          - - { de: Schnauze, en: snout }
-            - { de: kurz, en: short }
-            - { de: kurz ✓, en: short ✓ }
-            - { de: lang, en: long }
-          - - { de: Größe, en: size }
-            - { de: klein, en: small }
-            - { de: klein ✓, en: small ✓ }
-            - { de: groß, en: big }
-          - - { de: Pupillen, en: pupils }
-            - { de: rund, en: round }
-            - { de: schmal, en: narrow }
-            - { de: rund ✓, en: round ✓ }
-          - - { de: gleich, en: in common }
-            - { de: "–", en: "–" }
+          - - { de: spitze Ohren, en: pointed ears }
+            - { de: "✓ spitz", en: "✓ pointed" }
+            - { de: "✗ hängend", en: "✗ floppy" }
+          - - { de: kurze Schnauze, en: short snout }
+            - { de: "✓ kurz", en: "✓ short" }
+            - { de: "✗ lang", en: "✗ long" }
+          - - { de: klein, en: small }
+            - { de: "✓ klein", en: "✓ small" }
+            - { de: "✗ groß", en: "✗ big" }
+          - - { de: runde Pupillen, en: round pupils }
+            - { de: "✗ schmal", en: "✗ narrow" }
+            - { de: "✓ rund", en: "✓ round" }
+          - - { de: gleiche Merkmale, en: features in common }
             - { de: "3", en: "3" }
             - { de: "1", en: "1" }
       - type: text
@@ -225,8 +219,8 @@ blocks:
           - "(a.ohren - b.ohren) * (a.ohren - b.ohren) + (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) + (a.groesse - b.groesse) * (a.groesse - b.groesse) + (a.pupille - b.pupille) * (a.pupille - b.pupille) != 2"
         task:
           text:
-            de: "{{a.name}} hat {{a.merkmale}}. {{b.name}} hat {{b.merkmale}}. Wie viele Merkmale sind gleich?"
-            en: "{{a.name}} has {{a.merkmale}}. {{b.name}} has {{b.merkmale}}. How many features are the same?"
+            de: "Zwei Karten aus dem Tierheim. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. Wie viele Merkmale sind gleich?"
+            en: "Two cards from the shelter. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. How many features are the same?"
         answer:
           value: "4 - (a.ohren - b.ohren) * (a.ohren - b.ohren) - (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) - (a.groesse - b.groesse) * (a.groesse - b.groesse) - (a.pupille - b.pupille) * (a.pupille - b.pupille)"
           compare: { number: { format: integer } }
@@ -239,8 +233,8 @@ blocks:
           de: "Geh die vier Merkmale der Reihe nach durch: Ohren, Schnauze, Größe, Pupillen. Mach für jedes gleiche Merkmal einen Strich."
           en: "Go through the four features one by one: ears, snout, size, pupils. Make a mark for each feature that is the same."
         steps:
-          - de: "Vergleiche Merkmal für Merkmal: {{a.name}} hat {{a.merkmale}}, {{b.name}} hat {{b.merkmale}}."
-            en: "Compare feature by feature: {{a.name}} has {{a.merkmale}}, {{b.name}} has {{b.merkmale}}."
+          - de: "Vergleiche Merkmal für Merkmal. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
+            en: "Compare feature by feature. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
           - de: "Gleich sind {{answer}} von 4 Merkmalen."
             en: "{{answer}} of the 4 features are the same."
       - type: single-choice
@@ -295,8 +289,8 @@ blocks:
             de: "Im Beutel ist kein Hund. Dann kann die Maschine nie „Hund“ sagen, auch nicht bei {tier}."
             en: "There is no dog in the bag. Then the machine can never say “dog”, not even for {tier}."
           verwechselt:
-            de: "Die Maschine sagt über {tier}: {falsch}. Am ähnlichsten ist {karte} mit {n} gleichen Merkmalen. Lege ein Beispiel in den Beutel, das {tier} noch ähnlicher ist."
-            en: "The machine says about {tier}: {falsch}. The most similar card is {karte}, with {n} features in common. Put an example into the bag that is even more similar to {tier}."
+            de: "Die Maschine sagt über {tier}: {falsch}. Am ähnlichsten ist {karte} mit {n} gleichen Merkmalen. Nimm {karte} heraus oder lege ein Beispiel mit dem richtigen Etikett hinein, das {tier} noch ähnlicher ist."
+            en: "The machine says about {tier}: {falsch}. The most similar card is {karte}, with {n} features in common. Take {karte} out, or put in an example with the right label that is even more similar to {tier}."
           gleichstand:
             de: "Bei {tier} weiß die Maschine es nicht: {katzeKarte} (Katze) und {hundKarte} (Hund) haben je {n} gleiche Merkmale."
             en: "For {tier} the machine does not know: {katzeKarte} (cat) and {hundKarte} (dog) each have {n} features in common."

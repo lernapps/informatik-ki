@@ -68,8 +68,10 @@ function leerenKlick(): void {
     <ul class="beutel-aufgabe-tests">
       <li v-for="tier in aufgabe.testtiere" :key="tier.name">
         <TierBild v-bind="tier" />
-        <span class="beutel-aufgabe-name">{{ tier.name }} · {{ sorte(tier) }}</span>
-        <span class="beutel-aufgabe-merkmale">{{ tier.merkmale }}</span>
+        <span class="beutel-aufgabe-text">
+          <span class="beutel-aufgabe-name">{{ tier.name }} · {{ sorte(tier) }}</span>
+          <span class="beutel-aufgabe-merkmale">{{ tier.merkmale }}</span>
+        </span>
       </li>
     </ul>
     <p class="beutel-aufgabe-titel">{{ kartenTitel }}</p>
@@ -80,8 +82,10 @@ function leerenKlick(): void {
         :class="{ 'beutel-aufgabe-drin': imBeutel.includes(tier.name) }"
       >
         <TierBild v-bind="tier" />
-        <span class="beutel-aufgabe-name">{{ tier.name }} · {{ sorte(tier) }}</span>
-        <span class="beutel-aufgabe-merkmale">{{ tier.merkmale }}</span>
+        <span class="beutel-aufgabe-text">
+          <span class="beutel-aufgabe-name">{{ tier.name }} · {{ sorte(tier) }}</span>
+          <span class="beutel-aufgabe-merkmale">{{ tier.merkmale }}</span>
+        </span>
         <button
           type="button"
           :aria-pressed="imBeutel.includes(tier.name)"
@@ -103,7 +107,7 @@ function leerenKlick(): void {
 .beutel-aufgabe-tests,
 .beutel-aufgabe-karten {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 0.5rem;
   padding: 0;
   list-style: none;
@@ -111,9 +115,11 @@ function leerenKlick(): void {
 
 .beutel-aufgabe-tests li,
 .beutel-aufgabe-karten li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  grid-template-areas: "bild text" "knopf knopf";
+  gap: 0.25rem 0.75rem;
+  align-items: start;
   padding: 0.5rem;
   border: 2px solid var(--page-border);
   border-radius: 0.5rem;
@@ -145,6 +151,16 @@ button {
 button[aria-pressed="true"] {
   background: var(--page-accent);
   color: var(--page-on-accent);
+}
+
+.beutel-aufgabe-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: text;
+}
+
+li > button {
+  grid-area: knopf;
 }
 
 .sr-name {

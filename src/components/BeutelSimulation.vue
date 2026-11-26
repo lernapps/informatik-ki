@@ -77,8 +77,10 @@ function zurueck(): void {
     <ul class="beutel-sim-karten">
       <li v-for="tier in tiere" :key="tier.name" :class="{ 'beutel-sim-drin': imBeutel.includes(tier.name) }">
         <TierBild v-bind="tier" />
-        <span class="beutel-sim-name">{{ tier.name }} · {{ sorte(tier) }}</span>
-        <span class="beutel-sim-merkmale">{{ tier.merkmale }}</span>
+        <span class="beutel-sim-text">
+          <span class="beutel-sim-name">{{ tier.name }} · {{ sorte(tier) }}</span>
+          <span class="beutel-sim-merkmale">{{ tier.merkmale }}</span>
+        </span>
         <button type="button" :aria-pressed="imBeutel.includes(tier.name)" @click="umschalten(tier)">
           {{ imBeutel.includes(tier.name) ? heraus : hinein }}<span class="sr-name"> {{ tier.name }}</span>
         </button>
@@ -97,7 +99,7 @@ function zurueck(): void {
       <span>{{ neuTitel }}</span>
       <select v-model="neuName">
         <option v-for="tier in tiere.filter((t) => !imBeutel.includes(t.name))" :key="tier.name" :value="tier.name">
-          {{ tier.name }}: {{ tier.merkmale }}
+          {{ tier.name }}
         </option>
       </select>
     </label>
@@ -139,16 +141,18 @@ function zurueck(): void {
 <style scoped>
 .beutel-sim-karten {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 0.5rem;
   padding: 0;
   list-style: none;
 }
 
 .beutel-sim-karten li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  grid-template-areas: "bild text" "knopf knopf";
+  gap: 0.25rem 0.75rem;
+  align-items: start;
   padding: 0.5rem;
   border: 2px solid var(--page-border);
   border-radius: 0.5rem;
@@ -231,6 +235,16 @@ button[aria-pressed="true"] {
 
 .beutel-sim-antwort {
   font-weight: bold;
+}
+
+.beutel-sim-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: text;
+}
+
+li > button {
+  grid-area: knopf;
 }
 
 .sr-name {
