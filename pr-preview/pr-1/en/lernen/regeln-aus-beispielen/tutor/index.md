@@ -87,7 +87,8 @@ for all twelve cards.
 **Remember: Remember**
 
 You found the rule from examples with labels; nobody gave it to you. AI systems learn like this too: they
-make rules from example data, instead of someone programming every rule.
+find patterns in example data, instead of someone programming every rule. Some turn them into a rule like
+you did, others compare with similar examples.
 
 ### Practice
 

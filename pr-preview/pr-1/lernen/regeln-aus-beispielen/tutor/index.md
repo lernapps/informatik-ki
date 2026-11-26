@@ -87,7 +87,8 @@ bei allen zwölf Karten.
 **Merke: Merke**
 
 Ihr habt die Regel aus Beispielen mit Etikett gefunden, niemand hat sie vorgegeben. So lernen auch
-KI-Systeme: Sie bilden Regeln aus Beispieldaten, statt dass jemand jede Regel programmiert.
+KI-Systeme: Sie finden Muster in Beispieldaten, statt dass jemand jede Regel programmiert. Manche machen
+daraus eine Regel wie ihr, andere vergleichen mit ähnlichen Beispielen.
 
 ### Übung
 

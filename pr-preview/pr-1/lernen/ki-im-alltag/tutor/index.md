@@ -59,10 +59,11 @@ KI-Anwendungen **erkennen** etwas, zum Beispiel gesprochene Wörter oder Tiere a
 etwas vor**, zum Beispiel Videos, die dir gefallen könnten. Oder sie **übersetzen** in eine andere Sprache.
 Das konnten früher nur Menschen.
 
-Ein Taschenrechner oder ein Wecker macht immer dasselbe nach festen Regeln: 3 + 4 ergibt immer 7, der
-Wecker klingelt um 7 Uhr. Dafür braucht es keine KI.
+Beim Taschenrechner und beim Wecker hat ein Mensch jede Regel genau aufgeschrieben: 3 + 4 ergibt 7, der
+Wecker klingelt um 7 Uhr. Dafür braucht es keine KI. KI-Anwendungen haben ihr Können dagegen meist aus
+vielen Beispielen gelernt.
 
-- **künstliche Intelligenz (KI)**: Computerprogramme, die Aufgaben lösen, für die Menschen Intelligenz brauchen, zum Beispiel Sprache verstehen, Bilder erkennen oder Vorschläge machen.
+- **künstliche Intelligenz (KI)**: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel aufgeschrieben hat.
 
 KI auf Mias Wandzeitung:
 - Anwendung | Was die KI tut
@@ -104,7 +105,7 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Aufgabe: Was tut die KI in diesen Anwendungen? Ordne zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: Sprachassistent – erkennt gesprochene Fragen; Foto-App – erkennt Tiere auf Bildern; Musik-App – schlägt Lieder vor; Übersetzer-App – überträgt Text in eine andere Sprache
-- Erklärung: Jede dieser Anwendungen erkennt etwas oder macht einen Vorschlag. Rechnen nach festen Regeln braucht keine KI.
+- Erklärung: Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach aufgeschriebenen Regeln braucht keine KI.
 - Link: [../?via=tutor#was-die-ki-tut](../?via=tutor#was-die-ki-tut)
 
 ### Aufgabe wo-steckt-ki
@@ -114,10 +115,10 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Ein Handy erkennt beim Entsperren das Gesicht. – Das Handy erkennt ein Gesicht auf dem Kamerabild. Das ist Bilderkennung.
   - ✓ Eine Musik-App schlägt neue Lieder vor. – Die App macht Vorschläge, die zu dir passen sollen. Das ist eine Empfehlung durch KI.
-  - ✗ Ein Wecker klingelt jeden Tag um 7 Uhr. – Der Wecker folgt einer festen Regel. Er erkennt nichts und schlägt nichts vor.
-  - ✗ Ein Taschenrechner rechnet 12 · 3. – Der Taschenrechner rechnet nach festen Regeln. 12 · 3 ergibt immer 36.
+  - ✗ Ein Wecker klingelt jeden Tag um 7 Uhr. – Beim Wecker hat ein Mensch die Regel aufgeschrieben. Er erkennt nichts und schlägt nichts vor.
+  - ✗ Ein Taschenrechner rechnet 12 · 3. – Der Taschenrechner rechnet nach Regeln, die ein Mensch aufgeschrieben hat. 12 · 3 ergibt 36.
 - Lösung: Ein Handy erkennt beim Entsperren das Gesicht.; Eine Musik-App schlägt neue Lieder vor.
-- Erklärung: KI erkennt etwas oder schlägt etwas vor. Geräte mit festen Regeln tun immer dasselbe.
+- Erklärung: KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel aufgeschrieben hat, brauchen keine KI.
 - Link: [../?via=tutor#wo-steckt-ki](../?via=tutor#wo-steckt-ki)
 
 ### Aufgabe ki-nur-roboter
@@ -133,9 +134,9 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Aufgabe: Auf Mias Wandzeitung sind sechs Dinge, A bis F. In wie vielen davon steckt KI?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 4
-- Erklärung: In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. E und F arbeiten nach festen Regeln.
+- Erklärung: In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel aufgeschrieben.
 - Typische Fehler und was die App sagt:
-  - 6: Taschenrechner und Wecker arbeiten nach festen Regeln. Sie erkennen nichts und schlagen nichts vor.
+  - 6: Bei Taschenrechner und Wecker hat ein Mensch jede Regel aufgeschrieben. Sie erkennen nichts und schlagen nichts vor.
   - 5: Schau noch einmal auf E und F. Erkennt eines davon etwas oder schlägt etwas vor?
   - 3: Schau noch einmal auf A bis D: Jedes davon erkennt etwas, schlägt etwas vor oder übersetzt.
 - Link: [../?via=tutor#wie-viele-mit-ki](../?via=tutor#wie-viele-mit-ki)

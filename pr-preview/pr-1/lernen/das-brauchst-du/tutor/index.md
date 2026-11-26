@@ -70,7 +70,7 @@ Interaktiv: Waldis Karte: ein gezeichneter Hund mit hängenden Ohren, langer Sch
 - Aufgabe: Auf einem Zettel im Tierheim steht nur die Zahl „4“. Was bedeutet sie?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Das weißt du erst, wenn du weißt, worum es geht. – Ohne Zusammenhang ist „4“ nur ein Datum. Es kann ein Alter, eine Anzahl oder eine Zimmernummer sein.
+  - ✓ Das weißt du erst, wenn du weißt, worum es geht. – Ohne Zusammenhang ist „4“ nur eine Angabe ohne Bedeutung. Es kann ein Alter, eine Anzahl oder eine Zimmernummer sein.
   - ✗ Ein Hund ist 4 Jahre alt. – Das kann sein. Auf dem Zettel steht aber nicht, dass es um ein Alter geht.
   - ✗ Im Tierheim leben 4 Katzen. – Auch das kann sein. Ohne Zusammenhang kannst du es aber nicht wissen.
 - Lösung: Das weißt du erst, wenn du weißt, worum es geht.

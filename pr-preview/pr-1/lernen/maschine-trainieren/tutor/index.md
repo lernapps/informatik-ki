@@ -70,10 +70,11 @@ Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krüme
 
 Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Das ist falsch, Krümel ist ein Hund. Die
 Maschine hat nichts falsch gerechnet. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
-spitzen Ohren.
+spitzen Ohren. Die Maschine zählt jedes Merkmal gleich. Dass die Pupillen hier am meisten verraten, wie bei
+Selins Regel, weiß sie nicht.
 
-Manchmal sind eine Katze und ein Hund im Beutel gleich ähnlich. Dann weiß die Maschine nicht, welches Etikett
-sie nehmen soll.
+Manchmal sind die ähnlichste Katze und der ähnlichste Hund im Beutel gleich ähnlich. Dann weiß die Maschine
+nicht, welches Etikett sie nehmen soll.
 
 - **nächster Nachbar**: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Es steht ihm am nächsten, so wie dein Sitznachbar dir am nächsten sitzt. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
 
@@ -81,7 +82,7 @@ sie nehmen soll.
 
 - Beim Kartenspiel findet ihr eine **Regel**. Die Maschine sucht das **ähnlichste Beispiel**. Beide
   lernen nur aus dem, was im Beutel ist.
-- Ist eine Katze genauso ähnlich wie ein Hund, sagt die Maschine: **Ich weiß es nicht.**
+- Sind die ähnlichste Katze und der ähnlichste Hund gleich ähnlich, sagt die Maschine: **Ich weiß es nicht.**
 
 ### Ausprobieren: Karten in den Beutel legen
 
@@ -106,7 +107,9 @@ Interaktiv: Hier kannst du mit JavaScript Tierkarten in den Trainingsbeutel lege
 ### Rückblick
 
 Du hast eine Maschine trainiert. Niemand hat ihr eine Regel für Hunde und Katzen einprogrammiert. Sie hat
-nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**.
+nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**. Programmiert
+ist nur, wie sie vergleicht: gleiche Merkmale zählen. Ob Hund oder Katze, entscheiden die Beispiele im
+Beutel.
 
 **Was in den Beutel kommt, bestimmt, was herauskommt.**
 
@@ -119,7 +122,7 @@ nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **masch
   - ✗ Bruno – Mit Bruno hat Krümel nur ein Merkmal gleich: die runden Pupillen.
   - ✗ beiden gleich – Zähl nach: Mit Luna sind es drei gleiche Merkmale, mit Bruno nur eins.
 - Lösung: Luna
-- Erklärung: Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Das ist gleich wichtig.
+- Erklärung: Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Das wird gleich wichtig.
 - Link: [../?via=tutor#wer-ist-aehnlicher](../?via=tutor#wer-ist-aehnlicher)
 
 ### Aufgabe gleiche-merkmale-zaehlen

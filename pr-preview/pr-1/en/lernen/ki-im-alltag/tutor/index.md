@@ -59,10 +59,11 @@ AI apps **recognise** something, such as spoken words or animals in photos. Or t
 such as videos you might like. Or they **translate** into another language. Only people used to be able to
 do this.
 
-A calculator or an alarm clock always does the same thing by fixed rules: 3 + 4 always makes 7, the alarm
-rings at 7 o'clock. No AI is needed for that.
+For a calculator and an alarm clock, a person wrote down every rule exactly: 3 + 4 makes 7, the alarm rings
+at 7 o'clock. No AI is needed for that. AI apps, on the other hand, mostly learned what they can do from many
+examples.
 
-- **artificial intelligence (AI)**: Computer programs that do tasks people need intelligence for, such as understanding speech, recognising pictures or making suggestions.
+- **artificial intelligence (AI)**: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone writing down every rule.
 
 AI on Mia's wall poster:
 - App | What the AI does
@@ -104,7 +105,7 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Task: What does the AI do in these apps? Match them up.
 - Answer format: match each item on the left with one on the right
 - Solution: voice assistant – recognises spoken questions; photo app – recognises animals in pictures; music app – suggests songs; translator app – puts text into another language
-- Explanation: Each of these apps recognises something or makes a suggestion. Working out sums by fixed rules does not need AI.
+- Explanation: Each of these apps recognises something, makes a suggestion or translates. Working out sums by written-down rules does not need AI.
 - Link: [../?via=tutor#was-die-ki-tut](../?via=tutor#was-die-ki-tut)
 
 ### Exercise wo-steckt-ki
@@ -114,10 +115,10 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ A phone recognises a face when it unlocks. – The phone recognises a face in the camera picture. That is image recognition.
   - ✓ A music app suggests new songs. – The app makes suggestions that should suit you. That is a recommendation by AI.
-  - ✗ An alarm clock rings at 7 o'clock every day. – The alarm clock follows a fixed rule. It recognises nothing and suggests nothing.
-  - ✗ A calculator works out 12 × 3. – The calculator works by fixed rules. 12 × 3 always makes 36.
+  - ✗ An alarm clock rings at 7 o'clock every day. – For the alarm clock a person wrote down the rule. It recognises nothing and suggests nothing.
+  - ✗ A calculator works out 12 × 3. – The calculator works by rules a person wrote down. 12 × 3 makes 36.
 - Solution: A phone recognises a face when it unlocks.; A music app suggests new songs.
-- Explanation: AI recognises something or suggests something. Devices with fixed rules always do the same thing.
+- Explanation: AI recognises something or suggests something. Devices where someone wrote down every rule do not need AI.
 - Link: [../?via=tutor#wo-steckt-ki](../?via=tutor#wo-steckt-ki)
 
 ### Exercise ki-nur-roboter
@@ -133,9 +134,9 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Task: There are six things on Mia's wall poster, A to F. How many of them use AI?
 - Answer format: type a number
 - Solution: 4
-- Explanation: A, B, C and D use AI: they recognise, suggest or translate. E and F work by fixed rules.
+- Explanation: A, B, C and D use AI: they recognise, suggest or translate. For E and F a person wrote down every rule.
 - Typical mistakes and what the app says:
-  - 6: The calculator and the alarm clock work by fixed rules. They recognise nothing and suggest nothing.
+  - 6: For the calculator and the alarm clock a person wrote down every rule. They recognise nothing and suggest nothing.
   - 5: Look again at E and F. Does either of them recognise or suggest anything?
   - 3: Look again at A to D: each of them recognises, suggests or translates something.
 - Link: [../?via=tutor#wie-viele-mit-ki](../?via=tutor#wie-viele-mit-ki)

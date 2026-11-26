@@ -68,10 +68,12 @@ Krümel compared with the cards in the bag. ✓ means: the same as Krümel, ✗ 
 - features in common | 3 | 1
 
 Luna is the most similar example. So the machine says: **cat**. That is wrong, Krümel is a dog. The machine
-did not count wrong. The bag is just missing an example like Krümel: a small dog with pointed ears.
+did not count wrong. The bag is just missing an example like Krümel: a small dog with pointed ears. The
+machine counts every feature the same. It does not know that the pupils tell the most here, as in Selin's
+rule.
 
-Sometimes a cat and a dog in the bag are equally similar. Then the machine does not know which label to
-take.
+Sometimes the most similar cat and the most similar dog in the bag are equally similar. Then the machine
+does not know which label to take.
 
 - **nearest neighbour**: The example in the bag that is most similar to a new animal. It is the closest one, like the person who sits next to you in class. A machine that decides like this uses the “nearest neighbour” method.
 
@@ -79,7 +81,7 @@ take.
 
 - In the card game you find a **rule**. The machine looks for the **most similar example**. Both learn
   only from what is in the bag.
-- If a cat is just as similar as a dog, the machine says: **I don't know.**
+- If the most similar cat and the most similar dog are equally similar, the machine says: **I don't know.**
 
 ### Try it: put cards into the bag
 
@@ -104,7 +106,8 @@ Interactive: With JavaScript you can put animal cards into the training bag here
 ### Looking back
 
 You have trained a machine. Nobody programmed a rule for dogs and cats into it. It only got examples with
-labels and decided from them. This is called **machine learning**.
+labels and decided from them. This is called **machine learning**. Only the way it compares is programmed:
+counting the features in common. Whether dog or cat is decided by the examples in the bag.
 
 **What goes into the bag decides what comes out.**
 
