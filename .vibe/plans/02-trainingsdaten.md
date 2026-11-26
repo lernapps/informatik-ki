@@ -147,7 +147,7 @@ Seite `schief/verzerrte-daten`, Abschnitte wie im Leitfaden:
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Kapitel schief, Seite schief/verzerrte-daten (trainingsdaten), de und en, mit BeutelSimulation (start), Chat, Gender-Shades-Absatz, 5 Übungen; ein Slice, kein Sub-Agent.
+- [x] Kapitel schief, Seite schief/verzerrte-daten (trainingsdaten), de und en, mit BeutelSimulation (start), Chat, Gender-Shades-Absatz, 5 Übungen; ein Slice, kein Sub-Agent.
 <!-- tasks: slices (1 added): one per competency, as written in Plan -->
 - [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
