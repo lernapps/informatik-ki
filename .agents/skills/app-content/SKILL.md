@@ -45,13 +45,15 @@ Kapitel `lernen` „KI im Alltag: Lernen aus Beispielen“ (5-6), in dieser Reih
 Kapitel 2 (geplant): `schief/verzerrte-daten` (`trainingsdaten`): „Ich kann an einem Beispiel zeigen, wie die Auswahl
 der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch durch Verzerrungen.“
 
-Die Ids der Übungen stehen in den Seitendateien. Auf `maschine-trainieren` sind es:
+Übungen je Seite (Ids):
 
-- `wer-ist-aehnlicher`
-- `gleiche-merkmale-zaehlen`
-- `was-sagt-die-maschine`
-- die Komponente `BeutelAufgabe`
-- `nur-katzen-im-beutel`
+- `das-brauchst-du`: `was-heisst-vier`.
+- `ki-im-alltag`: `lautsprecher`, `was-die-ki-tut` (matching), `wo-steckt-ki`, `ki-nur-roboter`,
+  `wie-viele-mit-ki` (number).
+- `regeln-aus-beispielen`: `was-alle-katzen-haben`, `jonas-regel-passt`, `was-jonas-regel-sagt` (matching),
+  `schritte-lernen` (ordering), `programmiert-oder-gelernt`.
+- `maschine-trainieren`: `wer-ist-aehnlicher`, `gleiche-merkmale-zaehlen` (generated), `was-sagt-die-maschine`,
+  die Komponente `BeutelAufgabe`, `nur-katzen-im-beutel`.
 
 ## Content structure
 
@@ -69,10 +71,15 @@ Die Ids der Übungen stehen in den Seitendateien. Auf `maschine-trainieren` sind
   - Selin (11): lange dunkelbraune Haare mit Pferdeschwanz #3b2314, Haut #d9a27a, orange Jacke #e07b24.
   - Mia (11): schwarze Locken #222, runde Brille, Haut #8d5a3b, lila Jacke #7b4fb8.
   - Die Zeichnungen stammen aus `lernapps/informatik-computer`, `src/images/klasse-6b.svg`. Nicht ändern.
+- Die Kinder werden auf `ki-im-alltag` vorgestellt („sind 11 und gehen in die Klasse 6b“, die Klasse hilft dem
+  Tierheim). Bilder mit Kindern nennen sie in der Bildunterschrift von links nach rechts.
 - Die Seiten der Geschichte:
-  - S. 1: Mia baut die Wandzeitung „KI bei uns“.
-  - S. 2: Jona und Selin spielen das Kartenspiel.
-  - S. 3: Die Maschine bekommt den Beutel.
+  - Wiederholung: ein Zettel im Tierheim („klein“, Waldis Karte).
+  - `ki-im-alltag`: Mia baut die Wandzeitung „KI bei uns“ (`wandzeitung.svg`, Marker A–F).
+  - `regeln-aus-beispielen`: Mia leitet das Kartenspiel. Jona findet „spitze Ohren → Katze“, Mia zeigt Rex, Selin
+    findet „schmale Pupillen → Katze“.
+  - `maschine-trainieren`: Die Maschine bekommt den Beutel. Der Rückblick endet beim Tierheim.
+- Jede Seite endet mit einem Satz, der die nächste Seite ankündigt. Die Seite danach nennt die Seite davor.
 - Leitbild **Trainingsbeutel** (en „training bag“): ein Stoffbeutel mit Tierkarten, jede ein Beispiel mit Etikett
   Hund oder Katze. Merksatz: „Was in den Beutel kommt, bestimmt, was herauskommt.“ (en: „What goes into the bag
   decides what comes out.“)
@@ -83,14 +90,22 @@ Die Ids der Übungen stehen in den Seitendateien. Auf `maschine-trainieren` sind
 - Englische Fachwörter wie im Computing curriculum England: machine learning, training data, artificial intelligence
   (AI), label, feature.
 - Glossar (`definition`):
-  - künstliche Intelligenz (S. 1)
-  - Trainingsdaten, Merkmal, Etikett, Entscheidungsbaum (S. 2)
-  - nächster Nachbar (S. 3)
+  - künstliche Intelligenz (`ki-im-alltag`)
+  - Merkmal, Etikett (vor der Spielanleitung), Trainingsdaten, Entscheidungsbaum (`regeln-aus-beispielen`)
+  - nächster Nachbar, maschinelles Lernen (`maschine-trainieren`)
 - Die beiden Wege bekommen für Kinder klar verschiedene Namen:
   - Beim Kartenspiel **finden die Kinder eine Regel** (Entscheidungsbaum mit einer Frage).
   - Die Maschine **sucht das ähnlichste Beispiel** (nächster Nachbar).
   - Gemeinsam ist: Beide lernen nur aus dem, was im Beutel ist.
-- „Ich weiß es nicht“ (en „I don't know“): die Antwort der Maschine bei Gleichstand zwischen Katze und Hund.
+- „Ich weiß es nicht“ (en „I don't know“): die Antwort der Maschine, wenn die ähnlichste Katze und der ähnlichste
+  Hund gleich ähnlich sind. Nicht „eine Katze und ein Hund sind gleich ähnlich“.
+- KI gegen Nicht-KI: Es zählt, woher die Regeln kommen. Taschenrechner und Wecker hat ein Mensch **programmiert**
+  (jede Regel als Befehl aufgeschrieben). KI-Anwendungen haben ihr Können meist aus Beispielen gelernt. Immer das
+  Wort „programmiert“, nicht „feste Regeln“ oder „aufgeschrieben“ allein.
+- Was die Maschine lernt: „Sie finden Muster in Beispieldaten“ (nicht „Sie bilden Regeln“). Manche machen daraus
+  eine Regel, andere vergleichen mit ähnlichen Beispielen. Programmiert ist nur, wie die Maschine vergleicht.
+- Englisch: „data“ im Singular („data … becomes“). Die Tiernamen bleiben deutsch; die Wiederholungsseite sagt einmal,
+  wie man „Krümel“ spricht (KREW-mel) und dass es „crumb“ heißt.
 - Produktnamen nur als Gattung: Sprachassistent, Bilderkennung, Empfehlungen, Übersetzer. Keine Marken.
 - Merkmale heißen immer gleich, in dieser Reihenfolge:
   - de: Ohren (spitz/hängend), Schnauze (kurz/lang), Größe (klein/groß), Pupillen (schmal/rund).
@@ -117,18 +132,26 @@ Die Ids der Übungen stehen in den Seitendateien. Auf `maschine-trainieren` sind
   - Antwort `4 − Σ (a.m − b.m)²`.
   - Fehler „verschiedene gezählt“ = Σ (a.m − b.m)². Ausgeschlossen mit `where … != 2`, damit Fehler und Antwort nie
     gleich sind.
-- **Beutel füllen** (Komponente `BeutelAufgabe`, auf S. 3): Je Seed gibt es 3 Testtiere, darunter eine Katze, ein Hund
-  und eine Karte mit gemischten Merkmalen.
+- **Beutel füllen** (Komponente `BeutelAufgabe`, auf `maschine-trainieren`): Je Seed gibt es 3 Testtiere, darunter
+  eine Katze, ein Hund und eine Karte mit gemischten Merkmalen.
   - Der einfachste Beutel (Katze 1111 + Hund 0000) darf die Aufgabe nicht lösen.
+  - Mindestens zwei verschiedene Beutel lösen sie, keiner mit nur einer Karte (geprüft in `BeutelAufgabe.test.ts`).
   - Richtig ist jeder Beutel mit 1 bis 4 Karten, in dem der nächste Nachbar alle 3 Testtiere richtig benennt.
-  - Die Rückmeldung nennt das erste falsch erkannte Testtier, die falsche Antwort und die Karte, mit der es verwechselt
-    wird. Bei Gleichstand nennt sie beide Karten. Ist eine Sorte gar nicht im Beutel, sagt sie das.
+  - Die Rückmeldung nennt **jedes** falsch erkannte Testtier, die falsche Antwort und die Karte, mit der es verwechselt
+    wird. Bei Gleichstand nennt sie beide Karten. Fehlt eine Sorte im Beutel, sagt sie das einmal.
+  - Unter den Karten stehen der Beutelinhalt und „Der Beutel ist voll“. Die Aufgabe verweist auf „Ausprobieren“.
+- **Hinweise:** `true-false`, `matching` und `ordering` haben ein `hint`, sonst zeigt die Runtime nur eine allgemeine
+  Meldung.
+- **Anzeigen:** `Tierkarten` (Karten nach Nummer in `tiere.yaml`, mit oder ohne Etikett) und `BeutelSimulation`
+  (frei bedienbar; das neue Tier kann nicht in den Beutel, an seiner Karte steht „ist gerade das neue Tier“).
 
 ## Figures
 
 - Eigene SVGs ohne Text im Bild, CC-BY-4.0, `source: eigene Zeichnung / own drawing`:
-  - `src/images/beutel-szene.svg`: Jona, Mia, Selin und der Trainingsbeutel.
-  - weitere Szenen der Seiten nach demselben Muster.
+  - `src/images/beutel-szene.svg`: Jona, Mia, der Trainingsbeutel und Selin (auf `regeln-aus-beispielen` und
+    `maschine-trainieren`).
+  - `src/images/wandzeitung.svg`: Mia vor einer Pinnwand mit sechs Bildzeichen; Marker und Namen A–F setzt die Seite
+    (`labelled-figure`).
 - Der Trainingsbeutel steht als `<g id="trainingsbeutel">` in `beutel-szene.svg`. Andere Explainer (#505) dürfen ihn
   mit Herkunft kopieren.
   - Stoffbeutel petrol #3a8fa3, Kordel #1f5e6b, gelber Pfoten-Aufnäher #f4c542.
@@ -172,3 +195,6 @@ Die Ids der Übungen stehen in den Seitendateien. Auf `maschine-trainieren` sind
 ## Rules learned from mistakes
 
 - Kein Artikel vor einem eingesetzten Etikett. Der erste Entwurf ergab „ist eine Hund“.
+- Ein Begriff wird vor seiner ersten Verwendung erklärt (Merkmal und Etikett standen erst nach der Spielanleitung).
+- Text mit „: “ in YAML immer in Anführungszeichen (zweimal brach der Build).
+- KI nicht über „feste Regeln, immer dasselbe“ abgrenzen: Auch eine trainierte KI antwortet gleich. Fachprüfung.
