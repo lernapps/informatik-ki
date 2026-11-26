@@ -6,3 +6,9 @@ summary:
   de: Die Maschine des Tierheims macht immer wieder denselben Fehler. Du suchst den Fehler in den Trainingsdaten, nicht im Programm.
   en: The shelter's machine keeps making the same mistake. You look for the fault in the training data, not in the program.
 pages: [verzerrte-daten]
+selfAssessment:
+  pages:
+    - exercises:
+        - /schief/verzerrte-daten/#was-fehlt
+        - /schief/verzerrte-daten/#datenfehler-finden
+        - /schief/verzerrte-daten/#was-ergaenzen

@@ -149,9 +149,10 @@ Seite `schief/verzerrte-daten`, Abschnitte wie im Leitfaden:
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Kapitel schief, Seite schief/verzerrte-daten (trainingsdaten), de und en, mit BeutelSimulation (start), Chat, Gender-Shades-Absatz, 5 Übungen; ein Slice, kein Sub-Agent.
 <!-- tasks: slices (1 added): one per competency, as written in Plan -->
-- [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
+- [x] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
       finds, then ask the creator whether the others may follow it, and wait.
+      Creator: Ja, die nächsten Schritte folgen so: Fachprüfer, Selbsteinschätzung, Inhaltsleitfaden, dann Veröffentlichen. 360 px bitte im selben PR angehen, Kapitel 1 bei 360 px mitprüfen. Tabelle so lassen.
 - [ ] Update the content guide so that it describes the app as it is now (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every changed screen, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.

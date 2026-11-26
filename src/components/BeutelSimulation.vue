@@ -232,8 +232,25 @@ button[aria-pressed="true"] {
   font-weight: bold;
 }
 
+/* the machine's answer stays in view at the bottom of the screen while the learner scrolls through the cards, so
+   that a click and its effect are seen together, also at 360 px */
 .beutel-sim-antwort {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  margin: 0.75rem 0 0;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.5rem;
+  background: var(--page-surface);
   font-weight: bold;
+}
+
+/* narrow screens: smaller drawings, so that more cards fit */
+@media (max-width: 30rem) {
+  .beutel-sim-karten li {
+    grid-template-columns: 4rem 1fr;
+  }
 }
 
 .beutel-sim-text {
