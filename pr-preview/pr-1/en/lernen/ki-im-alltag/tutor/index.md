@@ -45,9 +45,9 @@ Spotting artificial intelligence in everyday life: voice assistants, image recog
 
 Picture: Mia stands on the left next to a pinboard with six pictures, A to F. Caption: Mia's wall poster “AI around us”. Is there AI in all of these? Labels: A voice assistant, B photo app sorts photos by animal, C video app suggests videos, D translator app, E calculator, F alarm clock
 
-The animal shelter wants a machine that sorts pictures of dogs and cats. For this it needs **artificial
-intelligence**, or AI for short. First, Mia wants to know where AI is already part of her everyday life. She
-collects things for a wall poster.
+Jona, Selin and Mia are 11 and in class 6b. Their class is helping the animal shelter: it wants a machine
+that sorts pictures of dogs and cats. For this it needs **artificial intelligence**, or AI for short. First,
+Mia wants to know where AI is already part of her everyday life. She collects things for a wall poster.
 
 On this page you learn to spot AI in your everyday life.
 
@@ -59,11 +59,11 @@ AI apps **recognise** something, such as spoken words or animals in photos. Or t
 such as videos you might like. Or they **translate** into another language. Only people used to be able to
 do this.
 
-For a calculator and an alarm clock, a person wrote down every rule exactly: 3 + 4 makes 7, the alarm rings
+A person **programmed** the calculator and the alarm clock: they wrote down every rule as an instruction. 3 + 4 makes 7, the alarm rings
 at 7 o'clock. No AI is needed for that. AI apps, on the other hand, mostly learned what they can do from many
 examples.
 
-- **artificial intelligence (AI)**: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone writing down every rule.
+- **artificial intelligence (AI)**: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone programming every rule.
 
 AI on Mia's wall poster:
 - App | What the AI does
@@ -86,7 +86,7 @@ AI is often hidden inside an app on a phone or tablet. There does not have to be
 
 - Exercise `wie-viele-mit-ki` (below)
 
-How does an AI learn to recognise animals in photos? You try it yourself on the next page, with animal cards and the training bag.
+How does an AI learn to recognise animals in photos? You try it yourself on the next page: with animal cards in a cloth bag, the training bag.
 
 ### Exercise lautsprecher
 
@@ -104,8 +104,9 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 
 - Task: What does the AI do in these apps? Match them up.
 - Answer format: match each item on the left with one on the right
-- Solution: voice assistant – recognises spoken questions; photo app – recognises animals in pictures; music app – suggests songs; translator app – puts text into another language
-- Explanation: Each of these apps recognises something, makes a suggestion or translates. Working out sums by written-down rules does not need AI.
+- Solution: voice assistant – recognises spoken questions; photo app – recognises animals in pictures; music app – suggests songs; translator app – translates text into another language
+- Explanation: Each of these apps recognises something, makes a suggestion or translates. Adding up by programmed rules does not need AI.
+- The app's hint: For each app, ask: what does it recognise, suggest or translate?
 - Link: [../?via=tutor#was-die-ki-tut](../?via=tutor#was-die-ki-tut)
 
 ### Exercise wo-steckt-ki
@@ -115,10 +116,10 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ A phone recognises a face when it unlocks. – The phone recognises a face in the camera picture. That is image recognition.
   - ✓ A music app suggests new songs. – The app makes suggestions that should suit you. That is a recommendation by AI.
-  - ✗ An alarm clock rings at 7 o'clock every day. – For the alarm clock a person wrote down the rule. It recognises nothing and suggests nothing.
-  - ✗ A calculator works out 12 × 3. – The calculator works by rules a person wrote down. 12 × 3 makes 36.
+  - ✗ An alarm clock rings at 7 o'clock every day. – A person programmed the alarm clock. It recognises nothing and suggests nothing.
+  - ✗ A calculator works out 12 × 3. – The calculator works by rules a person programmed. 12 × 3 makes 36.
 - Solution: A phone recognises a face when it unlocks.; A music app suggests new songs.
-- Explanation: AI recognises something or suggests something. Devices where someone wrote down every rule do not need AI.
+- Explanation: AI recognises something or suggests something. Devices where someone programmed every rule do not need AI.
 - Link: [../?via=tutor#wo-steckt-ki](../?via=tutor#wo-steckt-ki)
 
 ### Exercise ki-nur-roboter
@@ -127,6 +128,7 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
 - Explanation: AI is often inside apps, for example in a voice assistant or a photo app. A robot is not needed for it.
+- The app's hint: Think of the voice assistant and the photo app: are they robots?
 - Link: [../?via=tutor#ki-nur-roboter](../?via=tutor#ki-nur-roboter)
 
 ### Exercise wie-viele-mit-ki
@@ -134,9 +136,9 @@ How does an AI learn to recognise animals in photos? You try it yourself on the 
 - Task: There are six things on Mia's wall poster, A to F. How many of them use AI?
 - Answer format: type a number
 - Solution: 4
-- Explanation: A, B, C and D use AI: they recognise, suggest or translate. For E and F a person wrote down every rule.
+- Explanation: A, B, C and D use AI: they recognise, suggest or translate. For E and F a person programmed every rule.
 - Typical mistakes and what the app says:
-  - 6: For the calculator and the alarm clock a person wrote down every rule. They recognise nothing and suggest nothing.
+  - 6: For the calculator and the alarm clock a person programmed every rule. They recognise nothing and suggest nothing.
   - 5: Look again at E and F. Does either of them recognise or suggest anything?
   - 3: Look again at A to D: each of them recognises, suggests or translates something.
 - Link: [../?via=tutor#wie-viele-mit-ki](../?via=tutor#wie-viele-mit-ki)

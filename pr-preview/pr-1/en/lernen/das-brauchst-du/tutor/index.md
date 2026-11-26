@@ -56,10 +56,11 @@ Check yourself quickly:
 ### An example from the animal shelter
 
 A note at the animal shelter just says “small”. That is **data**. Only when you know that it is about the
-size of the dog Waldi does it become **information**: Waldi is small.
+size of the dog Waldi does it become **information**: Waldi is small. (The animals in this app have German
+names. Krümel, said “KREW-mel”, means “crumb”.)
 
-The animal cards in this chapter carry data like this: ears, snout, size and pupils. You interpret them in
-context, as with Waldi's card.
+The animal cards in this chapter carry data like this: ears, snout, size and pupils. You interpret it in
+context, as with Waldi's card. On the next page you first look for AI in your everyday life.
 
 Interactive: Waldi's card: a drawn dog with floppy ears, a long snout, small, with round pupils.
 
@@ -74,5 +75,5 @@ Interactive: Waldi's card: a drawn dog with floppy ears, a long snout, small, wi
   - ✗ A dog is 4 years old. – That could be. But the note does not say that it is about an age.
   - ✗ There are 4 cats at the shelter. – That could be too. But without context you cannot know.
 - Solution: You only know once you know what it is about.
-- Explanation: Data only become information when you know their context.
+- Explanation: Data only becomes information when you know its context.
 - Link: [../?via=tutor#was-heisst-vier](../?via=tutor#was-heisst-vier)

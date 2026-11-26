@@ -45,9 +45,9 @@ Künstliche Intelligenz im Alltag erkennen: Sprachassistent, Bilderkennung, Empf
 
 Bild: Mia steht links neben einer Pinnwand mit sechs Bildern, A bis F. Bildunterschrift: Mias Wandzeitung „KI bei uns“. Steckt in allem davon KI? Beschriftungen: A Sprachassistent, B Foto-App sortiert Fotos nach Tieren, C Video-App schlägt Videos vor, D Übersetzer-App, E Taschenrechner, F Wecker
 
-Das Tierheim will eine Maschine, die Bilder von Hunden und Katzen sortiert. Dafür braucht es **künstliche
-Intelligenz**, kurz KI. Mia will zuerst wissen, wo KI schon in ihrem Alltag steckt. Sie sammelt Dinge für eine
-Wandzeitung.
+Jona, Selin und Mia sind 11 und gehen in die Klasse 6b. Ihre Klasse hilft dem Tierheim: Es will eine
+Maschine, die Bilder von Hunden und Katzen sortiert. Dafür braucht es **künstliche Intelligenz**, kurz KI.
+Mia will zuerst wissen, wo KI schon in ihrem Alltag steckt. Sie sammelt Dinge für eine Wandzeitung.
 
 Auf dieser Seite lernst du, KI in deinem Alltag zu erkennen.
 
@@ -59,11 +59,11 @@ KI-Anwendungen **erkennen** etwas, zum Beispiel gesprochene Wörter oder Tiere a
 etwas vor**, zum Beispiel Videos, die dir gefallen könnten. Oder sie **übersetzen** in eine andere Sprache.
 Das konnten früher nur Menschen.
 
-Beim Taschenrechner und beim Wecker hat ein Mensch jede Regel genau aufgeschrieben: 3 + 4 ergibt 7, der
+Taschenrechner und Wecker hat ein Mensch **programmiert**: Er hat jede Regel als Befehl aufgeschrieben. 3 + 4 ergibt 7, der
 Wecker klingelt um 7 Uhr. Dafür braucht es keine KI. KI-Anwendungen haben ihr Können dagegen meist aus
 vielen Beispielen gelernt.
 
-- **künstliche Intelligenz (KI)**: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel aufgeschrieben hat.
+- **künstliche Intelligenz (KI)**: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel programmiert hat.
 
 KI auf Mias Wandzeitung:
 - Anwendung | Was die KI tut
@@ -86,7 +86,7 @@ KI steckt oft unsichtbar in einer App auf dem Handy oder Tablet. Ein Roboter mus
 
 - Aufgabe `wie-viele-mit-ki` (unten)
 
-Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus, mit Tierkarten und dem Trainingsbeutel.
+Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus: mit Tierkarten in einem Stoffbeutel, dem Trainingsbeutel.
 
 ### Aufgabe lautsprecher
 
@@ -105,7 +105,8 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Aufgabe: Was tut die KI in diesen Anwendungen? Ordne zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: Sprachassistent – erkennt gesprochene Fragen; Foto-App – erkennt Tiere auf Bildern; Musik-App – schlägt Lieder vor; Übersetzer-App – überträgt Text in eine andere Sprache
-- Erklärung: Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach aufgeschriebenen Regeln braucht keine KI.
+- Erklärung: Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach programmierten Regeln braucht keine KI.
+- Tipp der App: Frag bei jeder Anwendung: Was erkennt sie, was schlägt sie vor, was übersetzt sie?
 - Link: [../?via=tutor#was-die-ki-tut](../?via=tutor#was-die-ki-tut)
 
 ### Aufgabe wo-steckt-ki
@@ -115,10 +116,10 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Ein Handy erkennt beim Entsperren das Gesicht. – Das Handy erkennt ein Gesicht auf dem Kamerabild. Das ist Bilderkennung.
   - ✓ Eine Musik-App schlägt neue Lieder vor. – Die App macht Vorschläge, die zu dir passen sollen. Das ist eine Empfehlung durch KI.
-  - ✗ Ein Wecker klingelt jeden Tag um 7 Uhr. – Beim Wecker hat ein Mensch die Regel aufgeschrieben. Er erkennt nichts und schlägt nichts vor.
-  - ✗ Ein Taschenrechner rechnet 12 · 3. – Der Taschenrechner rechnet nach Regeln, die ein Mensch aufgeschrieben hat. 12 · 3 ergibt 36.
+  - ✗ Ein Wecker klingelt jeden Tag um 7 Uhr. – Den Wecker hat ein Mensch programmiert. Er erkennt nichts und schlägt nichts vor.
+  - ✗ Ein Taschenrechner rechnet 12 · 3. – Der Taschenrechner rechnet nach Regeln, die ein Mensch programmiert hat. 12 · 3 ergibt 36.
 - Lösung: Ein Handy erkennt beim Entsperren das Gesicht.; Eine Musik-App schlägt neue Lieder vor.
-- Erklärung: KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel aufgeschrieben hat, brauchen keine KI.
+- Erklärung: KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel programmiert hat, brauchen keine KI.
 - Link: [../?via=tutor#wo-steckt-ki](../?via=tutor#wo-steckt-ki)
 
 ### Aufgabe ki-nur-roboter
@@ -127,6 +128,7 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
 - Erklärung: KI steckt oft in Apps, zum Beispiel im Sprachassistenten oder in der Foto-App. Ein Roboter ist dafür nicht nötig.
+- Tipp der App: Denk an den Sprachassistenten und die Foto-App: Sind das Roboter?
 - Link: [../?via=tutor#ki-nur-roboter](../?via=tutor#ki-nur-roboter)
 
 ### Aufgabe wie-viele-mit-ki
@@ -134,9 +136,9 @@ Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächst
 - Aufgabe: Auf Mias Wandzeitung sind sechs Dinge, A bis F. In wie vielen davon steckt KI?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 4
-- Erklärung: In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel aufgeschrieben.
+- Erklärung: In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel programmiert.
 - Typische Fehler und was die App sagt:
-  - 6: Bei Taschenrechner und Wecker hat ein Mensch jede Regel aufgeschrieben. Sie erkennen nichts und schlagen nichts vor.
+  - 6: Bei Taschenrechner und Wecker hat ein Mensch jede Regel programmiert. Sie erkennen nichts und schlagen nichts vor.
   - 5: Schau noch einmal auf E und F. Erkennt eines davon etwas oder schlägt etwas vor?
   - 3: Schau noch einmal auf A bis D: Jedes davon erkennt etwas, schlägt etwas vor oder übersetzt.
 - Link: [../?via=tutor#wie-viele-mit-ki](../?via=tutor#wie-viele-mit-ki)

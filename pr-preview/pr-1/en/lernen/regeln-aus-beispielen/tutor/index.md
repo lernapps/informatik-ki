@@ -43,11 +43,12 @@ The card game with the training bag: dog or cat? Find a rule from examples and t
 
 ### At the shelter: six cards in the bag
 
-Before class 6b trains a machine, they try it themselves, with no computer. Jona has put six animal cards
-into the **training bag**. Each card says whether the animal is a dog or a cat.
+Picture: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top. Caption: From the left: Jona, Mia, the training bag and Selin.
 
-On this page you find a rule from examples yourself and test it on new cards. The animals have German names.
-Krümel (say “KREW-mel”) means “crumb”.
+First, class 6b tries it themselves, with no computer. Mia leads the game. She puts six
+animal cards into a cloth bag, the **training bag**. Each card says whether the animal is a dog or a cat.
+
+Here you find a rule from examples yourself and test it.
 
 Interactive: The six cards in the bag: - Luna, cat: pointed ears, short snout, small, narrow pupils - Mimi, cat: pointed ears, short snout, small, narrow pupils - Tiger, cat: pointed ears, short snout, big, narrow pupils - Bruno, dog: floppy ears, long snout, big, round pupils - Waldi, dog: floppy ears, long snout, small, round pupils - Otto, dog: floppy ears, short snout, small, round pupils
 
@@ -55,23 +56,23 @@ Interactive: The six cards in the bag: - Luna, cat: pointed ears, short snout, s
 
 ### The card game: how to play
 
-Play this in class in groups of three or four. You need a bag and the twelve cards below.
+- **feature**: Something you can observe about an example, such as the shape of the ears.
 
-1. Draw the cards. Write the **label** (dog or cat) on the back.
+- **label**: The right answer for an example; for us “dog” or “cat”.
+
+Play in groups of three or four. You need a bag and twelve cards: the six above and the six below.
+
+1. Copy the cards onto paper. Write the **label** (dog or cat) on the back.
 2. One person leads the game. They put six cards into the bag. These are the examples.
 3. The others take the cards out and read the labels. Look for a rule with **one question** about a feature,
    for example: “Does the animal have pointed ears? Yes: cat. No: dog.” The rule must fit all six examples.
 4. The leader shows new cards with the label face down. Use your rule to say dog or cat. Then turn the card
    over.
-5. If your rule is wrong, look for a better one using all the cards.
+5. If it is wrong, look for a better one.
 
-- **feature**: Something you can observe about an example, such as the shape of the ears.
+- **training data**: The examples with labels that something learns from: for us, the cards in the training bag.
 
-- **label**: The right answer for an example; for us “dog” or “cat”.
-
-- **training data**: The examples with labels that something learns from. For us these are the cards in the training bag.
-
-Interactive: All twelve cards: Luna, Mimi, Tiger, Flocke and Minka are cats. Bruno, Rex, Krümel, Waldi, Otto, Bella and Sammy are dogs. Each card shows a drawn animal with four features: ears (pointed or floppy), snout (short or long), size (small or big) and pupils (narrow or round).
+Interactive: The six new cards: Flocke and Minka are cats, Rex, Krümel, Bella and Sammy are dogs. Each card shows a drawn animal with four features: ears (pointed or floppy), snout (short or long), size (small or big) and pupils (narrow or round).
 
 ### Jona's rule and Selin's rule
 
@@ -100,11 +101,11 @@ you did, others compare with similar examples.
 
 - Exercise `programmiert-oder-gelernt` (below)
 
-On the next page a machine gets the bag. It does not look for a rule like you did.
+On the next page a machine decides with the bag, but differently from you.
 
 ### Exercise was-alle-katzen-haben
 
-- Task: Look at the six cards. What do all three cats have, but no dog?
+- Task: What do all three cats have, but no dog?
 - Answer format: choose all right answers
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ pointed ears – Luna, Mimi and Tiger have pointed ears. Bruno, Waldi and Otto have floppy ears.
@@ -112,7 +113,7 @@ On the next page a machine gets the bag. It does not look for a rule like you di
   - ✗ a short snout – All the cats have a short snout. But so does Otto, a dog.
   - ✗ They are small. – Tiger is a cat and big. And Waldi, a dog, is small.
 - Solution: pointed ears; narrow pupils
-- Explanation: Two features separate the cats and dogs in this bag. You can make a rule from them.
+- Explanation: Two features separate the cats and dogs here.
 - Link: [../?via=tutor#was-alle-katzen-haben](../?via=tutor#was-alle-katzen-haben)
 
 ### Exercise jonas-regel-passt
@@ -121,6 +122,7 @@ On the next page a machine gets the bag. It does not look for a rule like you di
 - Answer format: choose “true” or “false”
 - Solution: The statement is true.
 - Explanation: In the bag the cats have pointed ears and the dogs have floppy ones. Only the new card Rex does not fit.
+- The app's hint: Look only at the ears of the six cards at the top.
 - Link: [../?via=tutor#jonas-regel-passt](../?via=tutor#jonas-regel-passt)
 
 ### Exercise was-jonas-regel-sagt
@@ -128,7 +130,8 @@ On the next page a machine gets the bag. It does not look for a rule like you di
 - Task: What does Jona's rule “pointed ears means cat” say about these new cards? And is it right?
 - Answer format: match each item on the left with one on the right
 - Solution: Rex (dog): pointed ears – says cat, wrong; Flocke (cat): floppy ears – says dog, wrong; Bella (dog): floppy ears – says dog, right; Minka (cat): pointed ears – says cat, right
-- Explanation: The rule only looks at the ears. For Rex and Flocke the ears do not match the usual kind, so it gets them wrong.
+- Explanation: The rule only looks at the ears. Rex is a dog with pointed ears and Flocke is a cat with floppy ears. So the rule gets both wrong.
+- The app's hint: Look only at the ears: for the rule, pointed means cat. Then compare with the label.
 - Link: [../?via=tutor#was-jonas-regel-sagt](../?via=tutor#was-jonas-regel-sagt)
 
 ### Exercise schritte-lernen
@@ -137,6 +140,7 @@ On the next page a machine gets the bag. It does not look for a rule like you di
 - Answer format: put the items in the right order (the app shows them shuffled)
 - Solution: 1. Put examples with labels into the bag, 2. Look for a rule that fits all the examples, 3. Test the rule on new cards, 4. Improve the rule if it makes mistakes
 - Explanation: First the examples, then the rule, then the test with new cards. Mistakes in the test show that the rule needs to get better.
+- The app's hint: Without examples there is no rule, and you can only test a rule that already exists.
 - Link: [../?via=tutor#schritte-lernen](../?via=tutor#schritte-lernen)
 
 ### Exercise programmiert-oder-gelernt

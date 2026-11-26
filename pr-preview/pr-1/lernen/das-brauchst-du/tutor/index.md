@@ -59,7 +59,7 @@ Auf einem Zettel im Tierheim steht nur „klein“. Das sind **Daten**. Erst wen
 des Hundes Waldi geht, wird daraus eine **Information**: Waldi ist klein.
 
 Auf den Tierkarten in diesem Kapitel stehen solche Daten: Ohren, Schnauze, Größe und Pupillen. Du deutest
-sie im Zusammenhang, wie bei Waldis Karte.
+sie im Zusammenhang, wie bei Waldis Karte. Auf der nächsten Seite suchst du zuerst KI in deinem Alltag.
 
 Interaktiv: Waldis Karte: ein gezeichneter Hund mit hängenden Ohren, langer Schnauze, klein, mit runden Pupillen.
 

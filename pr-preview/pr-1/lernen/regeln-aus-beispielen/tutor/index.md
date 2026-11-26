@@ -43,10 +43,13 @@ Das Kartenspiel mit dem Trainingsbeutel: Hund oder Katze? Eine Regel aus Beispie
 
 ### Im Tierheim: sechs Karten im Beutel
 
-Bevor die Klasse 6b eine Maschine trainiert, probiert sie es selbst aus, ohne Computer. Jona hat sechs
-Tierkarten in den **Trainingsbeutel** gelegt. Auf jeder steht, ob das Tier ein Hund oder eine Katze ist.
+Bild: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus. Bildunterschrift: Von links: Jona, Mia, der Trainingsbeutel und Selin.
 
-Auf dieser Seite findest du selbst eine Regel aus Beispielen und testest sie an neuen Karten.
+Die Klasse 6b probiert es zuerst selbst aus, ohne Computer. Mia leitet das
+Spiel. Sie legt sechs Tierkarten in einen Stoffbeutel, den **Trainingsbeutel**. Auf jeder Karte steht, ob
+das Tier ein Hund oder eine Katze ist.
+
+Hier findest du selbst eine Regel aus Beispielen und testest sie.
 
 Interaktiv: Die sechs Karten im Beutel: - Luna, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Mimi, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Tiger, Katze: spitze Ohren, kurze Schnauze, groß, schmale Pupillen - Bruno, Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen - Waldi, Hund: hängende Ohren, lange Schnauze, klein, runde Pupillen - Otto, Hund: hängende Ohren, kurze Schnauze, klein, runde Pupillen
 
@@ -54,24 +57,23 @@ Interaktiv: Die sechs Karten im Beutel: - Luna, Katze: spitze Ohren, kurze Schna
 
 ### Das Kartenspiel: so geht es
 
-Spielt das in der Klasse zu dritt oder zu viert. Ihr braucht einen Beutel und die zwölf Karten unten.
-
-1. Malt die Karten ab. Schreibt das **Etikett** (Hund oder Katze) auf die Rückseite.
-2. Eine Person ist die Spielleitung. Sie legt sechs Karten in den Beutel. Das sind die Beispiele.
-3. Die anderen nehmen die Karten heraus und lesen die Etiketten. Sucht eine Regel mit **einer Frage** nach
-   einem Merkmal, zum Beispiel: „Hat das Tier spitze Ohren? Ja: Katze. Nein: Hund.“ Die Regel muss zu
-   allen sechs Beispielen passen.
-4. Die Spielleitung zeigt neue Karten, das Etikett nach unten. Sagt mit eurer Regel Hund oder Katze. Dann
-   dreht die Karte um.
-5. Stimmt eure Regel nicht, sucht mit allen Karten eine bessere.
-
 - **Merkmal**: Etwas, das man an einem Beispiel beobachten kann, zum Beispiel die Form der Ohren.
 
 - **Etikett**: Die richtige Antwort zu einem Beispiel, bei uns „Hund“ oder „Katze“.
 
-- **Trainingsdaten**: Die Beispiele mit Etikett, aus denen gelernt wird. Bei uns sind das die Karten im Trainingsbeutel.
+Spielt zu dritt oder zu viert. Ihr braucht einen Beutel und zwölf Karten: die sechs oben und die sechs unten.
 
-Interaktiv: Alle zwölf Karten: Luna, Mimi, Tiger, Flocke und Minka sind Katzen. Bruno, Rex, Krümel, Waldi, Otto, Bella und Sammy sind Hunde. Jede Karte zeigt ein gezeichnetes Tier mit vier Merkmalen: Ohren (spitz oder hängend), Schnauze (kurz oder lang), Größe (klein oder groß) und Pupillen (schmal oder rund).
+1. Malt die Karten ab. Schreibt das **Etikett** (Hund oder Katze) auf die Rückseite.
+2. Eine Person ist die Spielleitung. Sie legt sechs Karten in den Beutel. Das sind die Beispiele.
+3. Die anderen nehmen die Karten heraus und lesen die Etiketten. Sucht eine Regel mit **einer Frage** zu
+   einem Merkmal, zum Beispiel: „Hat das Tier spitze Ohren? Ja: Katze. Nein: Hund.“ Sie muss zu allen sechs Beispielen passen.
+4. Die Spielleitung zeigt neue Karten, das Etikett nach unten. Sagt mit eurer Regel Hund oder Katze. Dann
+   dreht die Karte um.
+5. Stimmt sie nicht, sucht eine bessere.
+
+- **Trainingsdaten**: Die Beispiele mit Etikett, aus denen gelernt wird: bei uns die Karten im Trainingsbeutel.
+
+Interaktiv: Die sechs neuen Karten: Flocke und Minka sind Katzen, Rex, Krümel, Bella und Sammy sind Hunde. Jede Karte zeigt ein gezeichnetes Tier mit vier Merkmalen: Ohren (spitz oder hängend), Schnauze (kurz oder lang), Größe (klein oder groß) und Pupillen (schmal oder rund).
 
 ### Jonas Regel und Selins Regel
 
@@ -100,11 +102,11 @@ daraus eine Regel wie ihr, andere vergleichen mit ähnlichen Beispielen.
 
 - Aufgabe `programmiert-oder-gelernt` (unten)
 
-Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel wie ihr.
+Auf der nächsten Seite entscheidet eine Maschine mit dem Beutel, aber anders als ihr.
 
 ### Aufgabe was-alle-katzen-haben
 
-- Aufgabe: Schau dir die sechs Karten an. Was haben alle drei Katzen, aber kein Hund?
+- Aufgabe: Was haben alle drei Katzen, aber kein Hund?
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ spitze Ohren – Luna, Mimi und Tiger haben spitze Ohren. Bruno, Waldi und Otto haben hängende Ohren.
@@ -112,7 +114,7 @@ Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel 
   - ✗ eine kurze Schnauze – Alle Katzen haben eine kurze Schnauze. Aber der Hund Otto auch.
   - ✗ Sie sind klein. – Tiger ist eine Katze und groß. Und der Hund Waldi ist klein.
 - Lösung: spitze Ohren; schmale Pupillen
-- Erklärung: Zwei Merkmale trennen in diesem Beutel Katzen und Hunde. Daraus könnt ihr eine Regel machen.
+- Erklärung: Zwei Merkmale trennen hier Katzen und Hunde.
 - Link: [../?via=tutor#was-alle-katzen-haben](../?via=tutor#was-alle-katzen-haben)
 
 ### Aufgabe jonas-regel-passt
@@ -121,6 +123,7 @@ Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel 
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt.
 - Erklärung: Im Beutel haben die Katzen spitze Ohren und die Hunde hängende. Erst die neue Karte Rex passt nicht.
+- Tipp der App: Schau bei den sechs Karten oben nur auf die Ohren.
 - Link: [../?via=tutor#jonas-regel-passt](../?via=tutor#jonas-regel-passt)
 
 ### Aufgabe was-jonas-regel-sagt
@@ -128,7 +131,8 @@ Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel 
 - Aufgabe: Was sagt Jonas Regel „spitze Ohren bedeutet Katze“ zu diesen neuen Karten? Und stimmt das?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
 - Lösung: Rex (Hund): spitze Ohren – sagt Katze, falsch; Flocke (Katze): hängende Ohren – sagt Hund, falsch; Bella (Hund): hängende Ohren – sagt Hund, richtig; Minka (Katze): spitze Ohren – sagt Katze, richtig
-- Erklärung: Die Regel schaut nur auf die Ohren. Bei Rex und Flocke passen die Ohren nicht zur üblichen Sorte, darum irrt sie.
+- Erklärung: Die Regel schaut nur auf die Ohren. Rex ist ein Hund mit spitzen Ohren, Flocke eine Katze mit hängenden Ohren. Darum irrt die Regel bei beiden.
+- Tipp der App: Schau nur auf die Ohren: Spitz heißt für die Regel Katze. Vergleiche dann mit dem Etikett.
 - Link: [../?via=tutor#was-jonas-regel-sagt](../?via=tutor#was-jonas-regel-sagt)
 
 ### Aufgabe schritte-lernen
@@ -137,6 +141,7 @@ Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel 
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
 - Lösung: 1. Beispiele mit Etikett in den Beutel legen, 2. Eine Regel suchen, die zu allen Beispielen passt, 3. Die Regel an neuen Karten testen, 4. Die Regel verbessern, wenn sie Fehler macht
 - Erklärung: Erst die Beispiele, dann die Regel, dann der Test mit neuen Karten. Fehler beim Test zeigen, dass die Regel besser werden muss.
+- Tipp der App: Ohne Beispiele gibt es keine Regel, und testen kannst du nur eine Regel, die es schon gibt.
 - Link: [../?via=tutor#schritte-lernen](../?via=tutor#schritte-lernen)
 
 ### Aufgabe programmiert-oder-gelernt

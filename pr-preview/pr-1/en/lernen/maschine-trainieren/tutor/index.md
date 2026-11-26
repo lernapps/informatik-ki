@@ -43,21 +43,19 @@ The training bag: the machine looks for the most similar example and gives its l
 
 ### At the animal shelter: dog or cat?
 
-Picture: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top. Caption: The training bag of class 6b with animal cards.
+Picture: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top. Caption: From the left: Jona, Mia, the training bag and Selin.
 
-In the card game you found a rule yourselves. Each card in the bag is an **example**: an animal with a
-**label**, dog or cat. Each card shows four **features**: ears, snout, size and pupils. Now a machine gets
-the training bag. It should tell the animal shelter whether a new animal is a dog or a cat.
-
-Here you learn how the machine decides from the cards in the bag. Then you fill the bag yourself.
+On the page “Finding a rule from examples” you found a rule yourselves. Now a machine gets the training bag.
+It should tell the animal shelter: dog or cat? Here you learn how it decides. Then you fill the bag
+yourself.
 
 - Exercise `wer-ist-aehnlicher` (below)
 
 ### How the machine decides
 
-The machine does not look for a rule like you did in the card game. It compares the new animal with **every
+The machine compares the new animal with **every
 card in the bag** and counts the features they have in common. The card with the most features in common
-is the most similar example. The machine gives the new animal the label of that card.
+is the most similar example; if there is a tie, there are several. The machine gives the new animal the label of that card.
 
 Krümel compared with the cards in the bag. ✓ means: the same as Krümel, ✗ means: different.:
 - Krümel has | Luna | Bruno
@@ -67,15 +65,14 @@ Krümel compared with the cards in the bag. ✓ means: the same as Krümel, ✗ 
 - round pupils | ✗ narrow | ✓ round
 - features in common | 3 | 1
 
-Luna is the most similar example. So the machine says: **cat**. That is wrong, Krümel is a dog. The machine
-did not count wrong. The bag is just missing an example like Krümel: a small dog with pointed ears. The
-machine counts every feature the same. It does not know that the pupils tell the most here, as in Selin's
+Luna is the most similar example. So the machine says: **cat**. Wrong, Krümel is a dog. The machine counted correctly. The bag is just missing an example like Krümel: a small dog with pointed ears. The
+machine counts every feature the same. It does not know that the pupils give away the most here, as in Selin's
 rule.
 
 Sometimes the most similar cat and the most similar dog in the bag are equally similar. Then the machine
 does not know which label to take.
 
-- **nearest neighbour**: The example in the bag that is most similar to a new animal. It is the closest one, like the person who sits next to you in class. A machine that decides like this uses the “nearest neighbour” method.
+- **nearest neighbour**: The example in the bag that is most similar to a new animal: the closest one, like the person next to you in class. The machine's method is named after it.
 
 **Remember: Remember**
 
@@ -105,11 +102,14 @@ Interactive: With JavaScript you can put animal cards into the training bag here
 
 ### Looking back
 
-You have trained a machine. Nobody programmed a rule for dogs and cats into it. It only got examples with
+You have trained a machine. It only got examples with
 labels and decided from them. This is called **machine learning**. Only the way it compares is programmed:
 counting the features in common. Whether dog or cat is decided by the examples in the bag.
 
-**What goes into the bag decides what comes out.**
+**What goes into the bag decides what comes out.** With good examples in the bag, the machine can now help the
+animal shelter.
+
+- **machine learning**: A computer learns from example data, instead of someone programming every rule.
 
 ### Exercise wer-ist-aehnlicher
 
@@ -222,7 +222,7 @@ No. | a.name | a.merkmale | b.name | b.merkmale | Solution | F1
 ### Exercise beutel-aufgabe
 
 - What to do: Three test animals from the animal shelter are given. The child puts at most 4 of the other animal cards into the training bag and presses “Check”. For each test animal the machine looks for the card in the bag with the most features in common (ears, snout, size, pupils) and gives its label.
-- Task: „The shelter tests the machine with three test animals (dashed frame). They do not go into the bag. Put at most 4 of the other cards into the bag so that the machine recognises all three correctly. Tip: you can test your bag first in “Try it” above. Test animals: {testtiere}“
+- Task: „The shelter tests the machine with three test animals (dashed frame). They do not go into the bag. Put at most 4 of the other cards into the bag so that the machine recognises all three correctly. Hint: you can test your bag first in “Try it” above. Test animals: {testtiere}“
 - Answer format: The cards in the bag; which ones does not matter, as long as the machine names all three test animals correctly.
 - What counts as right: Right if the bag holds 1 to 4 cards and the machine labels every test animal correctly as a dog or a cat, with no tie.
 - Typical mistakes (the app's message fits one of them):
@@ -309,4 +309,5 @@ No. | testtiere | Solution | F1 | F2
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
 - Explanation: The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out.
+- The app's hint: Which labels can the machine take from the bag at all?
 - Link: [../?via=tutor#nur-katzen-im-beutel](../?via=tutor#nur-katzen-im-beutel)

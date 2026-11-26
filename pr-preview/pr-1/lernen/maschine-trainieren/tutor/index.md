@@ -43,22 +43,19 @@ Der Trainingsbeutel: Die Maschine sucht das ähnlichste Beispiel und gibt sein E
 
 ### Im Tierheim: Hund oder Katze?
 
-Bild: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus. Bildunterschrift: Der Trainingsbeutel der Klasse 6b mit Tierkarten.
+Bild: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus. Bildunterschrift: Von links: Jona, Mia, der Trainingsbeutel und Selin.
 
-Beim Kartenspiel habt ihr selbst eine Regel gefunden. Jede Karte im Beutel ist ein **Beispiel**: ein Tier mit
-einem **Etikett**, Hund oder Katze. Auf jeder Karte stehen vier **Merkmale**: Ohren, Schnauze, Größe und
-Pupillen. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen, ob ein neues
-Tier ein Hund oder eine Katze ist.
-
-Hier lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Dann füllst du den Beutel selbst.
+Auf der Seite „Eine Regel aus Beispielen finden“ habt ihr selbst eine Regel gefunden. Jetzt bekommt eine
+Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen: Hund oder Katze? Hier lernst du, wie sie
+entscheidet. Dann füllst du den Beutel selbst.
 
 - Aufgabe `wer-ist-aehnlicher` (unten)
 
 ### So entscheidet die Maschine
 
-Die Maschine sucht keine Regel wie ihr beim Kartenspiel. Sie vergleicht das neue Tier mit **jeder Karte im
+Die Maschine vergleicht das neue Tier mit **jeder Karte im
 Beutel** und zählt die gleichen Merkmale. Die Karte mit den meisten gleichen Merkmalen ist das ähnlichste
-Beispiel. Die Maschine gibt dem neuen Tier dessen Etikett.
+Beispiel; bei Gleichstand gibt es mehrere. Die Maschine gibt dem neuen Tier dessen Etikett.
 
 Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krümel, ✗ heißt: anders.:
 - Krümel hat | Luna | Bruno
@@ -68,15 +65,14 @@ Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krüme
 - runde Pupillen | ✗ schmal | ✓ rund
 - gleiche Merkmale | 3 | 1
 
-Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Das ist falsch, Krümel ist ein Hund. Die
-Maschine hat nichts falsch gerechnet. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
+Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Falsch, Krümel ist ein Hund. Gerechnet hat die Maschine richtig. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
 spitzen Ohren. Die Maschine zählt jedes Merkmal gleich. Dass die Pupillen hier am meisten verraten, wie bei
 Selins Regel, weiß sie nicht.
 
 Manchmal sind die ähnlichste Katze und der ähnlichste Hund im Beutel gleich ähnlich. Dann weiß die Maschine
 nicht, welches Etikett sie nehmen soll.
 
-- **nächster Nachbar**: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Es steht ihm am nächsten, so wie dein Sitznachbar dir am nächsten sitzt. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
+- **nächster Nachbar**: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist, also am nächsten, wie dein Sitznachbar. Danach heißt das Verfahren der Maschine.
 
 **Merke: Merke**
 
@@ -106,12 +102,14 @@ Interaktiv: Hier kannst du mit JavaScript Tierkarten in den Trainingsbeutel lege
 
 ### Rückblick
 
-Du hast eine Maschine trainiert. Niemand hat ihr eine Regel für Hunde und Katzen einprogrammiert. Sie hat
-nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**. Programmiert
+Du hast eine Maschine trainiert. Sie hat nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**. Programmiert
 ist nur, wie sie vergleicht: gleiche Merkmale zählen. Ob Hund oder Katze, entscheiden die Beispiele im
 Beutel.
 
-**Was in den Beutel kommt, bestimmt, was herauskommt.**
+**Was in den Beutel kommt, bestimmt, was herauskommt.** Mit guten Beispielen im Beutel kann die Maschine
+dem Tierheim jetzt helfen.
+
+- **maschinelles Lernen**: Ein Computer lernt aus Beispieldaten, statt dass jemand jede Regel programmiert.
 
 ### Aufgabe wer-ist-aehnlicher
 
@@ -311,4 +309,5 @@ Nr. | testtiere | Lösung | F1 | F2
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
 - Erklärung: Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt.
+- Tipp der App: Welche Etiketten kann die Maschine überhaupt aus dem Beutel nehmen?
 - Link: [../?via=tutor#nur-katzen-im-beutel](../?via=tutor#nur-katzen-im-beutel)
