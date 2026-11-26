@@ -151,53 +151,52 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
 
 ### Tasks
 
-- [ ] Check the start: the folder `.agents/skills/lernapps-app` exists (else stop and tell the creator that the folder
+- [x] Check the start: the folder `.agents/skills/lernapps-app` exists (else stop and tell the creator that the folder
       was not started with `init`), and `git branch --show-current` prints `work` (else `git switch -c work`).
-- [ ] Load skill `lernapps-app`. Tell the creator in two sentences what a lernapps app is and where it will live: at
+- [x] Load skill `lernapps-app`. Tell the creator in two sentences what a lernapps app is and where it will live: at
       their own address, free and public, and once listed as a copy on lernapps.net. Say that the technical part
       (GitHub) comes at the end and that you do it.
-- [ ] Interview: ask the topics "Goal" and "Learners" of "Answers".
-- [ ] Load skill `lernapps-map-assignment` and read the learning map of the subject as it says. The creator brings
+- [x] Interview: ask the topics "Goal" and "Learners" of "Answers".
+- [x] Load skill `lernapps-map-assignment` and read the learning map of the subject as it says. The creator brings
       the content themselves (material, a word list, the pages): note under "Notes" which competencies of the map it
       covers. Else write the skill's assignment, with its story; the creator's yes answers the topics Content and
       Amount. A subject without a map: skip this task and say so.
-- [ ] Load skill `lernapps-exercise-patterns` and read its reference for the subject. Note under "Notes" how learners
+- [x] Load skill `lernapps-exercise-patterns` and read its reference for the subject. Note under "Notes" how learners
       will practise what the goal names.
-- [ ] Choose the archetype as skill `lernapps-app` says: read the README of each archetype in question, then tell the
+- [x] Choose the archetype as skill `lernapps-app` says: read the README of each archetype in question, then tell the
       creator in plain words what the chosen one can and cannot do. Write the archetype and its reason under "Key
       decisions".
 - [ ] Run `npx --no -- lernapps skills --archetype <name>` with the chosen archetype. It installs the archetype's
       skills and adds the archetype's tasks to this plan.
 <!-- archetype: explore -->
-- [ ] Interview: ask every other topic of "Answers", in order. Leave out only a topic that an answer of the creator
+- [x] Interview: ask every other topic of "Answers", in order. Leave out only a topic that an answer of the creator
       already covers, and note which answer. A topic nobody answered is asked once before you write an assumption
       with "(guess)".
-- [ ] Load skill `lernapps-content-research` and research as it says. Write under "Notes": the strand or subject, the
+- [x] Load skill `lernapps-content-research` and research as it says. Write under "Notes": the strand or subject, the
       competencies by chapter with their ids, the sources you opened.
 <!-- archetype: explore-structure -->
-- [ ] Write under "Notes", one line per competency: how learners get there (they derive it, they do not only read it
+- [x] Write under "Notes", one line per competency: how learners get there (they derive it, they do not only read it
       off), and which misconception the feedback catches.
-- [ ] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
+- [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
 
 ### Answers
 
-<!-- The interview: per topic the creator's answer, in their words. Keep the topics. -->
+Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für den Ersteller.
 
-- Goal: what learners do in the app, what they learn.
-- Learners: subject, school year, prior knowledge.
-- Model and focus: an app of the catalog (https://lernapps.net/apps/llms.txt) as model; what matters most (exercises,
-  visualisations, game feel).
-- Hurdles: misconceptions and mistakes of the learners; the creator's examples and experiments.
-- Content: who writes it (creator, you, from sources); own material (worksheets, tests).
-- Amount: how much content in the first version; what comes later.
-- Languages: German only, or German and English. Never English only.
-- Look and feel: calm like a worksheet, or like a game (colours, praise, effects); dark mode.
-- Terms: the creator's words for the main things in the app, used everywhere.
-- Finding the app: what teachers and parents would search for.
+- Goal: Auftrag #493, Kapitel 1: KI-Anwendungen erkennen; erklären, dass ein lernendes System aus Beispieldaten Regeln bildet.
+- Learners: Informatik, Klasse 5-6; Vorwissen Daten (#491), wiederholt am Kapitelanfang.
+- Model and focus: informatik-computer (#490) als Muster; Schwerpunkt: selbst eine Maschine trainieren.
+- Hurdles: siehe Notes, „Welcher Fehler abgefangen wird“.
+- Content: ich, aus der Karte und den Quellen.
+- Amount: Welle 1 = Kapitel 1 (5-6); Kapitel 2 (9-10) später auf `increment/9-10`.
+- Languages: de und en (Nachtrag 1).
+- Look and feel: fixed by the archetype.
+- Terms: Trainingsbeutel (training bag), Beispiel, Etikett (label), Merkmal (feature), Trainingsdaten (training data), maschinelles Lernen (machine learning).
+- Finding the app: Katalogeintrag macht der Orchestrator.
 
 ## Plan
 
@@ -208,14 +207,14 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-<archetype>-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-<archetype>-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
 <!-- archetype: plan -->
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
@@ -224,8 +223,44 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
 
 ### Content method
 
-<!-- One line each: the patterns and where; the figures and how they are made; the data files; each component, what it
-checks and what it cannot; how a later agent adds a chapter. It becomes the content guide in Code. -->
+- Seiten und Abschnitte: `.vibe/sketches/seiten.md`. Abschnitts-ids `einstieg`, `idee`, `beispiel`, `ausprobieren`
+  (nur mit Bedienelement), `uebung`. Jede Seite beginnt mit einer leichten Frage zur Szene und endet mit einem
+  Ausblick auf die nächste Seite.
+- Muster:
+  - **Zuordnen** (`matching`): Anwendung → was sie erkennt oder vorschlägt (S. 1); Karte → Antwort der Regel (S. 2).
+  - **Erkennen** (`multiple-choice`, `number`): Wo steckt KI? Wie viele Dinge der Wandzeitung (S. 1).
+  - **Urteilen** (`true-false`): Fehlvorstellung als Satz, der Grund steht in der Rückmeldung (alle Seiten).
+  - **Ordnen** (`ordering`): Schritte des Lernens aus Beispielen (S. 2).
+  - **Erklären** (`single-choice`): programmierte gegen gelernte Regel, mit Hintergrund in jeder falschen Option
+    (S. 2).
+  - **Zählen** (`generated`): zwei Karten aus `tiere.yaml`, gleiche Merkmale zählen. Antwort
+    `4 - (a.ohren-b.ohren)*(a.ohren-b.ohren) - …` (0/1-Werte). Fehler: „unterschiedliche gezählt“ (4 − Antwort);
+    nur bei mindestens 1 Unterschied (S. 3).
+  - **Vorhersagen** (`single-choice`): Was sagt die Maschine bei diesem Beutel? (S. 3)
+  - **Beutel füllen** (Übungskomponente `BeutelAufgabe`): Es gilt jeder Beutel mit höchstens 4 Karten, der alle 3
+    Testtiere richtig benennt. Geprüft wird die Eigenschaft, keine Musterlösung. Rückmeldung je Fehler: keine Katze
+    im Beutel, kein Hund im Beutel, Testtier n hat sein ähnlichstes Beispiel bei der falschen Sorte, Gleichstand,
+    leerer Beutel (S. 3).
+- Daten: `src/data/tiere.yaml`, 12 Karten (K1–K5 Katzen, H1–H7 Hunde). Felder: `id`, `sorte` (hund/katze), `ohren`,
+  `schnauze`, `groesse`, `pupille` (0/1), Fell- und Farbwerte für die Zeichnung, Texte der Merkmale in de und en.
+  Jede Karte gibt es nur dort.
+- Bilder:
+  - Eigene SVGs ohne Text: `klasse-6b.svg` (defs kopiert aus informatik-computer, mit Herkunft im Kopf),
+    `wandzeitung.svg`, `trainingsbeutel.svg`.
+  - Tierkarten zeichnet die Komponente aus den Merkmalen. Texte stehen nur im HTML (Props in de und en).
+- Komponenten (warum kein Block reicht: Karten wählen und die Maschine live antworten lassen kann kein Block):
+  - `Tierkarten` (Anzeige): Karten aus `tiere.yaml`.
+  - `BeutelSimulation` (Anzeige, frei bedienbar): zeigt die Tabelle mit gleichen Merkmalen und die Antwort.
+  - `BeutelAufgabe` (Übung): siehe oben.
+  - Logik in `Beutel.ts`, getestet in `*.test.ts`. Tastatur: echte Knöpfe, `aria-pressed`, `aria-live` nur für die
+    Antwort der freien Simulation.
+  - Kann nicht: echte Fotos erkennen, mehr als 4 Merkmale, Gewichte.
+- Verfahren: nächster Nachbar (k = 1, Cover & Hart 1967) über die Zahl gleicher Merkmale. Bei Gleichstand zwischen
+  Hund und Katze antwortet die Maschine „Ich weiß es nicht“. Für die Kinder: Die Maschine sucht im Beutel das
+  ähnlichste Beispiel. Beim Kartenspiel finden die Kinder dagegen eine Regel (Entscheidungsbaum mit einer Frage).
+  Gemeinsamer Merksatz: Beide lernen nur aus dem, was im Beutel ist.
+- Ein späteres Kapitel (9-10, `schief/`): `BeutelSimulation` mit Prop `start` (fester, einseitiger Beutel). Neue
+  Karten nur in `tiere.yaml`.
 <!-- archetype: content-method -->
 
 ## Code
@@ -247,10 +282,16 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 - [ ] Load skill `lernapps-<archetype>`.
 <!-- archetype: code-start -->
 <!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite `lernen/maschine-trainieren` mit `tiere.yaml`, `Beutel.ts`, `Tierkarten`, `BeutelSimulation`,
+      `BeutelAufgabe` und Tests, de und en; Entwurfs-PR `work` → `main` für die Vorschau.
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
 <!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
+- [ ] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
+- [ ] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
+- [ ] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
