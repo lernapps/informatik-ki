@@ -177,10 +177,12 @@ blocks:
             text:
               de: |
                 Ihr habt die Regel aus Beispielen mit Etikett gefunden, niemand hat sie vorgegeben. So lernen auch
-                KI-Systeme: Sie bilden Regeln aus Beispieldaten, statt dass jemand jede Regel programmiert.
+                KI-Systeme: Sie finden Muster in Beispieldaten, statt dass jemand jede Regel programmiert. Manche machen
+                daraus eine Regel wie ihr, andere vergleichen mit ähnlichen Beispielen.
               en: |
                 You found the rule from examples with labels; nobody gave it to you. AI systems learn like this too: they
-                make rules from example data, instead of someone programming every rule.
+                find patterns in example data, instead of someone programming every rule. Some turn them into a rule like
+                you did, others compare with similar examples.
   - type: section
     id: uebung
     title:

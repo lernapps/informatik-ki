@@ -86,20 +86,22 @@ blocks:
             etwas vor**, zum Beispiel Videos, die dir gefallen könnten. Oder sie **übersetzen** in eine andere Sprache.
             Das konnten früher nur Menschen.
 
-            Ein Taschenrechner oder ein Wecker macht immer dasselbe nach festen Regeln: 3 + 4 ergibt immer 7, der
-            Wecker klingelt um 7 Uhr. Dafür braucht es keine KI.
+            Beim Taschenrechner und beim Wecker hat ein Mensch jede Regel genau aufgeschrieben: 3 + 4 ergibt 7, der
+            Wecker klingelt um 7 Uhr. Dafür braucht es keine KI. KI-Anwendungen haben ihr Können dagegen meist aus
+            vielen Beispielen gelernt.
           en: |
             AI apps **recognise** something, such as spoken words or animals in photos. Or they **suggest** something,
             such as videos you might like. Or they **translate** into another language. Only people used to be able to
             do this.
 
-            A calculator or an alarm clock always does the same thing by fixed rules: 3 + 4 always makes 7, the alarm
-            rings at 7 o'clock. No AI is needed for that.
+            For a calculator and an alarm clock, a person wrote down every rule exactly: 3 + 4 makes 7, the alarm rings
+            at 7 o'clock. No AI is needed for that. AI apps, on the other hand, mostly learned what they can do from many
+            examples.
       - type: definition
         term: { de: künstliche Intelligenz (KI), en: artificial intelligence (AI) }
         explanation:
-          de: Computerprogramme, die Aufgaben lösen, für die Menschen Intelligenz brauchen, zum Beispiel Sprache verstehen, Bilder erkennen oder Vorschläge machen.
-          en: Computer programs that do tasks people need intelligence for, such as understanding speech, recognising pictures or making suggestions.
+          de: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel aufgeschrieben hat.
+          en: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone writing down every rule.
       - type: table
         caption:
           de: KI auf Mias Wandzeitung
@@ -145,10 +147,10 @@ blocks:
           - left: { de: Übersetzer-App, en: translator app }
             right: { de: überträgt Text in eine andere Sprache, en: puts text into another language }
         distractors:
-          - { de: rechnet 3 + 4 nach festen Regeln, en: works out 3 + 4 by fixed rules }
+          - { de: rechnet 3 + 4 nach aufgeschriebenen Regeln, en: works out 3 + 4 by written-down rules }
         explanation:
-          de: "Jede dieser Anwendungen erkennt etwas oder macht einen Vorschlag. Rechnen nach festen Regeln braucht keine KI."
-          en: "Each of these apps recognises something or makes a suggestion. Working out sums by fixed rules does not need AI."
+          de: "Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach aufgeschriebenen Regeln braucht keine KI."
+          en: "Each of these apps recognises something, makes a suggestion or translates. Working out sums by written-down rules does not need AI."
       - type: multiple-choice
         id: wo-steckt-ki
         text:
@@ -168,16 +170,16 @@ blocks:
           - text: { de: Ein Wecker klingelt jeden Tag um 7 Uhr., en: An alarm clock rings at 7 o'clock every day. }
             correct: false
             info:
-              de: Der Wecker folgt einer festen Regel. Er erkennt nichts und schlägt nichts vor.
-              en: The alarm clock follows a fixed rule. It recognises nothing and suggests nothing.
+              de: Beim Wecker hat ein Mensch die Regel aufgeschrieben. Er erkennt nichts und schlägt nichts vor.
+              en: For the alarm clock a person wrote down the rule. It recognises nothing and suggests nothing.
           - text: { de: Ein Taschenrechner rechnet 12 · 3., en: A calculator works out 12 × 3. }
             correct: false
             info:
-              de: Der Taschenrechner rechnet nach festen Regeln. 12 · 3 ergibt immer 36.
-              en: The calculator works by fixed rules. 12 × 3 always makes 36.
+              de: Der Taschenrechner rechnet nach Regeln, die ein Mensch aufgeschrieben hat. 12 · 3 ergibt 36.
+              en: The calculator works by rules a person wrote down. 12 × 3 makes 36.
         explanation:
-          de: "KI erkennt etwas oder schlägt etwas vor. Geräte mit festen Regeln tun immer dasselbe."
-          en: "AI recognises something or suggests something. Devices with fixed rules always do the same thing."
+          de: "KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel aufgeschrieben hat, brauchen keine KI."
+          en: "AI recognises something or suggests something. Devices where someone wrote down every rule do not need AI."
       - type: true-false
         id: ki-nur-roboter
         text:
@@ -197,8 +199,8 @@ blocks:
         mistakes:
           - answer: 6
             message:
-              de: Taschenrechner und Wecker arbeiten nach festen Regeln. Sie erkennen nichts und schlagen nichts vor.
-              en: The calculator and the alarm clock work by fixed rules. They recognise nothing and suggest nothing.
+              de: Bei Taschenrechner und Wecker hat ein Mensch jede Regel aufgeschrieben. Sie erkennen nichts und schlagen nichts vor.
+              en: For the calculator and the alarm clock a person wrote down every rule. They recognise nothing and suggest nothing.
           - answer: 5
             message:
               de: Schau noch einmal auf E und F. Erkennt eines davon etwas oder schlägt etwas vor?
@@ -208,8 +210,8 @@ blocks:
               de: "Schau noch einmal auf A bis D: Jedes davon erkennt etwas, schlägt etwas vor oder übersetzt."
               en: "Look again at A to D: each of them recognises, suggests or translates something."
         explanation:
-          de: "In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. E und F arbeiten nach festen Regeln."
-          en: "A, B, C and D use AI: they recognise, suggest or translate. E and F work by fixed rules."
+          de: "In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel aufgeschrieben."
+          en: "A, B, C and D use AI: they recognise, suggest or translate. For E and F a person wrote down every rule."
       - type: text
         text:
           de: Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus, mit Tierkarten und dem Trainingsbeutel.

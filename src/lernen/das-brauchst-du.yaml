@@ -75,7 +75,7 @@ blocks:
               }
             correct: true
             info:
-              de: Ohne Zusammenhang ist „4“ nur ein Datum. Es kann ein Alter, eine Anzahl oder eine Zimmernummer sein.
+              de: Ohne Zusammenhang ist „4“ nur eine Angabe ohne Bedeutung. Es kann ein Alter, eine Anzahl oder eine Zimmernummer sein.
               en: Without context, “4” is just data. It could be an age, a number of things or a room number.
           - text: { de: Ein Hund ist 4 Jahre alt., en: A dog is 4 years old. }
             correct: false
