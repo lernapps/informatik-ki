@@ -20,11 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
-- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=was-trennt-im-beutel`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=kruemel-luna`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
-- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/schief/verzerrte-daten/?via=tutor#was-trennt-im-beutel`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/schief/verzerrte-daten/?via=tutor#kruemel-luna`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -43,8 +43,8 @@ Einseitige Trainingsdaten führen zu immer gleichen Fehlern: den Fehler in den D
 
 ### Im Chat der 9b: Die Maschine irrt
 
-Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat inzwischen eine eigene Maschine,
-die nach dem Verfahren „nächster Nachbar“ arbeitet. Ein Helfer hat ihren Trainingsbeutel gefüllt.
+Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat jetzt eine Maschine nach dem Verfahren „nächster Nachbar“. Ein Helfer hat ihren Trainingsbeutel gefüllt, also die
+**Trainingsdaten**: Beispielkarten mit Etikett, aus denen die Maschine lernt.
 
 **Selin:** Das Tierheim schreibt uns: Die Maschine hält Krümel für eine Katze. Otto auch!
 
@@ -52,29 +52,33 @@ die nach dem Verfahren „nächster Nachbar“ arbeitet. Ein Helfer hat ihren Tr
 
 **Mia:** Der Helfer hat Fotos von der Katzenstation und aus der Hundeschule genommen. Hier ist der Beutel.
 
-Auf dieser Seite findest du heraus, woher die Fehler kommen und wie man sie behebt.
+Finde heraus, woher die Fehler kommen und was hilft.
 
 Interaktiv: Die sechs Karten im Beutel des Tierheims: - Luna, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Mimi, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Flocke, Katze: hängende Ohren, kurze Schnauze, klein, schmale Pupillen - Minka, Katze: spitze Ohren, lange Schnauze, klein, schmale Pupillen - Bruno, Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen - Rex, Hund: spitze Ohren, lange Schnauze, groß, runde Pupillen
 
-- Aufgabe `was-trennt-im-beutel` (unten)
+- Aufgabe `kruemel-luna` (unten)
 
 ### Ausprobieren: Krümel und Otto testen
 
-Unten liegt der Beutel des Tierheims. Wähle bei **Neues Tier** erst Krümel, dann Otto, und lies die Tabelle:
-Welche Karte ist jeweils am ähnlichsten, und warum? Lege dann mit **In den Beutel** Otto dazu und teste
-Krümel noch einmal.
+Wähle bei **Neues Tier** erst Krümel, dann Otto, und lies die Tabelle:
+Welche Karte ist am ähnlichsten? Lege dann mit **In den
+Beutel** Otto dazu und teste Krümel noch einmal.
 
 Interaktiv: Mit JavaScript kannst du hier den Beutel des Tierheims ändern und neue Tiere testen. Im Beutel liegen Luna, Mimi, Flocke und Minka (Katzen, alle klein) sowie Bruno und Rex (Hunde, beide groß). Krümel (Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen) hat mit Luna und Mimi je 3 gleiche Merkmale, mit Rex 2: Die Maschine sagt „Katze“. Otto (Hund: hängende Ohren, kurze Schnauze, klein, runde Pupillen) hat mit Flocke 3 gleiche Merkmale: wieder „Katze“. Legt man Otto in den Beutel, haben Luna, Mimi und Otto mit Krümel je 3 gleiche Merkmale: Die Maschine weiß es nicht.
+
+- Aufgabe `was-trennt-im-beutel` (unten)
 
 - Aufgabe `warum-katze` (unten)
 
 ### Verzerrung: Der Fehler steckt in den Daten
 
-Das Programm ist in Ordnung. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die
-Maschine findet darin ein Muster, das es bei echten Tieren nicht gibt, und macht deshalb **immer wieder
-denselben Fehler**: Kleine Hunde mit kurzer Schnauze werden zu Katzen.
+Das Programm zählt richtig. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
+Schnauze werden zu Katzen.
 
-- **Verzerrung (Bias)**: Die Trainingsdaten zeigen einen Ausschnitt der Welt einseitig. Das lernende System übernimmt ein Muster, das nur in den Daten gilt, und macht immer gleiche Fehler.
+Mit Otto im Beutel wird aus „Katze“ bei Krümel „Ich weiß es nicht“: Die Maschine irrt nicht mehr, sie ist
+unsicher. Richtig erkennt sie Krümel erst mit einem kleinen Hund mit spitzen Ohren als Beispiel. So eine Karte fehlt dem Tierheim noch.
+
+- **Verzerrung (Bias)**: Die Trainingsdaten zeigen die Welt einseitig. Das System übernimmt ein Muster, das nur in den Daten gilt.
 
 **Merke: Merke**
 
@@ -83,14 +87,14 @@ Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die 
 ### Auch bei echten Systemen
 
 Joy Buolamwini und Timnit Gebru untersuchten 2018 drei Programme, die aus einem Foto das Geschlecht eines
-Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos bestanden zu 79,6 % und zu 86,2 % aus
-Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des Geschlechts lag bei Frauen mit dunkler Haut
-bei bis zu 34,7 %, bei Männern mit heller Haut bei höchstens 0,8 %.
-([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
+Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche Programme prüft,
+bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des
+Geschlechts lag bei Frauen mit dunkler Haut bei bis zu 34,7 % (etwa jedes dritte Foto), bei Männern mit
+heller Haut bei höchstens 0,8 %. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
 
 ### Übung
 
-- Aufgabe `programm-schuld` (unten)
+- Aufgabe `mehr-karten` (unten)
 
 - Aufgabe `was-fehlt` (unten)
 
@@ -100,51 +104,59 @@ bei bis zu 34,7 %, bei Männern mit heller Haut bei höchstens 0,8 %.
 
 ### Rückblick
 
-Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, übernimmt es
-Zufälle der Auswahl als Muster und irrt immer wieder auf dieselbe Weise. **Was in den Beutel kommt, bestimmt,
-was herauskommt.**
+Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, irrt es immer wieder auf dieselbe Weise. **Was in den
+Beutel kommt, bestimmt, was herauskommt.**
+
+### Aufgabe kruemel-luna
+
+- Aufgabe: Krümel ist ein Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen. Wie viele Merkmale hat Krümel mit Luna gemeinsam?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 3
+- Erklärung: Ohren, Schnauze und Größe sind gleich, nur die Pupillen nicht: 3 von 4.
+- Typische Fehler und was die App sagt:
+  - 1: Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen.
+- Link: [../?via=tutor#kruemel-luna](../?via=tutor#kruemel-luna)
 
 ### Aufgabe was-trennt-im-beutel
 
-- Aufgabe: Welche Merkmale trennen in diesem Beutel alle Katzen von allen Hunden?
+- Aufgabe: Krümel und Otto wurden zu Katzen. Welche Merkmale trennen im Beutel alle Katzen von allen Hunden?
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ die Größe – Alle vier Katzen im Beutel sind klein, beide Hunde groß.
   - ✓ die Pupillen – Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.
-  - ✗ die Ohren – Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.
-  - ✗ die Schnauze – Minka ist eine Katze mit langer Schnauze, wie die Hunde.
+  - ✗ die Ohren – Nein: Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.
+  - ✗ die Schnauze – Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde.
 - Lösung: die Größe; die Pupillen
-- Erklärung: Ob beide auch bei neuen Tieren gelten, zeigt der nächste Abschnitt.
+- Erklärung: Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.
 - Tipp der App: Geh die Merkmale einzeln durch: Haben alle Katzen denselben Wert und alle Hunde den anderen?
 - Link: [../?via=tutor#was-trennt-im-beutel](../?via=tutor#was-trennt-im-beutel)
 
 ### Aufgabe warum-katze
 
-- Aufgabe: Krümel und Otto sind beide kleine Hunde. Warum sagt die Maschine bei beiden „Katze“?
+- Aufgabe: Welche dieser beiden Trennungen gilt nur in diesem Beutel, aber nicht bei echten Hunden und Katzen?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Im Beutel sind alle kleinen Tiere Katzen. – Kleine Hunde fehlen im Beutel. Darum ist eine kleine Katze am ähnlichsten.
-  - ✗ Das Programm zählt die Merkmale falsch. – Die Zahlen in der Tabelle stimmen.
-  - ✗ Kleine Hunde sehen fast immer wie Katzen aus. – Beide haben runde Pupillen wie alle Hunde auf unseren Karten.
-- Lösung: Im Beutel sind alle kleinen Tiere Katzen.
-- Erklärung: Dass im Beutel alle kleinen Tiere Katzen sind, ist ein Zufall der Auswahl. Die Maschine übernimmt ihn als Muster.
-- Tipp der App: Schau, welche Karte in der Tabelle den Stern bekommt, und was diese Karten mit Krümel und Otto gemeinsam haben.
+  - ✓ Katzen sind klein, Hunde groß. – Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß.
+  - ✗ Katzen haben schmale Pupillen, Hunde runde. – Nein: Das gilt bei allen zwölf Karten.
+- Lösung: Katzen sind klein, Hunde groß.
+- Erklärung: Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.
+- Tipp der App: Denk an Hunde, die du kennst. Sind alle groß?
 - Link: [../?via=tutor#warum-katze](../?via=tutor#warum-katze)
 
-### Aufgabe programm-schuld
+### Aufgabe mehr-karten
 
-- Aufgabe: Die Maschine des Tierheims irrt bei Krümel, weil ihr Programm einen Fehler hat.
+- Aufgabe: Legt man einfach mehr Karten in den Beutel, verschwindet die Verzerrung.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Das Programm zählt richtig. Der Fehler steckt im Beutel, in dem kleine Hunde fehlen.
-- Tipp der App: Dasselbe Programm hat in der 6. Klasse mit einem anderen Beutel richtig entschieden.
-- Link: [../?via=tutor#programm-schuld](../?via=tutor#programm-schuld)
+- Erklärung: Mehr Karten derselben Art machen das Muster nur stärker.
+- Tipp der App: Was ändert sich, wenn du zehn weitere kleine Katzen in den Beutel legst?
+- Link: [../?via=tutor#mehr-karten](../?via=tutor#mehr-karten)
 
 ### Aufgabe was-fehlt
 
 - Aufgabe: Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Eine Foto-App erkennt Hunde im Schnee schlecht. – Hundefotos aus dem Winter; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Kinderstimmen; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Fotos von Pflanzen ohne Blüten; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Karten von kleinen Hunden
+- Lösung: Eine Foto-App erkennt Hunde im Schnee schlecht. – Bilder aus der kalten Jahreszeit; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Sprechern unter zwölf Jahren; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Bilder außerhalb der Blütezeit; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Hunde in Katzengröße
 - Erklärung: In jedem Fall fehlt eine Art von Beispielen.
 - Tipp der App: Frag bei jedem Fall, welche Situation das System nie als Beispiel gesehen hat.
 - Link: [../?via=tutor#was-fehlt](../?via=tutor#was-fehlt)
@@ -153,21 +165,21 @@ was herauskommt.**
 
 - Aufgabe: In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
-- Lösung: 1. Falsch erkannte Beispiele sammeln, 2. Suchen, was diese Beispiele gemeinsam haben, 3. Prüfen, ob solche Beispiele in den Trainingsdaten fehlen, 4. Fehlende Beispiele ergänzen und neu testen
+- Lösung: 1. Falsch erkannte Tiere sammeln, 2. Gemeinsamkeiten der Fehler suchen, 3. In den Trainingsdaten nach Lücken suchen, 4. Beispiele ergänzen und neu testen
 - Erklärung: Erst das Muster der Fehler zeigt, welche Beispiele fehlen.
 - Tipp der App: Erst brauchst du die Fehler, dann ihr Muster, dann den Blick in die Daten.
 - Link: [../?via=tutor#datenfehler-finden](../?via=tutor#datenfehler-finden)
 
 ### Aufgabe was-ergaenzen
 
-- Aufgabe: Welche Karten machen den Beutel des Tierheims weniger einseitig?
+- Aufgabe: Welche Karten brechen im Beutel das Muster „klein ist Katze, groß ist Hund“?
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Waldi, ein kleiner Hund – Mit Waldi gibt es im Beutel auch einen kleinen Hund.
-  - ✓ Tiger, eine große Katze – Mit Tiger gibt es auch eine große Katze. Größe trennt dann nicht mehr die Sorten.
-  - ✗ Bella, ein großer Hund – Große Hunde gibt es schon.
-  - ✗ Mimi, eine kleine Katze – Kleine Katzen gibt es schon genug.
+  - ✓ Waldi, ein kleiner Hund – Ein kleiner Hund.
+  - ✓ Tiger, eine große Katze – Eine große Katze.
+  - ✗ Bella, ein großer Hund – Nein: Bella ist groß und ein Hund, sie passt ins Muster.
+  - ✗ Sammy, ein großer Hund – Nein: Auch Sammy ist groß und ein Hund.
 - Lösung: Waldi, ein kleiner Hund; Tiger, eine große Katze
-- Erklärung: Mehr Karten helfen nur, wenn sie zeigen, was im Beutel fehlt. Mehr von derselben Sorte macht es schlimmer.
-- Tipp der App: Gesucht sind Tiere, die das Muster „klein ist Katze, groß ist Hund“ brechen.
+- Erklärung: Solche Karten nehmen der Größe ihre Rolle.
+- Tipp der App: Gesucht sind Tiere, deren Größe nicht zu ihrem Etikett im Muster passt.
 - Link: [../?via=tutor#was-ergaenzen](../?via=tutor#was-ergaenzen)

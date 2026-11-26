@@ -15,7 +15,7 @@
     <meta name="robots" content="noindex" />
   </head>
   <body>
-    <p class="explainer-diff-banner" role="status"><strong>Änderungsansicht: Vorschau dieser Version gegen die Basis</strong> (Basis e7644d8) <button type="button" class="explainer-diff-toggle" data-off="Ohne Markierung ansehen" data-on="Mit Markierung ansehen" hidden>Ohne Markierung ansehen</button></p>
+    <p class="explainer-diff-banner" role="status"><strong>Änderungsansicht: Vorschau dieser Version gegen die Basis</strong> (Basis bf63912) <button type="button" class="explainer-diff-toggle" data-off="Ohne Markierung ansehen" data-on="Mit Markierung ansehen" hidden>Ohne Markierung ansehen</button></p>
 <aside class="explainer-diff-bar" aria-labelledby="diff-bar-title">
 <h2 id="diff-bar-title">Änderungen</h2>
 <div class="explainer-diff-counts" aria-label="Änderungen dieser Seite"></div>
@@ -51,20 +51,20 @@
 </details>
 <p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
 <p class="explainer-tutor-status" role="status" aria-live="polite"></p>
-<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧schief/verzerrte-daten/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-ki","page":{"id":"verzerrte-daten","title":"Verzerrte Trainingsdaten","exercises":[{"id":"was-trennt-im-beutel","section":"einstieg","numbered":false},{"id":"warum-katze","section":"ausprobieren","numbered":false},{"id":"programm-schuld","section":"uebung","numbered":false},{"id":"was-fehlt","section":"uebung","numbered":false},{"id":"datenfehler-finden","section":"uebung","numbered":false},{"id":"was-ergaenzen","section":"uebung","numbered":false}],"sections":["einstieg","ausprobieren","idee","beispiel","uebung","rueckblick"]},"tutor":"schief/verzerrte-daten/tutor/","markdown":"schief/verzerrte-daten/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧schief/verzerrte-daten/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-ki","page":{"id":"verzerrte-daten","title":"Verzerrte Trainingsdaten","exercises":[{"id":"kruemel-luna","section":"einstieg","numbered":false},{"id":"was-trennt-im-beutel","section":"ausprobieren","numbered":false},{"id":"warum-katze","section":"ausprobieren","numbered":false},{"id":"mehr-karten","section":"uebung","numbered":false},{"id":"was-fehlt","section":"uebung","numbered":false},{"id":"datenfehler-finden","section":"uebung","numbered":false},{"id":"was-ergaenzen","section":"uebung","numbered":false}],"sections":["einstieg","ausprobieren","idee","beispiel","uebung","rueckblick"]},"tutor":"schief/verzerrte-daten/tutor/","markdown":"schief/verzerrte-daten/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
 </div>
 </div>
 <div class="explainer-diff-page-note" data-diff="added"><span class="explainer-diff-chip" data-diff="added">Neue Seite</span></div>
 <nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Im Chat der 9b: Die Maschine irrt</a></li><li><a href="#ausprobieren">Ausprobieren: Krümel und Otto testen</a></li><li><a href="#idee">Verzerrung: Der Fehler steckt in den Daten</a></li><li><a href="#beispiel">Auch bei echten Systemen</a></li><li><a href="#uebung">Übung</a></li><li><a href="#rueckblick">Rückblick</a></li></ol></nav>
 <section class="explainer-section">
 <h2 id="einstieg">Im Chat der 9b: Die Maschine irrt</h2>
-<div class="explainer-block" data-block="einstieg/1" data-block-id="0417c578" data-block-type="text" data-block-order="1">
-<div class="block-text"><p>Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat inzwischen eine eigene Maschine,
-die nach dem Verfahren „nächster Nachbar“ arbeitet. Ein Helfer hat ihren Trainingsbeutel gefüllt.</p>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="50c83590" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat jetzt eine Maschine nach dem Verfahren „nächster Nachbar“. Ein Helfer hat ihren Trainingsbeutel gefüllt, also die
+<strong>Trainingsdaten</strong>: Beispielkarten mit Etikett, aus denen die Maschine lernt.</p>
 <p><strong>Selin:</strong> Das Tierheim schreibt uns: Die Maschine hält Krümel für eine Katze. Otto auch!</p>
 <p><strong>Jona:</strong> Ist das Programm kaputt? Es ist dasselbe wie unser Beutel-Programm aus der 6. Klasse.</p>
 <p><strong>Mia:</strong> Der Helfer hat Fotos von der Katzenstation und aus der Hundeschule genommen. Hier ist der Beutel.</p>
-<p>Auf dieser Seite findest du heraus, woher die Fehler kommen und wie man sie behebt.</p></div>
+<p>Finde heraus, woher die Fehler kommen und was hilft.</p></div>
 </div>
 <div class="explainer-block" data-block="einstieg/2" data-block-id="9618092b" data-block-type="vue-component" data-block-order="2">
 <div class="explainer-component" data-component="Tierkarten">
@@ -81,50 +81,37 @@ die nach dem Verfahren „nächster Nachbar“ arbeitet. Ein Helfer hat ihren Tr
 <script type="application/json" class="explainer-component-props">{"tiere":[{"name":"Luna","katze":1,"ohren":1,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, klein, schmale Pupillen","fell":0},{"name":"Mimi","katze":1,"ohren":1,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, klein, schmale Pupillen","fell":1},{"name":"Tiger","katze":1,"ohren":1,"schnauze":1,"groesse":0,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, groß, schmale Pupillen","fell":2},{"name":"Flocke","katze":1,"ohren":0,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"hängende Ohren, kurze Schnauze, klein, schmale Pupillen","fell":3},{"name":"Minka","katze":1,"ohren":1,"schnauze":0,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, lange Schnauze, klein, schmale Pupillen","fell":4},{"name":"Bruno","katze":0,"ohren":0,"schnauze":0,"groesse":0,"pupille":0,"merkmale":"hängende Ohren, lange Schnauze, groß, runde Pupillen","fell":5},{"name":"Rex","katze":0,"ohren":1,"schnauze":0,"groesse":0,"pupille":0,"merkmale":"spitze Ohren, lange Schnauze, groß, runde Pupillen","fell":6},{"name":"Krümel","katze":0,"ohren":1,"schnauze":1,"groesse":1,"pupille":0,"merkmale":"spitze Ohren, kurze Schnauze, klein, runde Pupillen","fell":7},{"name":"Waldi","katze":0,"ohren":0,"schnauze":0,"groesse":1,"pupille":0,"merkmale":"hängende Ohren, lange Schnauze, klein, runde Pupillen","fell":8},{"name":"Otto","katze":0,"ohren":0,"schnauze":1,"groesse":1,"pupille":0,"merkmale":"hängende Ohren, kurze Schnauze, klein, runde Pupillen","fell":9},{"name":"Bella","katze":0,"ohren":0,"schnauze":1,"groesse":0,"pupille":0,"merkmale":"hängende Ohren, kurze Schnauze, groß, runde Pupillen","fell":10},{"name":"Sammy","katze":0,"ohren":1,"schnauze":1,"groesse":0,"pupille":0,"merkmale":"spitze Ohren, kurze Schnauze, groß, runde Pupillen","fell":11}],"nummern":[1,2,4,5,6,7],"etikett":true,"katze":"Katze","hund":"Hund"}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="einstieg/3" data-block-id="1af975c2" data-block-type="multiple-choice" data-block-order="3">
-<div class="explainer-exercise explainer-question" id="was-trennt-im-beutel">
+<div class="explainer-block" data-block="einstieg/3" data-block-id="be98134c" data-block-type="number" data-block-order="3">
+<div class="explainer-exercise explainer-question" id="kruemel-luna">
 <p class="explainer-exercise-label">Aufgabe</p>
-<div class="question" id="frage-was-trennt-im-beutel" data-id="was-trennt-im-beutel" data-type="multiple-choice">
+<div class="question" id="frage-kruemel-luna" data-id="kruemel-luna" data-type="number">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">Welche Merkmale trennen in diesem Beutel alle Katzen von allen Hunden?</legend>
-<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="0"> <span>die Größe</span></label>
-<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="1"> <span>die Pupillen</span></label>
-<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="2"> <span>die Ohren</span></label>
-<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="3"> <span>die Schnauze</span></label>
+<legend class="question-text">Krümel ist ein Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen. Wie viele Merkmale hat Krümel mit Luna gemeinsam?</legend>
+<label class="question-number">Deine Antwort <input type="text" inputmode="decimal" autocomplete="off" name="frage-kruemel-luna">  </label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
-<ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>die Größe</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle vier Katzen im Beutel sind klein, beide Hunde groß.</p></li>
-<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Pupillen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>die Ohren</strong></p><p>Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>die Schnauze</strong></p><p>Minka ist eine Katze mit langer Schnauze, wie die Hunde.</p></li>
-</ul>
-<p class="question-explanation">Ob beide auch bei neuen Tieren gelten, zeigt der nächste Abschnitt.</p>
+<p><strong>Richtige Antwort:</strong> 3</p>
+<p class="question-explanation">Ohren, Schnauze und Größe sind gleich, nur die Pupillen nicht: 3 von 4.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
-<ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>die Größe</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle vier Katzen im Beutel sind klein, beide Hunde groß.</p></li>
-<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Pupillen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>die Ohren</strong></p><p>Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>die Schnauze</strong></p><p>Minka ist eine Katze mit langer Schnauze, wie die Hunde.</p></li>
-</ul>
-<p class="question-explanation">Ob beide auch bei neuen Tieren gelten, zeigt der nächste Abschnitt.</p>
+<p><strong>Richtige Antwort:</strong> 3</p>
+<p class="question-explanation">Ohren, Schnauze und Größe sind gleich, nur die Pupillen nicht: 3 von 4.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-trennt-im-beutel","text":"Welche Merkmale trennen in diesem Beutel alle Katzen von allen Hunden?","explanation":"Ob beide auch bei neuen Tieren gelten, zeigt der nächste Abschnitt.","links":[],"hint":"Geh die Merkmale einzeln durch: Haben alle Katzen denselben Wert und alle Hunde den anderen?","type":"multiple-choice","options":[{"text":"die Größe","correct":true,"info":"Alle vier Katzen im Beutel sind klein, beide Hunde groß."},{"text":"die Pupillen","correct":true,"info":"Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde."},{"text":"die Ohren","correct":false,"info":"Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren."},{"text":"die Schnauze","correct":false,"info":"Minka ist eine Katze mit langer Schnauze, wie die Hunde."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"kruemel-luna","text":"Krümel ist ein Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen. Wie viele Merkmale hat Krümel mit Luna gemeinsam?","explanation":"Ohren, Schnauze und Größe sind gleich, nur die Pupillen nicht: 3 von 4.","links":[],"type":"number","answer":3,"tolerance":0,"mistakes":[{"answer":1,"message":"Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="ausprobieren">Ausprobieren: Krümel und Otto testen</h2>
-<div class="explainer-block" data-block="ausprobieren/1" data-block-id="76d18e46" data-block-type="text" data-block-order="4">
-<div class="block-text"><p>Unten liegt der Beutel des Tierheims. Wähle bei <strong>Neues Tier</strong> erst Krümel, dann Otto, und lies die Tabelle:
-Welche Karte ist jeweils am ähnlichsten, und warum? Lege dann mit <strong>In den Beutel</strong> Otto dazu und teste
-Krümel noch einmal.</p></div>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="46a5382a" data-block-type="text" data-block-order="4">
+<div class="block-text"><p>Wähle bei <strong>Neues Tier</strong> erst Krümel, dann Otto, und lies die Tabelle:
+Welche Karte ist am ähnlichsten? Lege dann mit <strong>In den
+Beutel</strong> Otto dazu und teste Krümel noch einmal.</p></div>
 </div>
 <div class="explainer-block" data-block="ausprobieren/2" data-block-id="0f9c9307" data-block-type="vue-component" data-block-order="5">
 <div class="explainer-component" data-component="BeutelSimulation">
@@ -138,55 +125,90 @@ gleiche Merkmale: Die Maschine weiß es nicht.</p></div>
 <script type="application/json" class="explainer-component-props">{"tiere":[{"name":"Luna","katze":1,"ohren":1,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, klein, schmale Pupillen","fell":0},{"name":"Mimi","katze":1,"ohren":1,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, klein, schmale Pupillen","fell":1},{"name":"Tiger","katze":1,"ohren":1,"schnauze":1,"groesse":0,"pupille":1,"merkmale":"spitze Ohren, kurze Schnauze, groß, schmale Pupillen","fell":2},{"name":"Flocke","katze":1,"ohren":0,"schnauze":1,"groesse":1,"pupille":1,"merkmale":"hängende Ohren, kurze Schnauze, klein, schmale Pupillen","fell":3},{"name":"Minka","katze":1,"ohren":1,"schnauze":0,"groesse":1,"pupille":1,"merkmale":"spitze Ohren, lange Schnauze, klein, schmale Pupillen","fell":4},{"name":"Bruno","katze":0,"ohren":0,"schnauze":0,"groesse":0,"pupille":0,"merkmale":"hängende Ohren, lange Schnauze, groß, runde Pupillen","fell":5},{"name":"Rex","katze":0,"ohren":1,"schnauze":0,"groesse":0,"pupille":0,"merkmale":"spitze Ohren, lange Schnauze, groß, runde Pupillen","fell":6},{"name":"Krümel","katze":0,"ohren":1,"schnauze":1,"groesse":1,"pupille":0,"merkmale":"spitze Ohren, kurze Schnauze, klein, runde Pupillen","fell":7},{"name":"Waldi","katze":0,"ohren":0,"schnauze":0,"groesse":1,"pupille":0,"merkmale":"hängende Ohren, lange Schnauze, klein, runde Pupillen","fell":8},{"name":"Otto","katze":0,"ohren":0,"schnauze":1,"groesse":1,"pupille":0,"merkmale":"hängende Ohren, kurze Schnauze, klein, runde Pupillen","fell":9},{"name":"Bella","katze":0,"ohren":0,"schnauze":1,"groesse":0,"pupille":0,"merkmale":"hängende Ohren, kurze Schnauze, groß, runde Pupillen","fell":10},{"name":"Sammy","katze":0,"ohren":1,"schnauze":1,"groesse":0,"pupille":0,"merkmale":"spitze Ohren, kurze Schnauze, groß, runde Pupillen","fell":11}],"start":["Luna","Mimi","Flocke","Minka","Bruno","Rex"],"neu":"Krümel","katze":"Katze","hund":"Hund","kartenTitel":"Alle Tierkarten mit Etikett","beutelTitel":"Im Trainingsbeutel des Tierheims","hinein":"In den Beutel","heraus":"Heraus","leer":"Der Beutel ist leer.","neuTitel":"Neues Tier:","spalten":["Karte im Beutel","Etikett","gleiche Merkmale"],"naechste":"ähnlichstes Beispiel","antwort":"Die Maschine sagt über {tier}: {antwort}.","weissNicht":"Die Maschine sagt: Ich weiß es nicht. Die ähnlichste Katze und der ähnlichste Hund sind {tier} gleich ähnlich.","antwortLeer":"Die Maschine sagt nichts: Ohne Beispiele im Beutel kann sie nichts vergleichen.","wahrheit":"Das Tierheim weiß, was {tier} wirklich ist: {sorte}.","istNeu":"ist gerade das neue Tier","zuruecksetzen":"Zurück zum Beutel des Tierheims"}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="ausprobieren/3" data-block-id="2ee56334" data-block-type="single-choice" data-block-order="6">
-<div class="explainer-exercise explainer-question" id="warum-katze">
+<div class="explainer-block" data-block="ausprobieren/3" data-block-id="cd48e5ab" data-block-type="multiple-choice" data-block-order="6">
+<div class="explainer-exercise explainer-question" id="was-trennt-im-beutel">
 <p class="explainer-exercise-label">Aufgabe</p>
-<div class="question" id="frage-warum-katze" data-id="warum-katze" data-type="single-choice">
+<div class="question" id="frage-was-trennt-im-beutel" data-id="was-trennt-im-beutel" data-type="multiple-choice">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">Krümel und Otto sind beide kleine Hunde. Warum sagt die Maschine bei beiden „Katze“?</legend>
-<label class="question-option"><input type="radio" name="frage-warum-katze" value="0"> <span>Im Beutel sind alle kleinen Tiere Katzen.</span></label>
-<label class="question-option"><input type="radio" name="frage-warum-katze" value="1"> <span>Das Programm zählt die Merkmale falsch.</span></label>
-<label class="question-option"><input type="radio" name="frage-warum-katze" value="2"> <span>Kleine Hunde sehen fast immer wie Katzen aus.</span></label>
+<legend class="question-text">Krümel und Otto wurden zu Katzen. Welche Merkmale trennen im Beutel alle Katzen von allen Hunden?</legend>
+<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="0"> <span>die Größe</span></label>
+<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="1"> <span>die Pupillen</span></label>
+<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="2"> <span>die Ohren</span></label>
+<label class="question-option"><input type="checkbox" name="frage-was-trennt-im-beutel" value="3"> <span>die Schnauze</span></label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
 <ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Im Beutel sind alle kleinen Tiere Katzen.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Kleine Hunde fehlen im Beutel. Darum ist eine kleine Katze am ähnlichsten.</p></li>
-<li class="question-info" data-option="1"><p class="question-info-head"><strong>Das Programm zählt die Merkmale falsch.</strong></p><p>Die Zahlen in der Tabelle stimmen.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kleine Hunde sehen fast immer wie Katzen aus.</strong></p><p>Beide haben runde Pupillen wie alle Hunde auf unseren Karten.</p></li>
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>die Größe</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle vier Katzen im Beutel sind klein, beide Hunde groß.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Pupillen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>die Ohren</strong></p><p>Nein: Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>die Schnauze</strong></p><p>Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde.</p></li>
 </ul>
-<p class="question-explanation">Dass im Beutel alle kleinen Tiere Katzen sind, ist ein Zufall der Auswahl. Die Maschine übernimmt ihn als Muster.</p>
+<p class="question-explanation">Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
 <ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Im Beutel sind alle kleinen Tiere Katzen.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Kleine Hunde fehlen im Beutel. Darum ist eine kleine Katze am ähnlichsten.</p></li>
-<li class="question-info" data-option="1"><p class="question-info-head"><strong>Das Programm zählt die Merkmale falsch.</strong></p><p>Die Zahlen in der Tabelle stimmen.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kleine Hunde sehen fast immer wie Katzen aus.</strong></p><p>Beide haben runde Pupillen wie alle Hunde auf unseren Karten.</p></li>
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>die Größe</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle vier Katzen im Beutel sind klein, beide Hunde groß.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Pupillen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>die Ohren</strong></p><p>Nein: Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>die Schnauze</strong></p><p>Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde.</p></li>
 </ul>
-<p class="question-explanation">Dass im Beutel alle kleinen Tiere Katzen sind, ist ein Zufall der Auswahl. Die Maschine übernimmt ihn als Muster.</p>
+<p class="question-explanation">Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"warum-katze","text":"Krümel und Otto sind beide kleine Hunde. Warum sagt die Maschine bei beiden „Katze“?","explanation":"Dass im Beutel alle kleinen Tiere Katzen sind, ist ein Zufall der Auswahl. Die Maschine übernimmt ihn als Muster.","links":[],"hint":"Schau, welche Karte in der Tabelle den Stern bekommt, und was diese Karten mit Krümel und Otto gemeinsam haben.","type":"single-choice","options":[{"text":"Im Beutel sind alle kleinen Tiere Katzen.","correct":true,"info":"Kleine Hunde fehlen im Beutel. Darum ist eine kleine Katze am ähnlichsten."},{"text":"Das Programm zählt die Merkmale falsch.","correct":false,"info":"Die Zahlen in der Tabelle stimmen."},{"text":"Kleine Hunde sehen fast immer wie Katzen aus.","correct":false,"info":"Beide haben runde Pupillen wie alle Hunde auf unseren Karten."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-trennt-im-beutel","text":"Krümel und Otto wurden zu Katzen. Welche Merkmale trennen im Beutel alle Katzen von allen Hunden?","explanation":"Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.","links":[],"hint":"Geh die Merkmale einzeln durch: Haben alle Katzen denselben Wert und alle Hunde den anderen?","type":"multiple-choice","options":[{"text":"die Größe","correct":true,"info":"Alle vier Katzen im Beutel sind klein, beide Hunde groß."},{"text":"die Pupillen","correct":true,"info":"Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde."},{"text":"die Ohren","correct":false,"info":"Nein: Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren."},{"text":"die Schnauze","correct":false,"info":"Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/4" data-block-id="92f313f8" data-block-type="single-choice" data-block-order="7">
+<div class="explainer-exercise explainer-question" id="warum-katze">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-warum-katze" data-id="warum-katze" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche dieser beiden Trennungen gilt nur in diesem Beutel, aber nicht bei echten Hunden und Katzen?</legend>
+<label class="question-option"><input type="radio" name="frage-warum-katze" value="0"> <span>Katzen sind klein, Hunde groß.</span></label>
+<label class="question-option"><input type="radio" name="frage-warum-katze" value="1"> <span>Katzen haben schmale Pupillen, Hunde runde.</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Katzen sind klein, Hunde groß.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Katzen haben schmale Pupillen, Hunde runde.</strong></p><p>Nein: Das gilt bei allen zwölf Karten.</p></li>
+</ul>
+<p class="question-explanation">Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Katzen sind klein, Hunde groß.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Katzen haben schmale Pupillen, Hunde runde.</strong></p><p>Nein: Das gilt bei allen zwölf Karten.</p></li>
+</ul>
+<p class="question-explanation">Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"warum-katze","text":"Welche dieser beiden Trennungen gilt nur in diesem Beutel, aber nicht bei echten Hunden und Katzen?","explanation":"Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.","links":[],"hint":"Denk an Hunde, die du kennst. Sind alle groß?","type":"single-choice","options":[{"text":"Katzen sind klein, Hunde groß.","correct":true,"info":"Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß."},{"text":"Katzen haben schmale Pupillen, Hunde runde.","correct":false,"info":"Nein: Das gilt bei allen zwölf Karten."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="idee">Verzerrung: Der Fehler steckt in den Daten</h2>
-<div class="explainer-block" data-block="idee/1" data-block-id="d075ffc2" data-block-type="text" data-block-order="7">
-<div class="block-text"><p>Das Programm ist in Ordnung. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die
-Maschine findet darin ein Muster, das es bei echten Tieren nicht gibt, und macht deshalb <strong>immer wieder
-denselben Fehler</strong>: Kleine Hunde mit kurzer Schnauze werden zu Katzen.</p></div>
+<div class="explainer-block" data-block="idee/1" data-block-id="9d5a4224" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Das Programm zählt richtig. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht <strong>immer wieder denselben Fehler</strong>: Kleine Hunde mit kurzer
+Schnauze werden zu Katzen.</p>
+<p>Mit Otto im Beutel wird aus „Katze“ bei Krümel „Ich weiß es nicht“: Die Maschine irrt nicht mehr, sie ist
+unsicher. Richtig erkennt sie Krümel erst mit einem kleinen Hund mit spitzen Ohren als Beispiel. So eine Karte fehlt dem Tierheim noch.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/2" data-block-id="48ec4251" data-block-type="definition" data-block-order="8">
-<dl class="explainer-definition"><dt><dfn id="begriff-verzerrung-bias"><a href="../../glossar/#verzerrung-bias">Verzerrung (Bias)</a></dfn></dt><dd><p>Die Trainingsdaten zeigen einen Ausschnitt der Welt einseitig. Das lernende System übernimmt ein Muster, das nur in den Daten gilt, und macht immer gleiche Fehler.</p></dd></dl>
+<div class="explainer-block" data-block="idee/2" data-block-id="795912c6" data-block-type="definition" data-block-order="9">
+<dl class="explainer-definition"><dt><dfn id="begriff-verzerrung-bias"><a href="../../glossar/#verzerrung-bias">Verzerrung (Bias)</a></dfn></dt><dd><p>Die Trainingsdaten zeigen die Welt einseitig. Das System übernimmt ein Muster, das nur in den Daten gilt.</p></dd></dl>
 </div>
-<div class="explainer-block" data-block="idee/3" data-block-id="9bf02e41" data-block-type="note" data-block-order="9">
+<div class="explainer-block" data-block="idee/3" data-block-id="9bf02e41" data-block-type="note" data-block-order="10">
 <div class="explainer-box explainer-note">
 <h3 class="explainer-box-title">Merke</h3>
-<div class="explainer-block" data-block="idee/3/1" data-block-id="2637186d" data-block-type="text" data-block-order="10">
+<div class="explainer-block" data-block="idee/3/1" data-block-id="2637186d" data-block-type="text" data-block-order="11">
 <div class="block-text"><p>Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen?</p></div>
 </div>
 </div>
@@ -194,42 +216,42 @@ denselben Fehler</strong>: Kleine Hunde mit kurzer Schnauze werden zu Katzen.</p
 </section>
 <section class="explainer-section">
 <h2 id="beispiel">Auch bei echten Systemen</h2>
-<div class="explainer-block" data-block="beispiel/1" data-block-id="d3d34010" data-block-type="text" data-block-order="11">
+<div class="explainer-block" data-block="beispiel/1" data-block-id="91a03a9a" data-block-type="text" data-block-order="12">
 <div class="block-text"><p>Joy Buolamwini und Timnit Gebru untersuchten 2018 drei Programme, die aus einem Foto das Geschlecht eines
-Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos bestanden zu 79,6 % und zu 86,2 % aus
-Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des Geschlechts lag bei Frauen mit dunkler Haut
-bei bis zu 34,7 %, bei Männern mit heller Haut bei höchstens 0,8 %.
-(<a href="https://proceedings.mlr.press/v81/buolamwini18a.html" rel="noopener">Gender Shades, 2018, englisch</a>)</p></div>
+Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche Programme prüft,
+bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des
+Geschlechts lag bei Frauen mit dunkler Haut bei bis zu 34,7 % (etwa jedes dritte Foto), bei Männern mit
+heller Haut bei höchstens 0,8 %. (<a href="https://proceedings.mlr.press/v81/buolamwini18a.html" rel="noopener">Gender Shades, 2018, englisch</a>)</p></div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="uebung">Übung</h2>
-<div class="explainer-block" data-block="uebung/1" data-block-id="3d6fd5a1" data-block-type="true-false" data-block-order="12">
-<div class="explainer-exercise explainer-question" id="programm-schuld">
+<div class="explainer-block" data-block="uebung/1" data-block-id="58228024" data-block-type="true-false" data-block-order="13">
+<div class="explainer-exercise explainer-question" id="mehr-karten">
 <p class="explainer-exercise-label">Aufgabe</p>
-<div class="question" id="frage-programm-schuld" data-id="programm-schuld" data-type="true-false">
+<div class="question" id="frage-mehr-karten" data-id="mehr-karten" data-type="true-false">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">Die Maschine des Tierheims irrt bei Krümel, weil ihr Programm einen Fehler hat.</legend>
-<label class="question-option"><input type="radio" name="frage-programm-schuld" value="true"> <span>Stimmt</span></label>
-<label class="question-option"><input type="radio" name="frage-programm-schuld" value="false"> <span>Stimmt nicht</span></label>
+<legend class="question-text">Legt man einfach mehr Karten in den Beutel, verschwindet die Verzerrung.</legend>
+<label class="question-option"><input type="radio" name="frage-mehr-karten" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-mehr-karten" value="false"> <span>Stimmt nicht</span></label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
 <p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
-<p class="question-explanation">Das Programm zählt richtig. Der Fehler steckt im Beutel, in dem kleine Hunde fehlen.</p>
+<p class="question-explanation">Mehr Karten derselben Art machen das Muster nur stärker.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
 <p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
-<p class="question-explanation">Das Programm zählt richtig. Der Fehler steckt im Beutel, in dem kleine Hunde fehlen.</p>
+<p class="question-explanation">Mehr Karten derselben Art machen das Muster nur stärker.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"programm-schuld","text":"Die Maschine des Tierheims irrt bei Krümel, weil ihr Programm einen Fehler hat.","explanation":"Das Programm zählt richtig. Der Fehler steckt im Beutel, in dem kleine Hunde fehlen.","links":[],"hint":"Dasselbe Programm hat in der 6. Klasse mit einem anderen Beutel richtig entschieden.","type":"true-false","answer":false},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"mehr-karten","text":"Legt man einfach mehr Karten in den Beutel, verschwindet die Verzerrung.","explanation":"Mehr Karten derselben Art machen das Muster nur stärker.","links":[],"hint":"Was ändert sich, wenn du zehn weitere kleine Katzen in den Beutel legst?","type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="4ecc855d" data-block-type="matching" data-block-order="13">
+<div class="explainer-block" data-block="uebung/2" data-block-id="a1a89831" data-block-type="matching" data-block-order="14">
 <div class="explainer-exercise explainer-question" id="was-fehlt">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-was-fehlt" data-id="was-fehlt" data-type="matching">
@@ -238,28 +260,28 @@ bei bis zu 34,7 %, bei Männern mit heller Haut bei höchstens 0,8 %.
 <legend class="question-text">Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?</legend>
 <p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
 <ul class="question-pairs">
-<li><label><span>Eine Foto-App erkennt Hunde im Schnee schlecht.</span> <select name="frage-was-fehlt-0" data-left="0"><option value="">bitte wählen</option><option value="1">Aufnahmen von Kinderstimmen</option><option value="4">ein schnellerer Computer</option><option value="2">Fotos von Pflanzen ohne Blüten</option><option value="0">Hundefotos aus dem Winter</option><option value="3">Karten von kleinen Hunden</option></select></label></li>
-<li><label><span>Ein Sprachassistent versteht Kinder schlecht.</span> <select name="frage-was-fehlt-1" data-left="1"><option value="">bitte wählen</option><option value="1">Aufnahmen von Kinderstimmen</option><option value="4">ein schnellerer Computer</option><option value="2">Fotos von Pflanzen ohne Blüten</option><option value="0">Hundefotos aus dem Winter</option><option value="3">Karten von kleinen Hunden</option></select></label></li>
-<li><label><span>Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht.</span> <select name="frage-was-fehlt-2" data-left="2"><option value="">bitte wählen</option><option value="1">Aufnahmen von Kinderstimmen</option><option value="4">ein schnellerer Computer</option><option value="2">Fotos von Pflanzen ohne Blüten</option><option value="0">Hundefotos aus dem Winter</option><option value="3">Karten von kleinen Hunden</option></select></label></li>
-<li><label><span>Die Maschine des Tierheims hält kleine Hunde für Katzen.</span> <select name="frage-was-fehlt-3" data-left="3"><option value="">bitte wählen</option><option value="1">Aufnahmen von Kinderstimmen</option><option value="4">ein schnellerer Computer</option><option value="2">Fotos von Pflanzen ohne Blüten</option><option value="0">Hundefotos aus dem Winter</option><option value="3">Karten von kleinen Hunden</option></select></label></li>
+<li><label><span>Eine Foto-App erkennt Hunde im Schnee schlecht.</span> <select name="frage-was-fehlt-0" data-left="0"><option value="">bitte wählen</option><option value="1">Aufnahmen von Sprechern unter zwölf Jahren</option><option value="4">ein schnellerer Computer</option><option value="2">Bilder außerhalb der Blütezeit</option><option value="0">Bilder aus der kalten Jahreszeit</option><option value="3">Hunde in Katzengröße</option></select></label></li>
+<li><label><span>Ein Sprachassistent versteht Kinder schlecht.</span> <select name="frage-was-fehlt-1" data-left="1"><option value="">bitte wählen</option><option value="1">Aufnahmen von Sprechern unter zwölf Jahren</option><option value="4">ein schnellerer Computer</option><option value="2">Bilder außerhalb der Blütezeit</option><option value="0">Bilder aus der kalten Jahreszeit</option><option value="3">Hunde in Katzengröße</option></select></label></li>
+<li><label><span>Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht.</span> <select name="frage-was-fehlt-2" data-left="2"><option value="">bitte wählen</option><option value="1">Aufnahmen von Sprechern unter zwölf Jahren</option><option value="4">ein schnellerer Computer</option><option value="2">Bilder außerhalb der Blütezeit</option><option value="0">Bilder aus der kalten Jahreszeit</option><option value="3">Hunde in Katzengröße</option></select></label></li>
+<li><label><span>Die Maschine des Tierheims hält kleine Hunde für Katzen.</span> <select name="frage-was-fehlt-3" data-left="3"><option value="">bitte wählen</option><option value="1">Aufnahmen von Sprechern unter zwölf Jahren</option><option value="4">ein schnellerer Computer</option><option value="2">Bilder außerhalb der Blütezeit</option><option value="0">Bilder aus der kalten Jahreszeit</option><option value="3">Hunde in Katzengröße</option></select></label></li>
 </ul>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
-<p><strong>Richtige Antwort:</strong> Eine Foto-App erkennt Hunde im Schnee schlecht. – Hundefotos aus dem Winter; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Kinderstimmen; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Fotos von Pflanzen ohne Blüten; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Karten von kleinen Hunden</p>
+<p><strong>Richtige Antwort:</strong> Eine Foto-App erkennt Hunde im Schnee schlecht. – Bilder aus der kalten Jahreszeit; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Sprechern unter zwölf Jahren; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Bilder außerhalb der Blütezeit; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Hunde in Katzengröße</p>
 <p class="question-explanation">In jedem Fall fehlt eine Art von Beispielen.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
-<p><strong>Richtige Antwort:</strong> Eine Foto-App erkennt Hunde im Schnee schlecht. – Hundefotos aus dem Winter; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Kinderstimmen; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Fotos von Pflanzen ohne Blüten; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Karten von kleinen Hunden</p>
+<p><strong>Richtige Antwort:</strong> Eine Foto-App erkennt Hunde im Schnee schlecht. – Bilder aus der kalten Jahreszeit; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Sprechern unter zwölf Jahren; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Bilder außerhalb der Blütezeit; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Hunde in Katzengröße</p>
 <p class="question-explanation">In jedem Fall fehlt eine Art von Beispielen.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-fehlt","text":"Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?","explanation":"In jedem Fall fehlt eine Art von Beispielen.","links":[],"hint":"Frag bei jedem Fall, welche Situation das System nie als Beispiel gesehen hat.","type":"matching","pairs":[{"left":"Eine Foto-App erkennt Hunde im Schnee schlecht.","right":"Hundefotos aus dem Winter"},{"left":"Ein Sprachassistent versteht Kinder schlecht.","right":"Aufnahmen von Kinderstimmen"},{"left":"Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht.","right":"Fotos von Pflanzen ohne Blüten"},{"left":"Die Maschine des Tierheims hält kleine Hunde für Katzen.","right":"Karten von kleinen Hunden"}],"distractors":["ein schnellerer Computer"]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-fehlt","text":"Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?","explanation":"In jedem Fall fehlt eine Art von Beispielen.","links":[],"hint":"Frag bei jedem Fall, welche Situation das System nie als Beispiel gesehen hat.","type":"matching","pairs":[{"left":"Eine Foto-App erkennt Hunde im Schnee schlecht.","right":"Bilder aus der kalten Jahreszeit"},{"left":"Ein Sprachassistent versteht Kinder schlecht.","right":"Aufnahmen von Sprechern unter zwölf Jahren"},{"left":"Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht.","right":"Bilder außerhalb der Blütezeit"},{"left":"Die Maschine des Tierheims hält kleine Hunde für Katzen.","right":"Hunde in Katzengröße"}],"distractors":["ein schnellerer Computer"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="695e7d8f" data-block-type="ordering" data-block-order="14">
+<div class="explainer-block" data-block="uebung/3" data-block-id="0a9d164d" data-block-type="ordering" data-block-order="15">
 <div class="explainer-exercise explainer-question" id="datenfehler-finden">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-datenfehler-finden" data-id="datenfehler-finden" data-type="ordering">
@@ -268,71 +290,70 @@ bei bis zu 34,7 %, bei Männern mit heller Haut bei höchstens 0,8 %.
 <legend class="question-text">In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?</legend>
 <p class="question-hint">Gib jedem Eintrag seinen Platz: 1 für den ersten.</p>
 <ul class="question-pairs">
-<li><label><span>Fehlende Beispiele ergänzen und neu testen</span> <select name="frage-datenfehler-finden-3" data-item="3"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
-<li><label><span>Prüfen, ob solche Beispiele in den Trainingsdaten fehlen</span> <select name="frage-datenfehler-finden-2" data-item="2"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
-<li><label><span>Falsch erkannte Beispiele sammeln</span> <select name="frage-datenfehler-finden-0" data-item="0"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
-<li><label><span>Suchen, was diese Beispiele gemeinsam haben</span> <select name="frage-datenfehler-finden-1" data-item="1"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Beispiele ergänzen und neu testen</span> <select name="frage-datenfehler-finden-3" data-item="3"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>In den Trainingsdaten nach Lücken suchen</span> <select name="frage-datenfehler-finden-2" data-item="2"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Falsch erkannte Tiere sammeln</span> <select name="frage-datenfehler-finden-0" data-item="0"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Gemeinsamkeiten der Fehler suchen</span> <select name="frage-datenfehler-finden-1" data-item="1"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
 </ul>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
-<p><strong>Richtige Antwort:</strong> 1. Falsch erkannte Beispiele sammeln, 2. Suchen, was diese Beispiele gemeinsam haben, 3. Prüfen, ob solche Beispiele in den Trainingsdaten fehlen, 4. Fehlende Beispiele ergänzen und neu testen</p>
+<p><strong>Richtige Antwort:</strong> 1. Falsch erkannte Tiere sammeln, 2. Gemeinsamkeiten der Fehler suchen, 3. In den Trainingsdaten nach Lücken suchen, 4. Beispiele ergänzen und neu testen</p>
 <p class="question-explanation">Erst das Muster der Fehler zeigt, welche Beispiele fehlen.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
-<p><strong>Richtige Antwort:</strong> 1. Falsch erkannte Beispiele sammeln, 2. Suchen, was diese Beispiele gemeinsam haben, 3. Prüfen, ob solche Beispiele in den Trainingsdaten fehlen, 4. Fehlende Beispiele ergänzen und neu testen</p>
+<p><strong>Richtige Antwort:</strong> 1. Falsch erkannte Tiere sammeln, 2. Gemeinsamkeiten der Fehler suchen, 3. In den Trainingsdaten nach Lücken suchen, 4. Beispiele ergänzen und neu testen</p>
 <p class="question-explanation">Erst das Muster der Fehler zeigt, welche Beispiele fehlen.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"datenfehler-finden","text":"In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?","explanation":"Erst das Muster der Fehler zeigt, welche Beispiele fehlen.","links":[],"hint":"Erst brauchst du die Fehler, dann ihr Muster, dann den Blick in die Daten.","type":"ordering","items":["Falsch erkannte Beispiele sammeln","Suchen, was diese Beispiele gemeinsam haben","Prüfen, ob solche Beispiele in den Trainingsdaten fehlen","Fehlende Beispiele ergänzen und neu testen"]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"datenfehler-finden","text":"In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?","explanation":"Erst das Muster der Fehler zeigt, welche Beispiele fehlen.","links":[],"hint":"Erst brauchst du die Fehler, dann ihr Muster, dann den Blick in die Daten.","type":"ordering","items":["Falsch erkannte Tiere sammeln","Gemeinsamkeiten der Fehler suchen","In den Trainingsdaten nach Lücken suchen","Beispiele ergänzen und neu testen"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="09227473" data-block-type="multiple-choice" data-block-order="15">
+<div class="explainer-block" data-block="uebung/4" data-block-id="98c270aa" data-block-type="multiple-choice" data-block-order="16">
 <div class="explainer-exercise explainer-question" id="was-ergaenzen">
 <p class="explainer-exercise-label">Aufgabe</p>
 <div class="question" id="frage-was-ergaenzen" data-id="was-ergaenzen" data-type="multiple-choice">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">Welche Karten machen den Beutel des Tierheims weniger einseitig?</legend>
+<legend class="question-text">Welche Karten brechen im Beutel das Muster „klein ist Katze, groß ist Hund“?</legend>
 <label class="question-option"><input type="checkbox" name="frage-was-ergaenzen" value="0"> <span>Waldi, ein kleiner Hund</span></label>
 <label class="question-option"><input type="checkbox" name="frage-was-ergaenzen" value="1"> <span>Tiger, eine große Katze</span></label>
 <label class="question-option"><input type="checkbox" name="frage-was-ergaenzen" value="2"> <span>Bella, ein großer Hund</span></label>
-<label class="question-option"><input type="checkbox" name="frage-was-ergaenzen" value="3"> <span>Mimi, eine kleine Katze</span></label>
+<label class="question-option"><input type="checkbox" name="frage-was-ergaenzen" value="3"> <span>Sammy, ein großer Hund</span></label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
 <ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Waldi, ein kleiner Hund</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Mit Waldi gibt es im Beutel auch einen kleinen Hund.</p></li>
-<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Tiger, eine große Katze</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Mit Tiger gibt es auch eine große Katze. Größe trennt dann nicht mehr die Sorten.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>Bella, ein großer Hund</strong></p><p>Große Hunde gibt es schon.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>Mimi, eine kleine Katze</strong></p><p>Kleine Katzen gibt es schon genug.</p></li>
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Waldi, ein kleiner Hund</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein kleiner Hund.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Tiger, eine große Katze</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine große Katze.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Bella, ein großer Hund</strong></p><p>Nein: Bella ist groß und ein Hund, sie passt ins Muster.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Sammy, ein großer Hund</strong></p><p>Nein: Auch Sammy ist groß und ein Hund.</p></li>
 </ul>
-<p class="question-explanation">Mehr Karten helfen nur, wenn sie zeigen, was im Beutel fehlt. Mehr von derselben Sorte macht es schlimmer.</p>
+<p class="question-explanation">Solche Karten nehmen der Größe ihre Rolle.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Lösung</summary>
 <ul class="question-infos">
-<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Waldi, ein kleiner Hund</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Mit Waldi gibt es im Beutel auch einen kleinen Hund.</p></li>
-<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Tiger, eine große Katze</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Mit Tiger gibt es auch eine große Katze. Größe trennt dann nicht mehr die Sorten.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>Bella, ein großer Hund</strong></p><p>Große Hunde gibt es schon.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>Mimi, eine kleine Katze</strong></p><p>Kleine Katzen gibt es schon genug.</p></li>
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Waldi, ein kleiner Hund</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein kleiner Hund.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Tiger, eine große Katze</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine große Katze.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Bella, ein großer Hund</strong></p><p>Nein: Bella ist groß und ein Hund, sie passt ins Muster.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Sammy, ein großer Hund</strong></p><p>Nein: Auch Sammy ist groß und ein Hund.</p></li>
 </ul>
-<p class="question-explanation">Mehr Karten helfen nur, wenn sie zeigen, was im Beutel fehlt. Mehr von derselben Sorte macht es schlimmer.</p>
+<p class="question-explanation">Solche Karten nehmen der Größe ihre Rolle.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-ergaenzen","text":"Welche Karten machen den Beutel des Tierheims weniger einseitig?","explanation":"Mehr Karten helfen nur, wenn sie zeigen, was im Beutel fehlt. Mehr von derselben Sorte macht es schlimmer.","links":[],"hint":"Gesucht sind Tiere, die das Muster „klein ist Katze, groß ist Hund“ brechen.","type":"multiple-choice","options":[{"text":"Waldi, ein kleiner Hund","correct":true,"info":"Mit Waldi gibt es im Beutel auch einen kleinen Hund."},{"text":"Tiger, eine große Katze","correct":true,"info":"Mit Tiger gibt es auch eine große Katze. Größe trennt dann nicht mehr die Sorten."},{"text":"Bella, ein großer Hund","correct":false,"info":"Große Hunde gibt es schon."},{"text":"Mimi, eine kleine Katze","correct":false,"info":"Kleine Katzen gibt es schon genug."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-ergaenzen","text":"Welche Karten brechen im Beutel das Muster „klein ist Katze, groß ist Hund“?","explanation":"Solche Karten nehmen der Größe ihre Rolle.","links":[],"hint":"Gesucht sind Tiere, deren Größe nicht zu ihrem Etikett im Muster passt.","type":"multiple-choice","options":[{"text":"Waldi, ein kleiner Hund","correct":true,"info":"Ein kleiner Hund."},{"text":"Tiger, eine große Katze","correct":true,"info":"Eine große Katze."},{"text":"Bella, ein großer Hund","correct":false,"info":"Nein: Bella ist groß und ein Hund, sie passt ins Muster."},{"text":"Sammy, ein großer Hund","correct":false,"info":"Nein: Auch Sammy ist groß und ein Hund."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="rueckblick">Rückblick</h2>
-<div class="explainer-block" data-block="rueckblick/1" data-block-id="19b88ffc" data-block-type="text" data-block-order="16">
-<div class="block-text"><p>Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, übernimmt es
-Zufälle der Auswahl als Muster und irrt immer wieder auf dieselbe Weise. <strong>Was in den Beutel kommt, bestimmt,
-was herauskommt.</strong></p></div>
+<div class="explainer-block" data-block="rueckblick/1" data-block-id="3e7631d3" data-block-type="text" data-block-order="17">
+<div class="block-text"><p>Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, irrt es immer wieder auf dieselbe Weise. <strong>Was in den
+Beutel kommt, bestimmt, was herauskommt.</strong></p></div>
 </div>
 </section>
 <p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Wie Maschinen aus Daten lernen“ geben</button></p>
@@ -373,7 +394,7 @@ was herauskommt.</strong></p></div>
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-ki","app":"Wie Maschinen aus Daten lernen","root":"../../","repository":"lernapps/informatik-ki","revision":"e7644d8","page":{"title":"Verzerrte Trainingsdaten","order":4}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-ki","app":"Wie Maschinen aus Daten lernen","root":"../../","repository":"lernapps/informatik-ki","revision":"bf63912","page":{"title":"Verzerrte Trainingsdaten","order":4}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../lernen/maschine-trainieren/">Zurück: Die Maschine trainieren</a></nav>

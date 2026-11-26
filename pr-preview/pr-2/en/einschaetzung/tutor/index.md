@@ -46,7 +46,7 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 - “Finding a rule from examples” · Tasks A3, A4
 - “Training the machine” · Tasks A5, A6, A7
 
-### Chapter “When the data is skewed”
+### Chapter “When the data is skewed (bias)”
 
 - no self-assessment
 - “Skewed training data” · not asked

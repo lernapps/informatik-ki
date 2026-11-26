@@ -29,11 +29,11 @@
 </ul>
 <h2>Where the child is</h2>
 <ul>
-<li>The child&#39;s first message names this page and, for each exercise, the number of the task the child has in front of it, e.g. <code>?uebung=was-trennt-im-beutel</code>. Look the numbers up below with the exercises. If the child comes with “Help”, <code>uebung=</code> names the exercise and <code>abschnitt=</code> its section.</li>
+<li>The child&#39;s first message names this page and, for each exercise, the number of the task the child has in front of it, e.g. <code>?uebung=kruemel-luna</code>. Look the numbers up below with the exercises. If the child comes with “Help”, <code>uebung=</code> names the exercise and <code>abschnitt=</code> its section.</li>
 <li>If the message says “The app says: …”, the app showed that for the child&#39;s input. Build on it without repeating it.</li>
 <li>A line like “…, no. 16: right on try 2.” comes from “Back” in the app: the exercise, the number and how far the child got with it.</li>
 <li>“I practised on …:” comes from “Back to the tutor”: this page with the numbers, then for each task practised how it went, a wrong one with the input and the app&#39;s message. Start with the wrong ones, one after the other.</li>
-<li>Every task has a link: the address of the page, that is of this tutor page without <code>tutor/</code> and without <code>?…</code>, with the number and <code>via=tutor</code>, e.g. <code>…/schief/verzerrte-daten/?via=tutor#was-trennt-im-beutel</code>. Always send it as a full address, with the scheme and host of this tutor page (e.g. <code>https://</code>). For a further task take another number of the exercise and say its text. Add: “Solve it in the app, then press ‘Back’. Paste the line here.”</li>
+<li>Every task has a link: the address of the page, that is of this tutor page without <code>tutor/</code> and without <code>?…</code>, with the number and <code>via=tutor</code>, e.g. <code>…/schief/verzerrte-daten/?via=tutor#kruemel-luna</code>. Always send it as a full address, with the scheme and host of this tutor page (e.g. <code>https://</code>). For a further task take another number of the exercise and say its text. Add: “Solve it in the app, then press ‘Back’. Paste the line here.”</li>
 </ul>
 <h2>Special requirements</h2>
 <p>If the address of this page names <code>bedarf=</code>, each section it names holds, several separated by commas. It goes before what is said above; if two contradict each other, the stricter one holds. Without <code>bedarf=</code> none holds.</p>
@@ -47,41 +47,47 @@
 </ul>
 <h2>Context: the page “Skewed training data”</h2>
 <p>One-sided training data leads to the same mistakes again and again: finding the fault in the data.</p>
-<h3>In the 9B chat: the machine gets it wrong</h3>
-<p>Jona, Selin and Mia are now 14 and in class 9B. The animal shelter now has its own machine, which uses the
-“nearest neighbour” method. A volunteer filled its training bag.</p>
+<h3>In the class chat: the machine gets it wrong</h3>
+<p>Jona, Selin and Mia are now 14 and in Year 10. The shelter now has a “nearest neighbour” machine. A volunteer filled its training bag, in other words its <strong>training data</strong>:
+example cards with labels that the machine learns from.</p>
 <p><strong>Selin:</strong> The shelter has messaged us: the machine thinks Krümel is a cat. Otto too!</p>
 <p><strong>Jona:</strong> Is the program broken? It&#39;s the same as our bag program from Year 7.</p>
-<p><strong>Mia:</strong> The volunteer used photos from the cat ward and from the dog school. Here is the bag.</p>
-<p>On this page you find out where the mistakes come from and how to fix them.</p>
+<p><strong>Mia:</strong> The volunteer used photos from the cattery and from a dog training class. Here is the bag.</p>
+<p>Find out where the mistakes come from and what helps.</p>
 <p>Interactive: The six cards in the shelter&#39;s bag: - Luna, cat: pointed ears, short snout, small, narrow pupils - Mimi, cat: pointed ears, short snout, small, narrow pupils - Flocke, cat: floppy ears, short snout, small, narrow pupils - Minka, cat: pointed ears, long snout, small, narrow pupils - Bruno, dog: floppy ears, long snout, big, round pupils - Rex, dog: pointed ears, long snout, big, round pupils</p>
 <ul>
-<li>Exercise <code>was-trennt-im-beutel</code> (below)</li>
+<li>Exercise <code>kruemel-luna</code> (below)</li>
 </ul>
 <h3>Try it: testing Krümel and Otto</h3>
-<p>Below is the shelter&#39;s bag. At <strong>New animal</strong>, choose Krümel first, then Otto, and read the table: which
-card is most similar each time, and why? Then use <strong>Put in bag</strong> to add Otto and test Krümel again.</p>
+<p>At <strong>New animal</strong>, choose Krümel first, then Otto, and read the table: which card is most similar? Then use <strong>Put in bag</strong> to add Otto and test
+Krümel again.</p>
 <p>Interactive: With JavaScript you can change the shelter&#39;s bag here and test new animals. The bag holds Luna, Mimi, Flocke and Minka (cats, all small) and Bruno and Rex (dogs, both big). Krümel (dog: pointed ears, short snout, small, round pupils) has 3 features in common with Luna and with Mimi, and 2 with Rex: the machine says “cat”. Otto (dog: floppy ears, short snout, small, round pupils) has 3 in common with Flocke: “cat” again. If you put Otto into the bag, Luna, Mimi and Otto each have 3 features in common with Krümel: the machine does not know.</p>
 <ul>
-<li>Exercise <code>warum-katze</code> (below)</li>
+<li><p>Exercise <code>was-trennt-im-beutel</code> (below)</p>
+</li>
+<li><p>Exercise <code>warum-katze</code> (below)</p>
+</li>
 </ul>
 <h3>Bias: the fault is in the data</h3>
-<p>The program is fine. But the bag shows the world in a one-sided way: cats only small, dogs only big. The
-machine finds a pattern in it that real animals do not have, and so it makes <strong>the same mistake again and
-again</strong>: small dogs with a short snout become cats.</p>
+<p>The program counts correctly. But the bag shows the world in a one-sided way: cats only small, dogs only
+big. The machine takes on this pattern and makes <strong>the same mistake again and again</strong>: small dogs with a
+short snout become cats.</p>
+<p>With Otto in the bag, Krümel goes from “cat” to “I don&#39;t know”: the machine is no longer wrong, just unsure.
+It only gets Krümel right with a small dog with pointed ears as an example. The shelter has no such card yet.</p>
 <ul>
-<li><strong>bias</strong>: The training data shows part of the world in a one-sided way. The learning system takes on a pattern that only holds in the data and keeps making the same mistakes.</li>
+<li><strong>bias</strong>: The training data shows the world in a one-sided, skewed way. The system takes on a pattern that only holds in the data.</li>
 </ul>
 <p><strong>Remember: Remember</strong></p>
 <p>If a learning system keeps making the same mistake, look at the training data first. Which examples are missing?</p>
 <h3>In real systems too</h3>
 <p>In 2018, Joy Buolamwini and Timnit Gebru studied three programs that work out a person&#39;s gender from a
-photo. Two widely used collections of face photos were 79.6 % and 86.2 % made up of people with lighter
-skin. The error rate in working out the gender was up to 34.7 % for women with darker skin, and at most
-0.8 % for men with lighter skin. (<a href="https://proceedings.mlr.press/v81/buolamwini18a.html">Gender Shades, 2018</a>)</p>
+photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of the
+people had lighter skin. The error rate in working out the gender was up to 34.7% for women with darker
+skin (about one photo in three), and at most 0.8% for men with lighter skin.
+(<a href="https://proceedings.mlr.press/v81/buolamwini18a.html">Gender Shades, 2018</a>)</p>
 <h3>Practice</h3>
 <ul>
-<li><p>Exercise <code>programm-schuld</code> (below)</p>
+<li><p>Exercise <code>mehr-karten</code> (below)</p>
 </li>
 <li><p>Exercise <code>was-fehlt</code> (below)</p>
 </li>
@@ -91,54 +97,64 @@ skin. The error rate in working out the gender was up to 34.7 % for women with d
 </li>
 </ul>
 <h3>Looking back</h3>
-<p>The choice of training data decides what a learning system can do. If examples are missing, it takes on
-chance features of the choice as patterns and keeps getting things wrong in the same way. <strong>What goes into
-the bag decides what comes out.</strong></p>
-<h3>Exercise was-trennt-im-beutel</h3>
+<p>The choice of training data decides what a learning system can do. If examples are missing, it keeps getting things wrong in the same way.
+<strong>What goes into the bag decides what comes out.</strong></p>
+<h3>Exercise kruemel-luna</h3>
 <ul>
-<li>Task: Which features separate all the cats from all the dogs in this bag?</li>
-<li>Answer format: choose all right answers</li>
-<li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
-<li>✓ size – All four cats in the bag are small, both dogs are big.</li>
-<li>✓ the pupils – All the cats in the bag have narrow pupils, both dogs have round ones.</li>
-<li>✗ the ears – Flocke is a cat with floppy ears, Rex is a dog with pointed ears.</li>
-<li>✗ the snout – Minka is a cat with a long snout, like the dogs.</li>
+<li>Task: Krümel is a dog: pointed ears, short snout, small, round pupils. How many features does Krümel have in common with Luna?</li>
+<li>Answer format: type a number</li>
+<li>Solution: 3</li>
+<li>Explanation: Ears, snout and size are the same, only the pupils are not: 3 of 4.</li>
+<li>Typical mistakes and what the app says:<ul>
+<li>1: You counted the features that are different. The question asks for the ones in common.</li>
 </ul>
 </li>
-<li>Solution: size; the pupils</li>
-<li>Explanation: Whether both also hold for new animals, the next section shows.</li>
+<li>Link: <a href="../?via=tutor#kruemel-luna">../?via=tutor#kruemel-luna</a></li>
+</ul>
+<h3>Exercise was-trennt-im-beutel</h3>
+<ul>
+<li>Task: Krümel and Otto became cats. Which features separate all the cats from all the dogs in the bag?</li>
+<li>Answer format: choose all right answers</li>
+<li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
+<li>✓ the size – All four cats in the bag are small, both dogs are big.</li>
+<li>✓ the pupils – All the cats in the bag have narrow pupils, both dogs have round ones.</li>
+<li>✗ the ears – No: Flocke is a cat with floppy ears, Rex is a dog with pointed ears.</li>
+<li>✗ the snout – No: Minka is a cat with a long snout, like the dogs.</li>
+</ul>
+</li>
+<li>Solution: the size; the pupils</li>
+<li>Explanation: Krümel and Otto match the dogs in their pupils and the cats in their size.</li>
 <li>The app&#39;s hint: Go through the features one by one: do all the cats have the same value and all the dogs the other one?</li>
 <li>Link: <a href="../?via=tutor#was-trennt-im-beutel">../?via=tutor#was-trennt-im-beutel</a></li>
 </ul>
 <h3>Exercise warum-katze</h3>
 <ul>
-<li>Task: Krümel and Otto are both small dogs. Why does the machine say “cat” for both?</li>
+<li>Task: Which of these two separations only holds in this bag, but not for real dogs and cats?</li>
 <li>Answer format: choose one answer</li>
 <li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
-<li>✓ In the bag, all the small animals are cats. – There are no small dogs in the bag. So a small cat is most similar.</li>
-<li>✗ The program counts the features wrongly. – The numbers in the table are right.</li>
-<li>✗ Small dogs nearly always look like cats. – Both have round pupils like all the dogs on our cards.</li>
+<li>✓ Cats are small, dogs are big. – There are lots of small dogs. Here they just happen to be big.</li>
+<li>✗ Cats have narrow pupils, dogs round ones. – No: this holds for all twelve cards.</li>
 </ul>
 </li>
-<li>Solution: In the bag, all the small animals are cats.</li>
-<li>Explanation: That all the small animals in the bag are cats is a chance result of the choice. The machine takes it on as a pattern.</li>
-<li>The app&#39;s hint: Look at which card gets the star in the table, and what those cards have in common with Krümel and Otto.</li>
+<li>Solution: Cats are small, dogs are big.</li>
+<li>Explanation: Size only separates the kinds by chance. The machine still counts it.</li>
+<li>The app&#39;s hint: Think of dogs you know. Are they all big?</li>
 <li>Link: <a href="../?via=tutor#warum-katze">../?via=tutor#warum-katze</a></li>
 </ul>
-<h3>Exercise programm-schuld</h3>
+<h3>Exercise mehr-karten</h3>
 <ul>
-<li>Task: The shelter&#39;s machine gets Krümel wrong because its program has a fault.</li>
+<li>Task: If you simply put more cards into the bag, the bias goes away.</li>
 <li>Answer format: choose “true” or “false”</li>
 <li>Solution: The statement is false.</li>
-<li>Explanation: The program counts correctly. The fault is in the bag, which has no small dogs.</li>
-<li>The app&#39;s hint: The same program decided correctly in Year 7 with a different bag.</li>
-<li>Link: <a href="../?via=tutor#programm-schuld">../?via=tutor#programm-schuld</a></li>
+<li>Explanation: More cards of the same kind only make the pattern stronger.</li>
+<li>The app&#39;s hint: What changes if you put ten more small cats into the bag?</li>
+<li>Link: <a href="../?via=tutor#mehr-karten">../?via=tutor#mehr-karten</a></li>
 </ul>
 <h3>Exercise was-fehlt</h3>
 <ul>
 <li>Task: These cases are made up. Which examples are missing from the training data?</li>
 <li>Answer format: match each item on the left with one on the right</li>
-<li>Solution: A photo app is bad at recognising dogs in snow. – dog photos from winter; A voice assistant is bad at understanding children. – recordings of children&#39;s voices; A plant app does not recognise plants without flowers. – photos of plants without flowers; The shelter&#39;s machine thinks small dogs are cats. – cards of small dogs</li>
+<li>Solution: A photo app is bad at recognising dogs in snow. – pictures from the cold season; A voice assistant is bad at understanding children. – recordings of speakers under twelve; A plant app does not recognise plants without flowers. – pictures outside the flowering season; The shelter&#39;s machine thinks small dogs are cats. – dogs the size of cats</li>
 <li>Explanation: In each case one kind of example is missing.</li>
 <li>The app&#39;s hint: For each case, ask which situation the system never saw as an example.</li>
 <li>Link: <a href="../?via=tutor#was-fehlt">../?via=tutor#was-fehlt</a></li>
@@ -147,25 +163,25 @@ the bag decides what comes out.</strong></p>
 <ul>
 <li>Task: In which order do you find and fix a fault in the training data?</li>
 <li>Answer format: put the items in the right order (the app shows them shuffled)</li>
-<li>Solution: 1. Collect the examples that were recognised wrongly, 2. Look for what these examples have in common, 3. Check whether examples like them are missing from the training data, 4. Add the missing examples and test again</li>
+<li>Solution: 1. Collect the animals that were recognised wrongly, 2. Look for what the mistakes have in common, 3. Search the training data for gaps, 4. Add examples and test again</li>
 <li>Explanation: Only the pattern of the mistakes shows which examples are missing.</li>
 <li>The app&#39;s hint: First you need the mistakes, then their pattern, then a look at the data.</li>
 <li>Link: <a href="../?via=tutor#datenfehler-finden">../?via=tutor#datenfehler-finden</a></li>
 </ul>
 <h3>Exercise was-ergaenzen</h3>
 <ul>
-<li>Task: Which cards make the shelter&#39;s bag less one-sided?</li>
+<li>Task: Which cards break the pattern “small means cat, big means dog” in the bag?</li>
 <li>Answer format: choose all right answers</li>
 <li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
-<li>✓ Waldi, a small dog – With Waldi there is also a small dog in the bag.</li>
-<li>✓ Tiger, a big cat – With Tiger there is also a big cat. Then size no longer separates the kinds.</li>
-<li>✗ Bella, a big dog – There are already big dogs.</li>
-<li>✗ Mimi, a small cat – There are already enough small cats.</li>
+<li>✓ Waldi, a small dog – A small dog.</li>
+<li>✓ Tiger, a big cat – A big cat.</li>
+<li>✗ Bella, a big dog – No: Bella is big and a dog, so she fits the pattern.</li>
+<li>✗ Sammy, a big dog – No: Sammy is big and a dog too.</li>
 </ul>
 </li>
 <li>Solution: Waldi, a small dog; Tiger, a big cat</li>
-<li>Explanation: More cards only help if they show what is missing from the bag. More of the same makes it worse.</li>
-<li>The app&#39;s hint: You are looking for animals that break the pattern “small means cat, big means dog”.</li>
+<li>Explanation: Cards like these take away the role of size.</li>
+<li>The app&#39;s hint: You are looking for animals whose size does not match their label in the pattern.</li>
 <li>Link: <a href="../?via=tutor#was-ergaenzen">../?via=tutor#was-ergaenzen</a></li>
 </ul>
 </main>
