@@ -61,6 +61,11 @@ function richtig(task: Task, bag: readonly Tier[]): boolean {
   return task.testtiere.every((t) => klassifiziere(bag, t) === sorteVon(t));
 }
 
+/** How many different bags of 1 to MAX cards are right. */
+function anzahlLoesungen(task: Task): number {
+  return beutelAus(task.karten).filter((bag) => richtig(task, bag)).length;
+}
+
 /** The smallest right bag, or undefined when there is none. */
 function loesung(task: Task): Tier[] | undefined {
   return beutelAus(task.karten).find((bag) => richtig(task, bag));
@@ -88,7 +93,11 @@ const aufgabeMit = (tiere: readonly Tier[], tests: readonly Tier[]): Task => ({
   karten: tiere.filter((t) => !tests.includes(t)),
 });
 
-/** The task of `seed`: three test animals, a cat and a dog among them, a mixed one, a plain bag failing, a right bag. */
+/**
+ * The task of `seed`: three test animals, a cat and a dog among them, a mixed one; the plainest bag fails, and at least
+ * two different bags are right (none of one card: it gives one label only), so that every task is solvable and none
+ * is trivial.
+ */
 export function generate(seed: number, props: Props): Task {
   const next = zufall(seed);
   for (let attempt = 0; attempt < 200; attempt++) {
@@ -97,7 +106,7 @@ export function generate(seed: number, props: Props): Task {
     while (drawn.length < 3 && rest.length > 0) drawn.push(...rest.splice(Math.floor(next() * rest.length), 1));
     const task = aufgabeMit(props.tiere, drawn);
     const sorten = new Set(drawn.map((t) => sorteVon(t)));
-    if (sorten.size === 2 && drawn.some(gemischt) && knifflig(task) && loesung(task) !== undefined) return task;
+    if (sorten.size === 2 && drawn.some(gemischt) && knifflig(task) && anzahlLoesungen(task) >= 2) return task;
   }
   return aufgabeMit(props.tiere, karten(props.tiere, ["Krümel", "Luna", "Rex"]));
 }
@@ -116,6 +125,8 @@ export function check(task: Task, answer: Answer): boolean {
 }
 
 /** A right answer: the smallest right bag. */
+export { anzahlLoesungen };
+
 export function solution(task: Task): Answer {
   return (loesung(task) ?? []).map((t) => t.name);
 }

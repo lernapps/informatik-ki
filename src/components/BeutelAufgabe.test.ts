@@ -1,6 +1,6 @@
 import { expect, test } from "vite-plus/test";
 import { sorteVon, type Tier } from "./Beutel.ts";
-import { check, describe, generate, MAX, mistakes, reason, solution, wrong } from "./BeutelAufgabe.ts";
+import { anzahlLoesungen, check, describe, generate, MAX, mistakes, reason, solution, wrong } from "./BeutelAufgabe.ts";
 
 const WERTE = [
   ["hängende Ohren", "spitze Ohren"],
@@ -59,6 +59,9 @@ test("every task has a cat and a dog to test, keeps them out of the bag, and has
     expect(check(task, wrong(task))).toBe(false);
     for (const answer of mistakes(task, props)) if (answer !== undefined) expect(check(task, answer)).toBe(false);
     expect(generate(seed, props)).toEqual(task);
+    // every task alike: at least two right bags, and no single card is one
+    expect(anzahlLoesungen(task)).toBeGreaterThanOrEqual(2);
+    for (const karte of task.karten) expect(check(task, [karte.name])).toBe(false);
   }
 });
 

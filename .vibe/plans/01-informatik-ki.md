@@ -303,13 +303,14 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite `lernen/maschine-trainieren` mit `tiere.yaml`, `Beutel.ts`, `Tierkarten`, `BeutelSimulation`,
+- [x] Musterseite `lernen/maschine-trainieren` mit `tiere.yaml`, `Beutel.ts`, `Tierkarten`, `BeutelSimulation`,
       `BeutelAufgabe` und Tests, de und en; Entwurfs-PR `work` → `main` für die Vorschau.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
+      Creator: Ja, die anderen Seiten folgen diesem Muster. Die Rückmeldung mit jedem verwechselten Testtier ist genau richtig.
+- [x] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
 - [ ] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
 - [ ] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
 - [ ] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
