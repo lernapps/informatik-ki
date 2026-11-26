@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: null
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -187,6 +187,8 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
 
 Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für den Ersteller.
 
+- Plan (Orchestrator): „Ja, so bauen.“ Hinweis: Rückmeldung nach falschem Beutel nennt Testtier und die Karte, mit der es verwechselt wird.
+
 - Goal: Auftrag #493, Kapitel 1: KI-Anwendungen erkennen; erklären, dass ein lernendes System aus Beispieldaten Regeln bildet.
 - Learners: Informatik, Klasse 5-6; Vorwissen Daten (#491), wiederholt am Kapitelanfang.
 - Model and focus: informatik-computer (#490) als Muster; Schwerpunkt: selbst eine Maschine trainieren.
@@ -216,9 +218,9 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
 - [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
+- [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
 
 ### Content method
