@@ -31,15 +31,13 @@ blocks:
             Pupillen. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen, ob ein neues
             Tier ein Hund oder eine Katze ist.
 
-            Auf dieser Seite lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Danach füllst du den
-            Beutel selbst so, dass sie richtig entscheidet.
+            Hier lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Dann füllst du den Beutel selbst.
           en: |
             In the card game you found a rule yourselves. Each card in the bag is an **example**: an animal with a
             **label**, dog or cat. Each card shows four **features**: ears, snout, size and pupils. Now a machine gets
             the training bag. It should tell the animal shelter whether a new animal is a dog or a cat.
 
-            On this page you learn how the machine decides from the cards in the bag. Then you fill the bag yourself
-            so that it decides correctly.
+            Here you learn how the machine decides from the cards in the bag. Then you fill the bag yourself.
       - type: single-choice
         id: wer-ist-aehnlicher
         text:
@@ -147,16 +145,14 @@ blocks:
       - type: text
         text:
           de: |
-            Mit **In den Beutel** legst du eine Karte hinein, mit **Heraus** nimmst du sie wieder heraus. Bei **Neues
-            Tier** wählst du das Tier, das die Maschine erkennen soll. Die Tabelle zeigt für jede Karte im Beutel die
-            gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel, bei Gleichstand mehrere.
+            **In den Beutel** und **Heraus** füllen den Beutel. Bei **Neues Tier** wählst du, was die Maschine erkennen
+            soll. Die Tabelle zählt die gleichen Merkmale, der Stern ★ zeigt das ähnlichste Beispiel.
 
             Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus. Lege
             zum Schluss die Katze Tiger hinein: Bleibt die Antwort gleich?
           en: |
-            With **Put in bag** you put a card in, with **Take out** you take it out again. At **New animal** you choose
-            the animal the machine should recognise. The table shows, for each card in the bag, the features in common
-            with the new animal. The star ★ marks the most similar example, or several if there is a tie.
+            **Put in bag** and **Take out** fill the bag. At **New animal** you choose what the machine should
+            recognise. The table counts the features in common, and the star ★ marks the most similar example.
 
             Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out. Last, put the
             cat Tiger in: does the answer stay the same?
@@ -336,11 +332,9 @@ blocks:
             Du hast eine Maschine trainiert. Niemand hat ihr eine Regel für Hunde und Katzen einprogrammiert. Sie hat
             nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**.
 
-            **Was in den Beutel kommt, bestimmt, was herauskommt.** Mit guten Beispielen entscheidet die Maschine richtig,
-            mit fehlenden Beispielen macht sie Fehler.
+            **Was in den Beutel kommt, bestimmt, was herauskommt.**
           en: |
             You have trained a machine. Nobody programmed a rule for dogs and cats into it. It only got examples with
             labels and decided from them. This is called **machine learning**.
 
-            **What goes into the bag decides what comes out.** With good examples the machine decides correctly, with
-            missing examples it makes mistakes.
+            **What goes into the bag decides what comes out.**

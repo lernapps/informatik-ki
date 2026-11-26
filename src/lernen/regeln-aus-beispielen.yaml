@@ -16,15 +16,13 @@ blocks:
       - type: text
         text:
           de: |
-            Das Tierheim möchte eine Maschine, die Hunde und Katzen auseinanderhält. Bevor die Klasse 6b eine Maschine
-            trainiert, probiert sie es selbst aus, ganz ohne Computer. Jona hat sechs Tierkarten in den
-            **Trainingsbeutel** gelegt. Auf jeder steht, ob das Tier ein Hund oder eine Katze ist.
+            Bevor die Klasse 6b eine Maschine trainiert, probiert sie es selbst aus, ohne Computer. Jona hat sechs
+            Tierkarten in den **Trainingsbeutel** gelegt. Auf jeder steht, ob das Tier ein Hund oder eine Katze ist.
 
             Auf dieser Seite findest du selbst eine Regel aus Beispielen und testest sie an neuen Karten.
           en: |
-            The animal shelter wants a machine that can tell dogs and cats apart. Before class 6b trains a machine, they
-            try it themselves, with no computer at all. Jona has put six animal cards into the **training bag**. Each card
-            says whether the animal is a dog or a cat.
+            Before class 6b trains a machine, they try it themselves, with no computer. Jona has put six animal cards
+            into the **training bag**. Each card says whether the animal is a dog or a cat.
 
             On this page you find a rule from examples yourself and test it on new cards. The animals have German names.
             Krümel (say “KREW-mel”) means “crumb”.
@@ -102,7 +100,7 @@ blocks:
                allen sechs Beispielen passen.
             4. Die Spielleitung zeigt neue Karten, das Etikett nach unten. Sagt mit eurer Regel Hund oder Katze. Dann
                dreht die Karte um.
-            5. Zählt, wie oft eure Regel stimmt. Stimmt sie nicht, sucht mit allen Karten eine bessere.
+            5. Stimmt eure Regel nicht, sucht mit allen Karten eine bessere.
           en: |
             Play this in class in groups of three or four. You need a bag and the twelve cards below.
 
@@ -112,17 +110,17 @@ blocks:
                for example: “Does the animal have pointed ears? Yes: cat. No: dog.” The rule must fit all six examples.
             4. The leader shows new cards with the label face down. Use your rule to say dog or cat. Then turn the card
                over.
-            5. Count how often your rule is right. If it is wrong, look for a better one using all the cards.
+            5. If your rule is wrong, look for a better one using all the cards.
       - type: definition
         term: { de: Merkmal, en: feature }
         explanation:
-          de: Etwas, das man an einem Beispiel beobachten kann, zum Beispiel die Form der Ohren. Auf unseren Karten hat jedes Tier vier Merkmale.
-          en: Something you can observe about an example, such as the shape of the ears. On our cards each animal has four features.
+          de: Etwas, das man an einem Beispiel beobachten kann, zum Beispiel die Form der Ohren.
+          en: Something you can observe about an example, such as the shape of the ears.
       - type: definition
         term: { de: Etikett, en: label }
         explanation:
-          de: Die richtige Antwort, die zu einem Beispiel gehört. Auf unseren Karten ist es „Hund“ oder „Katze“.
-          en: The right answer that belongs to an example. On our cards it is “dog” or “cat”.
+          de: Die richtige Antwort zu einem Beispiel, bei uns „Hund“ oder „Katze“.
+          en: The right answer for an example; for us “dog” or “cat”.
       - type: definition
         term: { de: Trainingsdaten, en: training data }
         explanation:
@@ -178,13 +176,11 @@ blocks:
           - type: text
             text:
               de: |
-                Niemand hat euch die Regel verraten. Ihr habt sie aus Beispielen mit Etikett gefunden. So lernen auch
-                KI-Systeme: Sie bilden Regeln aus Beispieldaten, statt dass jemand jede Regel programmiert. Eine Regel
-                kann nur so gut sein wie die Beispiele im Beutel.
+                Ihr habt die Regel aus Beispielen mit Etikett gefunden, niemand hat sie vorgegeben. So lernen auch
+                KI-Systeme: Sie bilden Regeln aus Beispieldaten, statt dass jemand jede Regel programmiert.
               en: |
-                Nobody told you the rule. You found it from examples with labels. AI systems learn like this too: they
-                make rules from example data, instead of someone programming every rule. A rule can only be as good as
-                the examples in the bag.
+                You found the rule from examples with labels; nobody gave it to you. AI systems learn like this too: they
+                make rules from example data, instead of someone programming every rule.
   - type: section
     id: uebung
     title:
@@ -256,5 +252,5 @@ blocks:
           en: A rule from examples is learned. A rule that someone gives is programmed.
       - type: text
         text:
-          de: Als Nächstes bekommt eine Maschine den Trainingsbeutel. Sie sucht aber keine Regel wie ihr. Wie sie entscheidet, siehst du auf der nächsten Seite.
-          en: Next, a machine gets the training bag. But it does not look for a rule like you did. You see how it decides on the next page.
+          de: Auf der nächsten Seite bekommt eine Maschine den Beutel. Sie sucht keine Regel wie ihr.
+          en: On the next page a machine gets the bag. It does not look for a rule like you did.

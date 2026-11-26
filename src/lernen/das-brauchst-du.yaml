@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Das brauchst du hier
+  en: What you need here
+description:
+  de: "Kurz wiederholt: Information und Daten, Daten im Zusammenhang deuten."
+  en: "A short recap: information and data, interpreting data in context."
+recap: [informatik/information-und-daten, informatik/daten-interpretieren]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Kannst du das schon?
+      en: Can you do this already?
+    blocks:
+      - type: text
+        text:
+          de: |
+            In diesem Kapitel trainierst du eine Maschine mit Beispielen. Dafür brauchst du zwei Dinge aus dem Kapitel
+            über Daten. Prüfe dich kurz selbst:
+
+            - **Information und Daten:** Ich kann Information und Daten unterscheiden und erklären, dass Daten erst
+              durch ihre Deutung zu Information werden.
+            - **Daten interpretieren:** Ich kann Daten in ihrem Zusammenhang deuten, zum Beispiel erkennen, ob die Zahl
+              21 ein Alter, eine Temperatur oder eine Uhrzeit ist.
+          en: |
+            In this chapter you train a machine with examples. For this you need two things from the chapter on data.
+            Check yourself quickly:
+
+            - **Information and data:** I can tell information and data apart and explain that data only become
+              information when someone interprets them.
+            - **Interpreting data:** I can interpret data in their context, for example tell whether the number 21 is
+              an age, a temperature or a time.
+  - type: section
+    id: beispiel
+    title:
+      de: Ein Beispiel aus dem Tierheim
+      en: An example from the animal shelter
+    blocks:
+      - type: text
+        text:
+          de: |
+            Auf einem Zettel im Tierheim steht nur „klein“. Das sind **Daten**. Erst wenn du weißt, dass es um die Größe
+            des Hundes Waldi geht, wird daraus eine **Information**: Waldi ist klein.
+
+            Auf den Tierkarten in diesem Kapitel stehen solche Daten: Ohren, Schnauze, Größe und Pupillen. Du deutest
+            sie im Zusammenhang, wie bei Waldis Karte.
+          en: |
+            A note at the animal shelter just says “small”. That is **data**. Only when you know that it is about the
+            size of the dog Waldi does it become **information**: Waldi is small.
+
+            The animal cards in this chapter carry data like this: ears, snout, size and pupils. You interpret them in
+            context, as with Waldi's card.
+      - type: vue-component
+        component: Tierkarten
+        props:
+          tiere: { data: tiere }
+          nummern: [9]
+          etikett: true
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+        nojs:
+          de: "Waldis Karte: ein gezeichneter Hund mit hängenden Ohren, langer Schnauze, klein, mit runden Pupillen."
+          en: "Waldi's card: a drawn dog with floppy ears, a long snout, small, with round pupils."
+      - type: single-choice
+        id: was-heisst-vier
+        text:
+          de: Auf einem Zettel im Tierheim steht nur die Zahl „4“. Was bedeutet sie?
+          en: A note at the animal shelter only says the number “4”. What does it mean?
+        options:
+          - text:
+              {
+                de: "Das weißt du erst, wenn du weißt, worum es geht.",
+                en: "You only know once you know what it is about.",
+              }
+            correct: true
+            info:
+              de: Ohne Zusammenhang ist „4“ nur ein Datum. Es kann ein Alter, eine Anzahl oder eine Zimmernummer sein.
+              en: Without context, “4” is just data. It could be an age, a number of things or a room number.
+          - text: { de: Ein Hund ist 4 Jahre alt., en: A dog is 4 years old. }
+            correct: false
+            info:
+              de: Das kann sein. Auf dem Zettel steht aber nicht, dass es um ein Alter geht.
+              en: That could be. But the note does not say that it is about an age.
+          - text: { de: Im Tierheim leben 4 Katzen., en: There are 4 cats at the shelter. }
+            correct: false
+            info:
+              de: Auch das kann sein. Ohne Zusammenhang kannst du es aber nicht wissen.
+              en: That could be too. But without context you cannot know.
+        explanation:
+          de: Daten werden erst zur Information, wenn du ihren Zusammenhang kennst.
+          en: Data only become information when you know their context.
