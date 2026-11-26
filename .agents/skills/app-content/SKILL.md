@@ -51,8 +51,9 @@ durch Verzerrungen.“ Keine Wiederholungsseite: `maschinelles-lernen` übt Kapi
   (multiple-choice). Selbsteinschätzung: `was-fehlt`, `datenfehler-finden`, `was-ergaenzen`.
 - Fall (Klasse 9b, alle 14, kein Bild, Chat als Text mit Zeilen „**Selin:** …“): Die Tierheim-Maschine hält Krümel
   und Otto für Katzen. Ihr Beutel: Luna, Mimi, Flocke, Minka (kleine Katzen), Bruno, Rex (große Hunde). Durchgerechnet:
-  Krümel und Otto werden „Katze“; mit Otto im Beutel wird Krümel „Ich weiß es nicht“. Kein Beutel aus den 12 Karten
-  bringt Krümel zu „Hund“; die Seite sagt das ehrlich (es fehlt ein kleiner Hund mit spitzen Ohren).
+  Krümel und Otto werden „Katze“; mit Otto im Beutel wird Krümel „Ich weiß es nicht“. Solange Luna und Mimi im Beutel
+  bleiben, bringt keine Karte Krümel zu „Hund“; dafür fehlt ein Hund, der genauso aussieht wie Krümel (1110). Die
+  Seite sagt das ehrlich.
 - Die Jugendlichen ziehen den Schluss selbst: erst testen, dann „Welche Merkmale trennen im Beutel?“ (Größe,
   Pupillen), dann „Welche Trennung gilt nur in diesem Beutel?“ (Größe). Erst danach Erklärung und Definition.
 - Echte Folgen in einem neutralen Absatz ohne Bild (Gender Shades); die Bewertung für die Gesellschaft steht in #505.

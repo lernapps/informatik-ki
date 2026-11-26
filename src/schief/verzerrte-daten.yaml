@@ -25,7 +25,7 @@ blocks:
 
             **Mia:** Der Helfer hat Fotos von der Katzenstation und aus der Hundeschule genommen. Hier ist der Beutel.
 
-            Finde heraus, woher die Fehler kommen und was hilft.
+            Woher kommen die Fehler?
           en: |
             Jona, Selin and Mia are now 14 and in Year 10. The shelter now has a “nearest neighbour” machine. A volunteer filled its training bag, in other words its **training data**:
             example cards with labels that the machine learns from.
@@ -34,9 +34,9 @@ blocks:
 
             **Jona:** Is the program broken? It's the same as our bag program from Year 7.
 
-            **Mia:** The volunteer used photos from the cattery and from a dog training class. Here is the bag.
+            **Mia:** The volunteer used photos from the shelter's cat section and from a dog training class. Here is the bag.
 
-            Find out where the mistakes come from and what helps.
+            Where do the mistakes come from?
       - type: vue-component
         component: Tierkarten
         props:
@@ -175,8 +175,8 @@ blocks:
               de: "Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde."
               en: "No: Minka is a cat with a long snout, like the dogs."
         hint:
-          de: "Geh die Merkmale einzeln durch: Haben alle Katzen denselben Wert und alle Hunde den anderen?"
-          en: "Go through the features one by one: do all the cats have the same value and all the dogs the other one?"
+          de: "Haben alle Katzen denselben Wert und alle Hunde den anderen?"
+          en: "Do all the cats have one value and all the dogs the other?"
         explanation:
           de: Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.
           en: Krümel and Otto match the dogs in their pupils and the cats in their size.
@@ -189,19 +189,19 @@ blocks:
           - text: { de: "Katzen sind klein, Hunde groß.", en: "Cats are small, dogs are big." }
             correct: true
             info:
-              de: Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß.
-              en: There are lots of small dogs. Here they just happen to be big.
+              de: Es gibt viele kleine Hunde. Hier sind alle groß, weil die Fotos aus der Hundeschule stammen.
+              en: There are lots of small dogs. Here all the dogs are big because of where the photos came from.
           - text: { de: "Katzen haben schmale Pupillen, Hunde runde.", en: "Cats have narrow pupils, dogs round ones." }
             correct: false
             info:
-              de: "Nein: Das gilt bei allen zwölf Karten."
-              en: "No: this holds for all twelve cards."
+              de: "Nein: Das gilt bei allen zwölf Karten, und Hauskatzen haben wirklich Schlitzpupillen."
+              en: "No: this holds for all twelve cards, and house cats really do have slit pupils."
         hint:
           de: Denk an Hunde, die du kennst. Sind alle groß?
           en: Think of dogs you know. Are they all big?
         explanation:
-          de: Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.
-          en: Size only separates the kinds by chance. The machine still counts it.
+          de: Die Größe trennt die Sorten nur in diesem Beutel. Die Maschine zählt sie trotzdem mit.
+          en: Size only separates the kinds in this bag. The machine still counts it.
   - type: section
     id: idee
     title:
@@ -211,18 +211,17 @@ blocks:
       - type: text
         text:
           de: |
-            Das Programm zählt richtig. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
+            Das Programm zählt richtig, aber der Beutel ist einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
             Schnauze werden zu Katzen.
 
-            Mit Otto im Beutel wird aus „Katze“ bei Krümel „Ich weiß es nicht“: Die Maschine irrt nicht mehr, sie ist
-            unsicher. Richtig erkennt sie Krümel erst mit einem kleinen Hund mit spitzen Ohren als Beispiel. So eine Karte fehlt dem Tierheim noch.
+            Mit Otto im Beutel ist die Maschine bei Krümel nur noch unsicher. Richtig erkennt sie Krümel erst, wenn ein Hund im Beutel liegt, der genauso aussieht: klein, spitze Ohren, kurze Schnauze. So eine Karte fehlt dem Tierheim noch.
           en: |
-            The program counts correctly. But the bag shows the world in a one-sided way: cats only small, dogs only
+            The program counts correctly, but the bag is one-sided: cats only small, dogs only
             big. The machine takes on this pattern and makes **the same mistake again and again**: small dogs with a
             short snout become cats.
 
-            With Otto in the bag, Krümel goes from “cat” to “I don't know”: the machine is no longer wrong, just unsure.
-            It only gets Krümel right with a small dog with pointed ears as an example. The shelter has no such card yet.
+            With Otto in the bag, the machine is only unsure about Krümel.
+            It only gets Krümel right if the bag holds a dog that looks just like Krümel: small, pointed ears, short snout. The shelter has no such card yet.
       - type: definition
         term: { de: Verzerrung (Bias), en: bias }
         explanation:
@@ -233,8 +232,8 @@ blocks:
         blocks:
           - type: text
             text:
-              de: Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen?
-              en: If a learning system keeps making the same mistake, look at the training data first. Which examples are missing?
+              de: Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen, welche sind einseitig ausgewählt?
+              en: If a learning system keeps making the same mistake, look at the training data first. Which examples are missing, and which were chosen one-sidedly?
   - type: section
     id: beispiel
     title:
@@ -244,17 +243,16 @@ blocks:
       - type: text
         text:
           de: |
-            Joy Buolamwini und Timnit Gebru untersuchten 2018 drei Programme, die aus einem Foto das Geschlecht eines
-            Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche Programme prüft,
-            bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des
-            Geschlechts lag bei Frauen mit dunkler Haut bei bis zu 34,7 % (etwa jedes dritte Foto), bei Männern mit
-            heller Haut bei höchstens 0,8 %. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
+            Joy Buolamwini und Timnit Gebru untersuchten 2018 drei kommerzielle Programme, die aus einem Foto das
+            Geschlecht eines Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche
+            Programme prüft, bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Sie prüften deshalb mit einer eigenen, ausgewogenen Sammlung. Die Fehlerquote lag
+            bei Frauen mit dunkler Haut bei bis zu 34,7 % (beim schlechtesten Programm etwa jedes dritte Foto), bei
+            Männern mit heller Haut bei höchstens 0,8 %. Ihre Trainingsdaten nennt die Studie nicht. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
           en: |
-            In 2018, Joy Buolamwini and Timnit Gebru studied three programs that work out a person's gender from a
-            photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of the
-            people had lighter skin. The error rate in working out the gender was up to 34.7% for women with darker
-            skin (about one photo in three), and at most 0.8% for men with lighter skin.
-            ([Gender Shades, 2018](https://proceedings.mlr.press/v81/buolamwini18a.html))
+            In 2018, Joy Buolamwini and Timnit Gebru studied three commercial programs that work out a person's gender
+            from a photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of
+            the people had lighter skin. So they tested with their own balanced collection. The error rate was up to 34.7% for women with darker skin (about one photo in three for the
+            worst program), and at most 0.8% for men with lighter skin. The study does not name their training data. ([Gender Shades, 2018](https://proceedings.mlr.press/v81/buolamwini18a.html))
   - type: section
     id: uebung
     title:
@@ -271,8 +269,8 @@ blocks:
           de: Was ändert sich, wenn du zehn weitere kleine Katzen in den Beutel legst?
           en: What changes if you put ten more small cats into the bag?
         explanation:
-          de: Mehr Karten derselben Art machen das Muster nur stärker.
-          en: More cards of the same kind only make the pattern stronger.
+          de: "Mehr Karten derselben Art ändern nichts: Das Muster bleibt."
+          en: "More cards of the same kind change nothing: the pattern stays."
       - type: matching
         id: was-fehlt
         text:
@@ -299,15 +297,15 @@ blocks:
             right: { de: Bilder außerhalb der Blütezeit, en: pictures outside the flowering season }
           - left:
               {
-                de: "Die Maschine des Tierheims hält kleine Hunde für Katzen.",
-                en: "The shelter's machine thinks small dogs are cats.",
+                de: "Die Maschine des Tierheims hält kleine Hunde mit kurzer Schnauze für Katzen.",
+                en: "The shelter's machine thinks small dogs with a short snout are cats.",
               }
             right: { de: Hunde in Katzengröße, en: dogs the size of cats }
         distractors:
           - { de: ein schnellerer Computer, en: a faster computer }
         hint:
-          de: Frag bei jedem Fall, welche Situation das System nie als Beispiel gesehen hat.
-          en: For each case, ask which situation the system never saw as an example.
+          de: Was hat das System nie gesehen?
+          en: What did the system never see?
         explanation:
           de: In jedem Fall fehlt eine Art von Beispielen.
           en: In each case one kind of example is missing.
@@ -317,21 +315,21 @@ blocks:
           de: In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?
           en: In which order do you find and fix a fault in the training data?
         items:
-          - { de: Falsch erkannte Tiere sammeln, en: Collect the animals that were recognised wrongly }
+          - { de: Falsch erkannte Tiere sammeln, en: Collect the animals that were wrongly identified }
           - { de: Gemeinsamkeiten der Fehler suchen, en: Look for what the mistakes have in common }
           - { de: In den Trainingsdaten nach Lücken suchen, en: Search the training data for gaps }
           - { de: Beispiele ergänzen und neu testen, en: Add examples and test again }
         hint:
-          de: Erst brauchst du die Fehler, dann ihr Muster, dann den Blick in die Daten.
-          en: First you need the mistakes, then their pattern, then a look at the data.
+          de: Erst die Fehler, dann ihr Muster, dann die Daten.
+          en: First the mistakes, then their pattern, then the data.
         explanation:
           de: Erst das Muster der Fehler zeigt, welche Beispiele fehlen.
           en: Only the pattern of the mistakes shows which examples are missing.
       - type: multiple-choice
         id: was-ergaenzen
         text:
-          de: "Welche Karten brechen im Beutel das Muster „klein ist Katze, groß ist Hund“?"
-          en: "Which cards break the pattern “small means cat, big means dog” in the bag?"
+          de: "Welche Karten würden das Muster „klein ist Katze, groß ist Hund“ brechen, wenn sie in den Beutel kämen?"
+          en: "Which cards would break the pattern “small means cat, big means dog” if they went into the bag?"
         options:
           - text: { de: "Waldi, ein kleiner Hund", en: "Waldi, a small dog" }
             correct: true
@@ -357,8 +355,8 @@ blocks:
           de: Gesucht sind Tiere, deren Größe nicht zu ihrem Etikett im Muster passt.
           en: You are looking for animals whose size does not match their label in the pattern.
         explanation:
-          de: Solche Karten nehmen der Größe ihre Rolle.
-          en: Cards like these take away the role of size.
+          de: Mit solchen Karten entscheidet die Größe nicht mehr allein.
+          en: Cards like these stop size from deciding.
   - type: section
     id: rueckblick
     title:
@@ -368,8 +366,8 @@ blocks:
       - type: text
         text:
           de: |
-            Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, irrt es immer wieder auf dieselbe Weise. **Was in den
+            Sind die Beispiele einseitig ausgewählt, irrt ein lernendes System immer wieder auf dieselbe Weise. **Was in den
             Beutel kommt, bestimmt, was herauskommt.**
           en: |
-            The choice of training data decides what a learning system can do. If examples are missing, it keeps getting things wrong in the same way.
+            If the examples are chosen one-sidedly, a learning system keeps getting things wrong in the same way.
             **What goes into the bag decides what comes out.**
