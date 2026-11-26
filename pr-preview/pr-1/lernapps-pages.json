@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "strand": "informatik/daten",
+  "pages": [
+    {
+      "path": "lernen/maschine-trainieren/",
+      "title": {
+        "de": "Die Maschine trainieren",
+        "en": "Training the machine"
+      },
+      "competencies": [
+        "maschinelles-lernen"
+      ]
+    }
+  ]
+}
