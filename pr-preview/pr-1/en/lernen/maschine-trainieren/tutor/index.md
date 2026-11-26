@@ -49,8 +49,7 @@ In the card game you found a rule yourselves. Each card in the bag is an **examp
 **label**, dog or cat. Each card shows four **features**: ears, snout, size and pupils. Now a machine gets
 the training bag. It should tell the animal shelter whether a new animal is a dog or a cat.
 
-On this page you learn how the machine decides from the cards in the bag. Then you fill the bag yourself
-so that it decides correctly.
+Here you learn how the machine decides from the cards in the bag. Then you fill the bag yourself.
 
 - Exercise `wer-ist-aehnlicher` (below)
 
@@ -84,9 +83,8 @@ take.
 
 ### Try it: put cards into the bag
 
-With **Put in bag** you put a card in, with **Take out** you take it out again. At **New animal** you choose
-the animal the machine should recognise. The table shows, for each card in the bag, the features in common
-with the new animal. The star ★ marks the most similar example, or several if there is a tie.
+**Put in bag** and **Take out** fill the bag. At **New animal** you choose what the machine should
+recognise. The table counts the features in common, and the star ★ marks the most similar example.
 
 Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out. Last, put the
 cat Tiger in: does the answer stay the same?
@@ -108,8 +106,7 @@ Interactive: With JavaScript you can put animal cards into the training bag here
 You have trained a machine. Nobody programmed a rule for dogs and cats into it. It only got examples with
 labels and decided from them. This is called **machine learning**.
 
-**What goes into the bag decides what comes out.** With good examples the machine decides correctly, with
-missing examples it makes mistakes.
+**What goes into the bag decides what comes out.**
 
 ### Exercise wer-ist-aehnlicher
 

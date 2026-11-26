@@ -50,8 +50,7 @@ einem **Etikett**, Hund oder Katze. Auf jeder Karte stehen vier **Merkmale**: Oh
 Pupillen. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen, ob ein neues
 Tier ein Hund oder eine Katze ist.
 
-Auf dieser Seite lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Danach füllst du den
-Beutel selbst so, dass sie richtig entscheidet.
+Hier lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Dann füllst du den Beutel selbst.
 
 - Aufgabe `wer-ist-aehnlicher` (unten)
 
@@ -86,9 +85,8 @@ sie nehmen soll.
 
 ### Ausprobieren: Karten in den Beutel legen
 
-Mit **In den Beutel** legst du eine Karte hinein, mit **Heraus** nimmst du sie wieder heraus. Bei **Neues
-Tier** wählst du das Tier, das die Maschine erkennen soll. Die Tabelle zeigt für jede Karte im Beutel die
-gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel, bei Gleichstand mehrere.
+**In den Beutel** und **Heraus** füllen den Beutel. Bei **Neues Tier** wählst du, was die Maschine erkennen
+soll. Die Tabelle zählt die gleichen Merkmale, der Stern ★ zeigt das ähnlichste Beispiel.
 
 Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus. Lege
 zum Schluss die Katze Tiger hinein: Bleibt die Antwort gleich?
@@ -110,8 +108,7 @@ Interaktiv: Hier kannst du mit JavaScript Tierkarten in den Trainingsbeutel lege
 Du hast eine Maschine trainiert. Niemand hat ihr eine Regel für Hunde und Katzen einprogrammiert. Sie hat
 nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**.
 
-**Was in den Beutel kommt, bestimmt, was herauskommt.** Mit guten Beispielen entscheidet die Maschine richtig,
-mit fehlenden Beispielen macht sie Fehler.
+**Was in den Beutel kommt, bestimmt, was herauskommt.**
 
 ### Aufgabe wer-ist-aehnlicher
 
