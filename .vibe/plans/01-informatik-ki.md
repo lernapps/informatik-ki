@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -132,6 +132,20 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
   - Dann füllen sie den Beutel so, dass alle Testtiere richtig erkannt werden.
   - Fehler: „Ohne Katzen im Beutel erkennt sie trotzdem Katzen“, „Ein einziges Beispiel reicht“, „Die Maschine
     rät“.
+
+### Prüfungen in Code
+
+- Lernenden-Check Musterseite (de, en): Begriffe vorab erklärt, Gleichstand im Text, neues Tier nicht in den Beutel,
+  Rückmeldung nennt jedes verwechselte Testtier, Beutelinhalt und „voll“, größere Pupillen.
+- Fachprüfung (Informatik/ML): keine Rechen- oder Logikfehler (2000 Seeds nachgerechnet). Geändert: KI-Definition
+  und Abgrenzung über „programmiert“ statt „feste Regeln“, „Muster finden“ statt „Regeln bilden“, Rückblick nennt das
+  programmierte Vergleichen, Gleichstand nur zwischen ähnlichster Katze und ähnlichstem Hund.
+- Ganze App als Lernende (de, en): Kinder auf `ki-im-alltag` vorgestellt, Bildunterschriften nennen sie, ein Wort
+  „programmiert“, Hinweise für Wahr/Falsch, Zuordnen, Ordnen, Brücken zwischen den Seiten, Mia leitet das
+  Kartenspiel, Merkmal und Etikett vor der Anleitung, Übersetzer-Bild mit Pfeilen, Englisch (data im Singular,
+  „Copy the cards“, „Hint“).
+- Nicht behoben, an der Vorlage (lernapps/app-templates#209): Rückmeldung bleibt nach Änderung stehen, leere Antwort,
+  allgemeine Meldungen, Komponentenübung ohne Kasten, Wiederholungs-Links zeigen Kennungen statt Namen, „Matched rightly“.
 
 ### Umfang
 
@@ -315,11 +329,11 @@ page, which a link. -->
 - [x] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
 - [x] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
 <!-- tasks: pages (4 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit

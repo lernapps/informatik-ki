@@ -24,17 +24,17 @@ blocks:
           de: Mias Wandzeitung „KI bei uns“. Steckt in allem davon KI?
           en: Mia's wall poster “AI around us”. Is there AI in all of these?
         labels:
-          - { x: 27, y: 18, marker: A, text: { de: Sprachassistent, en: voice assistant } }
+          - { x: 27, y: 16, marker: A, text: { de: Sprachassistent, en: voice assistant } }
           - {
               x: 52,
-              y: 18,
+              y: 16,
               marker: B,
               text: { de: Foto-App sortiert Fotos nach Tieren, en: photo app sorts photos by animal },
             }
-          - { x: 77, y: 18, marker: C, text: { de: Video-App schlägt Videos vor, en: video app suggests videos } }
-          - { x: 27, y: 58, marker: D, text: { de: Übersetzer-App, en: translator app } }
-          - { x: 52, y: 58, marker: E, text: { de: Taschenrechner, en: calculator } }
-          - { x: 77, y: 58, marker: F, text: { de: Wecker, en: alarm clock } }
+          - { x: 77, y: 16, marker: C, text: { de: Video-App schlägt Videos vor, en: video app suggests videos } }
+          - { x: 27, y: 51, marker: D, text: { de: Übersetzer-App, en: translator app } }
+          - { x: 52, y: 51, marker: E, text: { de: Taschenrechner, en: calculator } }
+          - { x: 77, y: 51, marker: F, text: { de: Wecker, en: alarm clock } }
       - type: text
         text:
           de: |

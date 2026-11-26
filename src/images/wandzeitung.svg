@@ -1,7 +1,7 @@
 <!-- Mias Wandzeitung „KI bei uns“: sechs Dinge aus dem Alltag als Bildzeichen, ohne Text. Die Marker A bis F und ihre
      Namen setzt die Seite (labelled-figure). Mia aus lernapps/informatik-computer, src/images/klasse-6b.svg (eigene
      Zeichnung, CC-BY-4.0). -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img">
   <title>Mia vor ihrer Wandzeitung mit sechs Bildern</title>
   <defs>
     <!-- Mia: schwarze Locken, runde Brille, lila Jacke -->
@@ -14,8 +14,8 @@
       <path d="M42 71 Q50 78 58 71" fill="none"/>
     </g>
   </defs>
-  <rect width="600" height="300" fill="#f4efe2"/>
-  <rect y="262" width="600" height="38" fill="#c9a77a"/>
+  <rect width="600" height="340" fill="#f4efe2"/>
+  <rect y="262" width="600" height="78" fill="#c9a77a"/>
   <rect x="136" y="24" width="452" height="256" rx="8" fill="#d9b382" stroke="#333" stroke-width="2"/>
   <g transform="translate(150,40)" stroke="#333" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <rect x="4" y="4" width="112" height="100" rx="6" fill="#fff"/>
@@ -39,6 +39,7 @@
     <path d="M20 22 h44 v28 h-28 l-10 10 v-10 h-6 Z" fill="#9cc3e6"/><path d="M56 48 h44 v28 h-6 v10 l-10 -10 h-28 Z" fill="#f4c542"/>
 <circle cx="42" cy="36" r="9" fill="#fff"/><path d="M33 36 h18 M42 27 v18 M36 30 Q42 36 36 42 M48 30 Q42 36 48 42" fill="none" stroke-width="1.5"/>
 <path d="M66 58 h24 M66 64 h18" fill="none"/>
+<path d="M30 88 h22 m-6 -5 l6 5 l-6 5 M90 88 h-22 m6 -5 l-6 5 l6 5" fill="none" stroke-width="2.5"/>
   </g>
   <g transform="translate(300,160)" stroke="#333" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <rect x="4" y="4" width="112" height="100" rx="6" fill="#fff"/>
