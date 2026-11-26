@@ -1,0 +1,348 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Die Maschine trainieren
+  en: Training the machine
+description:
+  de: "Der Trainingsbeutel: Die Maschine sucht das ähnlichste Beispiel und gibt sein Etikett."
+  en: "The training bag: the machine looks for the most similar example and gives its label."
+competencies: [maschinelles-lernen]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: "Im Tierheim: Hund oder Katze?"
+      en: "At the animal shelter: dog or cat?"
+    blocks:
+      - type: figure
+        image: images/beutel-szene.svg
+        source: { de: eigene Zeichnung, en: own drawing }
+        licence: CC-BY-4.0
+        alt:
+          de: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus.
+          en: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top.
+        caption:
+          de: "Von links: Jona, Mia, der Trainingsbeutel und Selin."
+          en: "From the left: Jona, Mia, the training bag and Selin."
+      - type: text
+        text:
+          de: |
+            Auf der Seite „Eine Regel aus Beispielen finden“ habt ihr selbst eine Regel gefunden. Jetzt bekommt eine
+            Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen: Hund oder Katze? Hier lernst du, wie sie
+            entscheidet. Dann füllst du den Beutel selbst.
+          en: |
+            On the page “Finding a rule from examples” you found a rule yourselves. Now a machine gets the training bag.
+            It should tell the animal shelter: dog or cat? Here you learn how it decides. Then you fill the bag
+            yourself.
+      - type: single-choice
+        id: wer-ist-aehnlicher
+        text:
+          de: "Im Beutel liegen Luna (Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen) und Bruno (Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen). Neu kommt Krümel: spitze Ohren, kurze Schnauze, klein, runde Pupillen. Wem ist Krümel ähnlicher?"
+          en: "The bag holds Luna (cat: pointed ears, short snout, small, narrow pupils) and Bruno (dog: floppy ears, long snout, big, round pupils). Krümel is new: pointed ears, short snout, small, round pupils. Who is Krümel more similar to?"
+        options:
+          - text: { de: Luna, en: Luna }
+            correct: true
+            info:
+              de: "Krümel hat drei Merkmale wie Luna: spitze Ohren, kurze Schnauze, klein. Nur die Pupillen sind anders."
+              en: "Krümel has three features like Luna: pointed ears, short snout, small. Only the pupils are different."
+          - text: { de: Bruno, en: Bruno }
+            correct: false
+            info:
+              de: "Mit Bruno hat Krümel nur ein Merkmal gleich: die runden Pupillen."
+              en: "Krümel has only one feature in common with Bruno: the round pupils."
+          - text: { de: beiden gleich, en: both the same }
+            correct: false
+            info:
+              de: "Zähl nach: Mit Luna sind es drei gleiche Merkmale, mit Bruno nur eins."
+              en: "Count again: with Luna there are three features in common, with Bruno only one."
+        explanation:
+          de: "Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Das wird gleich wichtig."
+          en: "Krümel is more similar to Luna. But Krümel is a dog! Keep this in mind: it matters in a moment."
+  - type: section
+    id: idee
+    title:
+      de: So entscheidet die Maschine
+      en: How the machine decides
+    blocks:
+      - type: text
+        text:
+          de: |
+            Die Maschine vergleicht das neue Tier mit **jeder Karte im
+            Beutel** und zählt die gleichen Merkmale. Die Karte mit den meisten gleichen Merkmalen ist das ähnlichste
+            Beispiel; bei Gleichstand gibt es mehrere. Die Maschine gibt dem neuen Tier dessen Etikett.
+          en: |
+            The machine compares the new animal with **every
+            card in the bag** and counts the features they have in common. The card with the most features in common
+            is the most similar example; if there is a tie, there are several. The machine gives the new animal the label of that card.
+      - type: table
+        caption:
+          de: "Krümel im Vergleich mit den Karten im Beutel. ✓ heißt: gleich wie bei Krümel, ✗ heißt: anders."
+          en: "Krümel compared with the cards in the bag. ✓ means: the same as Krümel, ✗ means: different."
+        header:
+          - { de: Krümel hat, en: Krümel has }
+          - { de: Luna, en: Luna }
+          - { de: Bruno, en: Bruno }
+        rowHeaders: true
+        rows:
+          - - { de: spitze Ohren, en: pointed ears }
+            - { de: "✓ spitz", en: "✓ pointed" }
+            - { de: "✗ hängend", en: "✗ floppy" }
+          - - { de: kurze Schnauze, en: short snout }
+            - { de: "✓ kurz", en: "✓ short" }
+            - { de: "✗ lang", en: "✗ long" }
+          - - { de: klein, en: small }
+            - { de: "✓ klein", en: "✓ small" }
+            - { de: "✗ groß", en: "✗ big" }
+          - - { de: runde Pupillen, en: round pupils }
+            - { de: "✗ schmal", en: "✗ narrow" }
+            - { de: "✓ rund", en: "✓ round" }
+          - - { de: gleiche Merkmale, en: features in common }
+            - { de: "3", en: "3" }
+            - { de: "1", en: "1" }
+      - type: text
+        text:
+          de: |
+            Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Falsch, Krümel ist ein Hund. Gerechnet hat die Maschine richtig. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
+            spitzen Ohren. Die Maschine zählt jedes Merkmal gleich. Dass die Pupillen hier am meisten verraten, wie bei
+            Selins Regel, weiß sie nicht.
+
+            Manchmal sind die ähnlichste Katze und der ähnlichste Hund im Beutel gleich ähnlich. Dann weiß die Maschine
+            nicht, welches Etikett sie nehmen soll.
+          en: |
+            Luna is the most similar example. So the machine says: **cat**. Wrong, Krümel is a dog. The machine counted correctly. The bag is just missing an example like Krümel: a small dog with pointed ears. The
+            machine counts every feature the same. It does not know that the pupils give away the most here, as in Selin's
+            rule.
+
+            Sometimes the most similar cat and the most similar dog in the bag are equally similar. Then the machine
+            does not know which label to take.
+      - type: definition
+        term: { de: nächster Nachbar, en: nearest neighbour }
+        explanation:
+          de: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist, also am nächsten, wie dein Sitznachbar. Danach heißt das Verfahren der Maschine.
+          en: "The example in the bag that is most similar to a new animal: the closest one, like the person next to you in class. The machine's method is named after it."
+      - type: note
+        title: { de: Merke, en: Remember }
+        blocks:
+          - type: text
+            text:
+              de: |
+                - Beim Kartenspiel findet ihr eine **Regel**. Die Maschine sucht das **ähnlichste Beispiel**. Beide
+                  lernen nur aus dem, was im Beutel ist.
+                - Sind die ähnlichste Katze und der ähnlichste Hund gleich ähnlich, sagt die Maschine: **Ich weiß es nicht.**
+              en: |
+                - In the card game you find a **rule**. The machine looks for the **most similar example**. Both learn
+                  only from what is in the bag.
+                - If the most similar cat and the most similar dog are equally similar, the machine says: **I don't know.**
+  - type: section
+    id: ausprobieren
+    title:
+      de: "Ausprobieren: Karten in den Beutel legen"
+      en: "Try it: put cards into the bag"
+    blocks:
+      - type: text
+        text:
+          de: |
+            **In den Beutel** und **Heraus** füllen den Beutel. Bei **Neues Tier** wählst du, was die Maschine erkennen
+            soll. Die Tabelle zählt die gleichen Merkmale, der Stern ★ zeigt das ähnlichste Beispiel.
+
+            Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus. Lege
+            zum Schluss die Katze Tiger hinein: Bleibt die Antwort gleich?
+          en: |
+            **Put in bag** and **Take out** fill the bag. At **New animal** you choose what the machine should
+            recognise. The table counts the features in common, and the star ★ marks the most similar example.
+
+            Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out. Last, put the
+            cat Tiger in: does the answer stay the same?
+      - type: vue-component
+        component: BeutelSimulation
+        props:
+          tiere: { data: tiere }
+          start:
+            - { de: Luna, en: Luna }
+            - { de: Bruno, en: Bruno }
+          neu: { de: Krümel, en: Krümel }
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+          kartenTitel: { de: "Alle Tierkarten mit Etikett", en: "All animal cards with their labels" }
+          beutelTitel: { de: "Im Trainingsbeutel", en: "In the training bag" }
+          hinein: { de: In den Beutel, en: Put in bag }
+          heraus: { de: Heraus, en: Take out }
+          leer: { de: Der Beutel ist leer., en: The bag is empty. }
+          neuTitel: { de: "Neues Tier:", en: "New animal:" }
+          spalten:
+            - { de: Karte im Beutel, en: Card in the bag }
+            - { de: Etikett, en: Label }
+            - { de: gleiche Merkmale, en: features in common }
+          naechste: { de: ähnlichstes Beispiel, en: most similar example }
+          antwort: { de: "Die Maschine sagt über {tier}: {antwort}.", en: "The machine says about {tier}: {antwort}." }
+          weissNicht:
+            de: "Die Maschine sagt: Ich weiß es nicht. Die ähnlichste Katze und der ähnlichste Hund sind {tier} gleich ähnlich."
+            en: "The machine says: I don't know. The most similar cat and the most similar dog are equally similar to {tier}."
+          antwortLeer:
+            de: "Die Maschine sagt nichts: Ohne Beispiele im Beutel kann sie nichts vergleichen."
+            en: "The machine says nothing: with no examples in the bag it cannot compare anything."
+          wahrheit:
+            {
+              de: "Das Tierheim weiß, was {tier} wirklich ist: {sorte}.",
+              en: "The shelter knows what {tier} really is: {sorte}.",
+            }
+          istNeu: { de: "ist gerade das neue Tier", en: "is the new animal right now" }
+          zuruecksetzen: { de: Zurück zum Anfang, en: Back to the start }
+        nojs:
+          de: |
+            Hier kannst du mit JavaScript Tierkarten in den Trainingsbeutel legen und ein neues Tier wählen. Die
+            Maschine zählt für jede Karte im Beutel die gleichen Merkmale und gibt dem neuen Tier das Etikett der
+            ähnlichsten Karte. Am Anfang liegen Luna (Katze) und Bruno (Hund) im Beutel, das neue Tier ist Krümel
+            (Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen). Luna hat 3 gleiche Merkmale, Bruno 1: Die
+            Maschine sagt „Katze“. Legst du Sammy (Hund: spitze Ohren, kurze Schnauze, groß, runde Pupillen) dazu, hat
+            auch Sammy 3 gleiche Merkmale: Die Maschine weiß es nicht. Nimmst du Luna heraus und legst Tiger (Katze:
+            spitze Ohren, kurze Schnauze, groß, schmale Pupillen) hinein, hat Tiger 2 und Sammy 3: Die Maschine sagt
+            „Hund“.
+          en: |
+            With JavaScript you can put animal cards into the training bag here and choose a new animal. For each card in
+            the bag the machine counts the features in common and gives the new animal the label of the most similar
+            card. At the start the bag holds Luna (cat) and Bruno (dog), and the new animal is Krümel (dog: pointed
+            ears, short snout, small, round pupils). Luna has 3 features in common, Bruno 1: the machine says “cat”. If
+            you add Sammy (dog: pointed ears, short snout, big, round pupils), Sammy also has 3: the machine does not
+            know. If you take Luna out and put Tiger in (cat: pointed ears, short snout, big, narrow pupils), Tiger has
+            2 and Sammy 3: the machine says “dog”.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: gleiche-merkmale-zaehlen
+        given:
+          a: { pick: 1, from: { data: tiere } }
+          b: { pick: 1, from: { data: tiere } }
+        where:
+          - "a.name != b.name"
+          - "(a.ohren - b.ohren) * (a.ohren - b.ohren) + (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) + (a.groesse - b.groesse) * (a.groesse - b.groesse) + (a.pupille - b.pupille) * (a.pupille - b.pupille) != 2"
+        task:
+          text:
+            de: "Zwei Karten aus dem Tierheim. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. Wie viele Merkmale sind gleich?"
+            en: "Two cards from the shelter. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. How many features do they have in common?"
+        answer:
+          value: "4 - (a.ohren - b.ohren) * (a.ohren - b.ohren) - (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) - (a.groesse - b.groesse) * (a.groesse - b.groesse) - (a.pupille - b.pupille) * (a.pupille - b.pupille)"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "(a.ohren - b.ohren) * (a.ohren - b.ohren) + (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) + (a.groesse - b.groesse) * (a.groesse - b.groesse) + (a.pupille - b.pupille) * (a.pupille - b.pupille)"
+            message:
+              de: Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen.
+              en: You counted the features that are different. The question asks for the ones they have in common.
+        hint:
+          de: "Geh die vier Merkmale der Reihe nach durch: Ohren, Schnauze, Größe, Pupillen. Mach für jedes gleiche Merkmal einen Strich."
+          en: "Go through the four features one by one: ears, snout, size, pupils. Make a mark for each feature that is the same."
+        steps:
+          - de: "Vergleiche Merkmal für Merkmal. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
+            en: "Compare feature by feature. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
+          - de: "Anzahl der gleichen Merkmale: {{answer}} von 4."
+            en: "Features in common: {{answer}} of 4."
+      - type: single-choice
+        id: was-sagt-die-maschine
+        text:
+          de: "Im Beutel liegen Tiger (Katze: spitze Ohren, kurze Schnauze, groß, schmale Pupillen) und Rex (Hund: spitze Ohren, lange Schnauze, groß, runde Pupillen). Neu kommt Sammy: spitze Ohren, kurze Schnauze, groß, runde Pupillen. Was sagt die Maschine?"
+          en: "The bag holds Tiger (cat: pointed ears, short snout, big, narrow pupils) and Rex (dog: pointed ears, long snout, big, round pupils). Sammy is new: pointed ears, short snout, big, round pupils. What does the machine say?"
+        options:
+          - text: { de: "Ich weiß es nicht.", en: "I don't know." }
+            correct: true
+            info:
+              de: "Tiger und Rex haben je 3 Merkmale mit Sammy gleich. Eine Katze und ein Hund sind gleich ähnlich."
+              en: "Tiger and Rex each have 3 features in common with Sammy. A cat and a dog are equally similar."
+          - text: { de: Katze, en: Cat }
+            correct: false
+            info:
+              de: "Tiger hat 3 gleiche Merkmale, aber Rex auch. Kein Beispiel ist allein am ähnlichsten."
+              en: "Tiger has 3 features in common, but so does Rex. No single example is the most similar."
+          - text: { de: Hund, en: Dog }
+            correct: false
+            info:
+              de: "Rex hat 3 gleiche Merkmale, aber Tiger auch. Dass Sammy ein Hund ist, weiß die Maschine nicht: Sie sieht nur die Merkmale."
+              en: "Rex has 3 features in common, but so does Tiger. The machine does not know that Sammy is a dog: it only sees the features."
+        explanation:
+          de: "Zähl bei jeder Karte im Beutel die gleichen Merkmale. Bei Gleichstand zwischen Katze und Hund weiß die Maschine es nicht."
+          en: "For each card in the bag, count the features in common. If a cat and a dog are tied, the machine does not know."
+      - type: vue-component
+        component: BeutelAufgabe
+        props:
+          tiere: { data: tiere }
+          task:
+            de: "Das Tierheim testet die Maschine mit drei Testtieren (gestrichelter Rahmen). Sie kommen nicht in den Beutel. Lege höchstens {max} der anderen Karten in den Beutel, sodass die Maschine alle drei richtig erkennt. Tipp: Oben bei „Ausprobieren“ kannst du deinen Beutel vorher testen."
+            en: "The shelter tests the machine with three test animals (dashed frame). They do not go into the bag. Put at most {max} of the other cards into the bag so that the machine recognises all three correctly. Hint: you can test your bag first in “Try it” above."
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+          testTitel: { de: Testtiere, en: Test animals }
+          kartenTitel: { de: "Karten für den Beutel", en: "Cards for the bag" }
+          hinein: { de: In den Beutel, en: Put in bag }
+          heraus: { de: Heraus, en: Take out }
+          zaehler: { de: "Im Beutel ({n} von {max}): {karten}", en: "In the bag ({n} of {max}): {karten}" }
+          voll:
+            { de: "Der Beutel ist voll. Nimm erst eine Karte heraus.", en: "The bag is full. Take a card out first." }
+          keine: { de: noch nichts, en: nothing yet }
+          leeren: { de: Beutel leeren, en: Empty the bag }
+          leer:
+            {
+              de: "Der Beutel ist noch leer. Lege Beispiele hinein.",
+              en: "The bag is still empty. Put some examples in.",
+            }
+          zuViele: { de: "Höchstens {max} Karten passen in den Beutel.", en: "At most {max} cards fit into the bag." }
+          keineKatze:
+            de: "Im Beutel ist keine Katze. Dann kann die Maschine nie „Katze“ sagen, auch nicht bei {tier}."
+            en: "There is no cat in the bag. Then the machine can never say “cat”, not even for {tier}."
+          keinHund:
+            de: "Im Beutel ist kein Hund. Dann kann die Maschine nie „Hund“ sagen, auch nicht bei {tier}."
+            en: "There is no dog in the bag. Then the machine can never say “dog”, not even for {tier}."
+          verwechselt:
+            de: "Die Maschine sagt über {tier}: {falsch}. Am ähnlichsten ist {karte} mit {n} gleichen Merkmalen. Nimm {karte} heraus oder lege ein Beispiel mit dem richtigen Etikett hinein, das {tier} noch ähnlicher ist."
+            en: "The machine says about {tier}: {falsch}. The most similar card is {karte}, with {n} features in common. Take {karte} out, or put in an example with the right label that is even more similar to {tier}."
+          gleichstand:
+            de: "Bei {tier} weiß die Maschine es nicht: {katzeKarte} (Katze) und {hundKarte} (Hund) haben je {n} gleiche Merkmale."
+            en: "For {tier} the machine does not know: {katzeKarte} (cat) and {hundKarte} (dog) each have {n} features in common."
+        examples:
+          accepted:
+            - { answer: [Tiger, Sammy], seed: 1 }
+            - { answer: [Tiger, Sammy, Bruno], seed: 1 }
+          rejected:
+            - { answer: [Mimi, Bruno], seed: 1 }
+            - { answer: [Mimi, Tiger], seed: 1 }
+            - { answer: [Mimi, Sammy], seed: 1 }
+      - type: true-false
+        id: nur-katzen-im-beutel
+        text:
+          de: "Im Beutel liegen nur Katzen. Trotzdem kann die Maschine einen Hund als Hund erkennen."
+          en: "The bag holds only cats. Even so, the machine can recognise a dog as a dog."
+        answer: false
+        hint:
+          de: "Welche Etiketten kann die Maschine überhaupt aus dem Beutel nehmen?"
+          en: "Which labels can the machine take from the bag at all?"
+        explanation:
+          de: "Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt."
+          en: "The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out."
+  - type: section
+    id: rueckblick
+    title:
+      de: Rückblick
+      en: Looking back
+    blocks:
+      - type: text
+        text:
+          de: |
+            Du hast eine Maschine trainiert. Sie hat nur Beispiele mit Etikett bekommen und daraus entschieden. Das nennt man **maschinelles Lernen**. Programmiert
+            ist nur, wie sie vergleicht: gleiche Merkmale zählen. Ob Hund oder Katze, entscheiden die Beispiele im
+            Beutel.
+
+            **Was in den Beutel kommt, bestimmt, was herauskommt.** Mit guten Beispielen im Beutel kann die Maschine
+            dem Tierheim jetzt helfen.
+          en: |
+            You have trained a machine. It only got examples with
+            labels and decided from them. This is called **machine learning**. Only the way it compares is programmed:
+            counting the features in common. Whether dog or cat is decided by the examples in the bag.
+
+            **What goes into the bag decides what comes out.** With good examples in the bag, the machine can now help the
+            animal shelter.
+      - type: definition
+        term: { de: maschinelles Lernen, en: machine learning }
+        explanation:
+          de: Ein Computer lernt aus Beispieldaten, statt dass jemand jede Regel programmiert.
+          en: A computer learns from example data, instead of someone programming every rule.

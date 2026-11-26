@@ -1,0 +1,13 @@
+<!-- Skizze: der Trainingsbeutel (eigene Zeichnung). Kein Text im Bild. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img">
+  <title>Der Trainingsbeutel: ein Stoffbeutel mit Tierkarten</title>
+  <g stroke="#333" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="70" y="24" width="44" height="58" rx="5" fill="#fff" transform="rotate(-12 92 53)"/>
+    <rect x="118" y="20" width="44" height="58" rx="5" fill="#fff" transform="rotate(10 140 49)"/>
+    <path d="M40 80 Q120 64 200 80 L214 186 Q120 214 26 186 Z" fill="#3a8fa3"/>
+    <path d="M40 80 Q120 96 200 80" fill="none" stroke="#1f5e6b" stroke-width="4"/>
+    <circle cx="120" cy="140" r="18" fill="#f4c542"/>
+    <circle cx="112" cy="134" r="3" fill="#333"/><circle cx="128" cy="134" r="3" fill="#333"/>
+    <circle cx="120" cy="146" r="4" fill="#333"/>
+  </g>
+</svg>

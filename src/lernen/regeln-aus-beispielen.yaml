@@ -1,0 +1,275 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Eine Regel aus Beispielen finden
+  en: Finding a rule from examples
+description:
+  de: "Das Kartenspiel mit dem Trainingsbeutel: Hund oder Katze? Eine Regel aus Beispielen finden und an neuen Karten testen."
+  en: "The card game with the training bag: dog or cat? Find a rule from examples and test it on new cards."
+competencies: [maschinelles-lernen]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: "Im Tierheim: sechs Karten im Beutel"
+      en: "At the shelter: six cards in the bag"
+    blocks:
+      - type: figure
+        image: images/beutel-szene.svg
+        source: { de: eigene Zeichnung, en: own drawing }
+        licence: CC-BY-4.0
+        alt:
+          de: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus.
+          en: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top.
+        caption:
+          de: "Von links: Jona, Mia, der Trainingsbeutel und Selin."
+          en: "From the left: Jona, Mia, the training bag and Selin."
+      - type: text
+        text:
+          de: |
+            Die Klasse 6b probiert es zuerst selbst aus, ohne Computer. Mia leitet das
+            Spiel. Sie legt sechs Tierkarten in einen Stoffbeutel, den **Trainingsbeutel**. Auf jeder Karte steht, ob
+            das Tier ein Hund oder eine Katze ist.
+
+            Hier findest du selbst eine Regel aus Beispielen und testest sie.
+          en: |
+            First, class 6b tries it themselves, with no computer. Mia leads the game. She puts six
+            animal cards into a cloth bag, the **training bag**. Each card says whether the animal is a dog or a cat.
+
+            Here you find a rule from examples yourself and test it.
+      - type: vue-component
+        component: Tierkarten
+        props:
+          tiere: { data: tiere }
+          nummern: [1, 2, 3, 6, 9, 10]
+          etikett: true
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+        nojs:
+          de: |
+            Die sechs Karten im Beutel:
+
+            - Luna, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen
+            - Mimi, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen
+            - Tiger, Katze: spitze Ohren, kurze Schnauze, groß, schmale Pupillen
+            - Bruno, Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen
+            - Waldi, Hund: hängende Ohren, lange Schnauze, klein, runde Pupillen
+            - Otto, Hund: hängende Ohren, kurze Schnauze, klein, runde Pupillen
+          en: |
+            The six cards in the bag:
+
+            - Luna, cat: pointed ears, short snout, small, narrow pupils
+            - Mimi, cat: pointed ears, short snout, small, narrow pupils
+            - Tiger, cat: pointed ears, short snout, big, narrow pupils
+            - Bruno, dog: floppy ears, long snout, big, round pupils
+            - Waldi, dog: floppy ears, long snout, small, round pupils
+            - Otto, dog: floppy ears, short snout, small, round pupils
+      - type: multiple-choice
+        id: was-alle-katzen-haben
+        text:
+          de: Was haben alle drei Katzen, aber kein Hund?
+          en: What do all three cats have, but no dog?
+        options:
+          - text: { de: spitze Ohren, en: pointed ears }
+            correct: true
+            info:
+              de: Luna, Mimi und Tiger haben spitze Ohren. Bruno, Waldi und Otto haben hängende Ohren.
+              en: Luna, Mimi and Tiger have pointed ears. Bruno, Waldi and Otto have floppy ears.
+          - text: { de: schmale Pupillen, en: narrow pupils }
+            correct: true
+            info:
+              de: Alle drei Katzen haben schmale Pupillen, alle drei Hunde runde.
+              en: All three cats have narrow pupils, all three dogs have round ones.
+          - text: { de: eine kurze Schnauze, en: a short snout }
+            correct: false
+            info:
+              de: Alle Katzen haben eine kurze Schnauze. Aber der Hund Otto auch.
+              en: All the cats have a short snout. But so does Otto, a dog.
+          - text: { de: "Sie sind klein.", en: "They are small." }
+            correct: false
+            info:
+              de: Tiger ist eine Katze und groß. Und der Hund Waldi ist klein.
+              en: Tiger is a cat and big. And Waldi, a dog, is small.
+        explanation:
+          de: Zwei Merkmale trennen hier Katzen und Hunde.
+          en: Two features separate the cats and dogs here.
+  - type: section
+    id: idee
+    title:
+      de: "Das Kartenspiel: so geht es"
+      en: "The card game: how to play"
+    blocks:
+      - type: definition
+        term: { de: Merkmal, en: feature }
+        explanation:
+          de: Etwas, das man an einem Beispiel beobachten kann, zum Beispiel die Form der Ohren.
+          en: Something you can observe about an example, such as the shape of the ears.
+      - type: definition
+        term: { de: Etikett, en: label }
+        explanation:
+          de: Die richtige Antwort zu einem Beispiel, bei uns „Hund“ oder „Katze“.
+          en: The right answer for an example; for us “dog” or “cat”.
+      - type: text
+        text:
+          de: |
+            Spielt zu dritt oder zu viert. Ihr braucht einen Beutel und zwölf Karten: die sechs oben und die sechs unten.
+
+            1. Malt die Karten ab. Schreibt das **Etikett** (Hund oder Katze) auf die Rückseite.
+            2. Eine Person ist die Spielleitung. Sie legt sechs Karten in den Beutel. Das sind die Beispiele.
+            3. Die anderen nehmen die Karten heraus und lesen die Etiketten. Sucht eine Regel mit **einer Frage** zu
+               einem Merkmal, zum Beispiel: „Hat das Tier spitze Ohren? Ja: Katze. Nein: Hund.“ Sie muss zu allen sechs Beispielen passen.
+            4. Die Spielleitung zeigt neue Karten, das Etikett nach unten. Sagt mit eurer Regel Hund oder Katze. Dann
+               dreht die Karte um.
+            5. Stimmt sie nicht, sucht eine bessere.
+          en: |
+            Play in groups of three or four. You need a bag and twelve cards: the six above and the six below.
+
+            1. Copy the cards onto paper. Write the **label** (dog or cat) on the back.
+            2. One person leads the game. They put six cards into the bag. These are the examples.
+            3. The others take the cards out and read the labels. Look for a rule with **one question** about a feature,
+               for example: “Does the animal have pointed ears? Yes: cat. No: dog.” The rule must fit all six examples.
+            4. The leader shows new cards with the label face down. Use your rule to say dog or cat. Then turn the card
+               over.
+            5. If it is wrong, look for a better one.
+      - type: definition
+        term: { de: Trainingsdaten, en: training data }
+        explanation:
+          de: "Die Beispiele mit Etikett, aus denen gelernt wird: bei uns die Karten im Trainingsbeutel."
+          en: "The examples with labels that something learns from: for us, the cards in the training bag."
+      - type: vue-component
+        component: Tierkarten
+        props:
+          tiere: { data: tiere }
+          nummern: [4, 5, 7, 8, 11, 12]
+          etikett: true
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+        nojs:
+          de: |
+            Die sechs neuen Karten: Flocke und Minka sind Katzen, Rex, Krümel, Bella und Sammy sind Hunde. Jede Karte
+            zeigt ein gezeichnetes Tier mit vier Merkmalen: Ohren (spitz oder
+            hängend), Schnauze (kurz oder lang), Größe (klein oder groß) und Pupillen (schmal oder rund).
+          en: |
+            The six new cards: Flocke and Minka are cats, Rex, Krümel, Bella and Sammy are dogs. Each card shows a drawn animal with four features: ears (pointed or floppy), snout (short or
+            long), size (small or big) and pupils (narrow or round).
+  - type: section
+    id: beispiel
+    title:
+      de: Jonas Regel und Selins Regel
+      en: Jona's rule and Selin's rule
+    blocks:
+      - type: text
+        text:
+          de: |
+            Jona findet die Regel: „Hat das Tier spitze Ohren? Ja: Katze. Nein: Hund.“ Sie passt zu allen sechs Karten
+            im Beutel. Dann zeigt Mia die neue Karte **Rex**: spitze Ohren, aber ein Hund. Jonas Regel sagt „Katze“.
+            Sie hat nur zu den Beispielen im Beutel gepasst.
+
+            Selin nimmt eine andere Frage: „Hat das Tier schmale Pupillen? Ja: Katze. Nein: Hund.“ Diese Regel stimmt
+            bei allen zwölf Karten.
+          en: |
+            Jona finds the rule: “Does the animal have pointed ears? Yes: cat. No: dog.” It fits all six cards in the
+            bag. Then Mia shows the new card **Rex**: pointed ears, but a dog. Jona's rule says “cat”. It only fitted
+            the examples in the bag.
+
+            Selin uses another question: “Does the animal have narrow pupils? Yes: cat. No: dog.” This rule is right
+            for all twelve cards.
+      - type: definition
+        term: { de: Entscheidungsbaum, en: decision tree }
+        explanation:
+          de: Eine Regel aus Fragen. Jede Antwort führt zur nächsten Frage oder zu einem Ergebnis. Selins Regel ist ein Entscheidungsbaum mit einer Frage und zwei Ästen.
+          en: A rule made of questions. Each answer leads to the next question or to a result. Selin's rule is a decision tree with one question and two branches.
+      - type: note
+        title: { de: Merke, en: Remember }
+        blocks:
+          - type: text
+            text:
+              de: |
+                Ihr habt die Regel aus Beispielen mit Etikett gefunden, niemand hat sie vorgegeben. So lernen auch
+                KI-Systeme: Sie finden Muster in Beispieldaten, statt dass jemand jede Regel programmiert. Manche machen
+                daraus eine Regel wie ihr, andere vergleichen mit ähnlichen Beispielen.
+              en: |
+                You found the rule from examples with labels; nobody gave it to you. AI systems learn like this too: they
+                find patterns in example data, instead of someone programming every rule. Some turn them into a rule like
+                you did, others compare with similar examples.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: true-false
+        id: jonas-regel-passt
+        text:
+          de: Jonas Regel „spitze Ohren bedeutet Katze“ passt zu allen sechs Karten, die am Anfang im Beutel lagen.
+          en: Jona's rule “pointed ears means cat” fits all six cards that were in the bag at the start.
+        answer: true
+        hint:
+          de: "Schau bei den sechs Karten oben nur auf die Ohren."
+          en: "Look only at the ears of the six cards at the top."
+        explanation:
+          de: Im Beutel haben die Katzen spitze Ohren und die Hunde hängende. Erst die neue Karte Rex passt nicht.
+          en: In the bag the cats have pointed ears and the dogs have floppy ones. Only the new card Rex does not fit.
+      - type: matching
+        id: was-jonas-regel-sagt
+        text:
+          de: "Was sagt Jonas Regel „spitze Ohren bedeutet Katze“ zu diesen neuen Karten? Und stimmt das?"
+          en: "What does Jona's rule “pointed ears means cat” say about these new cards? And is it right?"
+        pairs:
+          - left: { de: "Rex (Hund): spitze Ohren", en: "Rex (dog): pointed ears" }
+            right: { de: "sagt Katze, falsch", en: "says cat, wrong" }
+          - left: { de: "Flocke (Katze): hängende Ohren", en: "Flocke (cat): floppy ears" }
+            right: { de: "sagt Hund, falsch", en: "says dog, wrong" }
+          - left: { de: "Bella (Hund): hängende Ohren", en: "Bella (dog): floppy ears" }
+            right: { de: "sagt Hund, richtig", en: "says dog, right" }
+          - left: { de: "Minka (Katze): spitze Ohren", en: "Minka (cat): pointed ears" }
+            right: { de: "sagt Katze, richtig", en: "says cat, right" }
+        hint:
+          de: "Schau nur auf die Ohren: Spitz heißt für die Regel Katze. Vergleiche dann mit dem Etikett."
+          en: "Look only at the ears: for the rule, pointed means cat. Then compare with the label."
+        explanation:
+          de: Die Regel schaut nur auf die Ohren. Rex ist ein Hund mit spitzen Ohren, Flocke eine Katze mit hängenden Ohren. Darum irrt die Regel bei beiden.
+          en: The rule only looks at the ears. Rex is a dog with pointed ears and Flocke is a cat with floppy ears. So the rule gets both wrong.
+      - type: ordering
+        id: schritte-lernen
+        text:
+          de: In welcher Reihenfolge lernt man aus Beispielen? Bring die Schritte in die richtige Reihenfolge.
+          en: In which order do you learn from examples? Put the steps in the right order.
+        items:
+          - { de: Beispiele mit Etikett in den Beutel legen, en: Put examples with labels into the bag }
+          - { de: "Eine Regel suchen, die zu allen Beispielen passt", en: "Look for a rule that fits all the examples" }
+          - { de: Die Regel an neuen Karten testen, en: Test the rule on new cards }
+          - { de: "Die Regel verbessern, wenn sie Fehler macht", en: "Improve the rule if it makes mistakes" }
+        hint:
+          de: "Ohne Beispiele gibt es keine Regel, und testen kannst du nur eine Regel, die es schon gibt."
+          en: "Without examples there is no rule, and you can only test a rule that already exists."
+        explanation:
+          de: Erst die Beispiele, dann die Regel, dann der Test mit neuen Karten. Fehler beim Test zeigen, dass die Regel besser werden muss.
+          en: First the examples, then the rule, then the test with new cards. Mistakes in the test show that the rule needs to get better.
+      - type: single-choice
+        id: programmiert-oder-gelernt
+        text:
+          de: Ein Taschenrechner rechnet mit Regeln, die jemand programmiert hat. Wie ist Selins Regel entstanden?
+          en: A calculator works with rules that someone programmed. How did Selin's rule come about?
+        options:
+          - text: { de: Sie hat sie aus den Beispielkarten abgeleitet., en: She worked it out from the example cards. }
+            correct: true
+            info:
+              de: Selin hat Karten mit Etikett verglichen und ein Merkmal gefunden, das Hunde und Katzen trennt.
+              en: Selin compared cards with labels and found a feature that separates dogs and cats.
+          - text: { de: Jemand hat ihr die Regel vorher gesagt., en: Someone told her the rule beforehand. }
+            correct: false
+            info:
+              de: Dann wäre die Regel vorgegeben, wie beim Taschenrechner. Selin hat sie aber selbst gefunden.
+              en: Then the rule would be given, like in a calculator. But Selin found it herself.
+          - text: { de: "Sie hat geraten, ohne die Karten anzusehen.", en: "She guessed without looking at the cards." }
+            correct: false
+            info:
+              de: Geraten stimmt eine Regel selten bei allen zwölf Karten. Selin hat die Beispiele genau angesehen.
+              en: A guessed rule is rarely right for all twelve cards. Selin looked closely at the examples.
+        explanation:
+          de: Eine Regel aus Beispielen ist gelernt. Eine Regel, die jemand vorgibt, ist programmiert.
+          en: A rule from examples is learned. A rule that someone gives is programmed.
+      - type: text
+        text:
+          de: Auf der nächsten Seite entscheidet eine Maschine mit dem Beutel, aber anders als ihr.
+          en: On the next page a machine decides with the bag, but differently from you.

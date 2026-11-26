@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: informatik/daten
+title:
+  de: Wie Maschinen aus Daten lernen
+  en: How machines learn from data
+intro:
+  de: >-
+    Das Tierheim bekommt jeden Tag Bilder von Fundtieren. Jona, Selin und Mia, alle 11, aus der Klasse 6b wollen eine Maschine
+    bauen, die sagt: Hund oder Katze? Du findest künstliche Intelligenz in deinem Alltag, sortierst Tierkarten nach
+    einer Regel und trainierst die Maschine mit dem Trainingsbeutel.
+  en: >-
+    Every day the animal shelter gets pictures of animals that were found. Jona, Selin and Mia, all aged 11, from class 6b want to
+    build a machine that says: dog or cat? You find artificial intelligence in your everyday life, sort animal cards
+    with a rule and train the machine with the training bag.
+languages: [de, en]
+chapters: [lernen]
