@@ -48,7 +48,7 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ### Chapter “When the data is skewed (bias)”
 
-- no self-assessment
+- self-assessment of the chapter
 - “Skewed training data”
 
 ## The tasks of this self-assessment

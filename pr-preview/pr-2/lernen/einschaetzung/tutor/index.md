@@ -48,7 +48,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ### Kapitel „Wenn die Daten schief sind“
 
-- keine Selbsteinschätzung
+- Selbsteinschätzung des Kapitels
 - „Verzerrte Trainingsdaten“
 
 ## Die Aufgaben dieser Selbsteinschätzung

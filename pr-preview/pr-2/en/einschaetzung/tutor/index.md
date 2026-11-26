@@ -48,8 +48,8 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ### Chapter “When the data is skewed (bias)”
 
-- no self-assessment
-- “Skewed training data” · not asked
+- self-assessment of the chapter
+- “Skewed training data” · Tasks A8, A9, A10
 
 ## The tasks of this self-assessment
 
@@ -60,3 +60,6 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 - A5: exercise gleiche-merkmale-zaehlen of the page “Training the machine”
 - A6: exercise gleiche-merkmale-zaehlen of the page “Training the machine”
 - A7: exercise was-sagt-die-maschine of the page “Training the machine” (always the same task, on its page too: right may be remembered)
+- A8: exercise was-fehlt of the page “Skewed training data” (always the same task, on its page too: right may be remembered)
+- A9: exercise datenfehler-finden of the page “Skewed training data” (always the same task, on its page too: right may be remembered)
+- A10: exercise was-ergaenzen of the page “Skewed training data” (always the same task, on its page too: right may be remembered)

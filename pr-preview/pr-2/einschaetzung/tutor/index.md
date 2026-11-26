@@ -48,8 +48,8 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ### Kapitel „Wenn die Daten schief sind“
 
-- keine Selbsteinschätzung
-- „Verzerrte Trainingsdaten“ · nicht abgefragt
+- Selbsteinschätzung des Kapitels
+- „Verzerrte Trainingsdaten“ · Aufgaben A8, A9, A10
 
 ## Die Aufgaben dieser Selbsteinschätzung
 
@@ -60,3 +60,6 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A5: Aufgabe gleiche-merkmale-zaehlen der Seite „Die Maschine trainieren“
 - A6: Aufgabe gleiche-merkmale-zaehlen der Seite „Die Maschine trainieren“
 - A7: Aufgabe was-sagt-die-maschine der Seite „Die Maschine trainieren“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A8: Aufgabe was-fehlt der Seite „Verzerrte Trainingsdaten“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A9: Aufgabe datenfehler-finden der Seite „Verzerrte Trainingsdaten“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A10: Aufgabe was-ergaenzen der Seite „Verzerrte Trainingsdaten“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
