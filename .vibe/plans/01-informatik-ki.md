@@ -2,13 +2,13 @@
 # Read by the hooks, the review, the evals. Schema: @lernapps/tooling/guidance/plan-front-matter.v1.schema.json
 # Written by `lernapps plan` and the hooks. Never change a key or a value by hand.
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
-archetype: null
+archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
 phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { plan-file: 1 }
 ---
 
 # Plan: informatik-ki, first version
@@ -166,15 +166,17 @@ Wiederholung: `daten-interpretieren` aus #491 steht als Sammel-Wiederholung am K
 - [x] Choose the archetype as skill `lernapps-app` says: read the README of each archetype in question, then tell the
       creator in plain words what the chosen one can and cannot do. Write the archetype and its reason under "Key
       decisions".
-- [ ] Run `npx --no -- lernapps skills --archetype <name>` with the chosen archetype. It installs the archetype's
+- [x] Run `npx --no -- lernapps skills --archetype <name>` with the chosen archetype. It installs the archetype's
       skills and adds the archetype's tasks to this plan.
-<!-- archetype: explore -->
+- [x] Load skill `lernapps-explainer-design`. An explainer has the look of the runtime: write "fixed by the
+      archetype" under the topic "Look and feel" of "Answers".
 - [x] Interview: ask every other topic of "Answers", in order. Leave out only a topic that an answer of the creator
       already covers, and note which answer. A topic nobody answered is asked once before you write an assumption
       with "(guess)".
 - [x] Load skill `lernapps-content-research` and research as it says. Write under "Notes": the strand or subject, the
       competencies by chapter with their ids, the sources you opened.
-<!-- archetype: explore-structure -->
+- [x] Write under "Notes" which competency goes on which page and which pages form a chapter, as "Map the content" of
+      skill `lernapps-explainer-design` says. Per page, name the prerequisites the app does not practise.
 - [x] Write under "Notes", one line per competency: how learners get there (they derive it, they do not only read it
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
@@ -212,7 +214,8 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
 - [x] Map the content as "Map the content" of skill `lernapps-<archetype>-design` says, and write the result under
       "Content method".
 - [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-<!-- archetype: plan -->
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+      opening task, the change of activity, the reward, the story.
 - [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
@@ -261,9 +264,20 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
   Hund und Katze antwortet die Maschine „Ich weiß es nicht“. Für die Kinder: Die Maschine sucht im Beutel das
   ähnlichste Beispiel. Beim Kartenspiel finden die Kinder dagegen eine Regel (Entscheidungsbaum mit einer Frage).
   Gemeinsamer Merksatz: Beide lernen nur aus dem, was im Beutel ist.
+- Engagement je Seite (Einstieg · Wechsel · Belohnung · Geschichte):
+  - `das-brauchst-du`: Selbstcheck an einer Tierkarte · lesen, eine Frage · „Das kannst du schon“ · Klasse 6b im
+    Tierheim.
+  - `ki-im-alltag`: Welches Gerät hört zu und antwortet? · Bild, Tabelle, Zuordnen, Zählen · eigene Wandzeitung „KI
+    bei uns“ · Mia sammelt KI-Beispiele, Ausblick auf das Tierheim.
+  - `regeln-aus-beispielen`: Hund oder Katze an einer Karte · Anleitung (tun), Regel testen, Ordnen · eine selbst
+    gefundene Regel · Jonas Regel scheitert, Selin findet eine bessere; Ausblick: die Maschine bekommt den Beutel.
+  - `maschine-trainieren`: Wem ist Krümel ähnlicher? · Tabelle, Simulation, Zählen, Beutel füllen · ein trainierter
+    Beutel, der alle Testtiere erkennt; Rückblick mit Merksatz · die Maschine fürs Tierheim.
 - Ein späteres Kapitel (9-10, `schief/`): `BeutelSimulation` mit Prop `start` (fester, einseitiger Beutel). Neue
   Karten nur in `tiere.yaml`.
-<!-- archetype: content-method -->
+<!-- An explainer: per figure, model and component its learning action in two to four sentences
+(`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
+page, which a link. -->
 
 ## Code
 
@@ -282,7 +296,12 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
 - [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
 - [ ] Load skill `lernapps-<archetype>`.
-<!-- archetype: code-start -->
+- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+      `.agents/skills/lernapps-explainer/references/blocks.md` and
+      `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
+      `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
+- [ ] Decide whether the app needs `scope`, as "`scope`" in
+      `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 <!-- tasks: pattern: the one page or screen that is the pattern for the others -->
 - [ ] Musterseite `lernen/maschine-trainieren` mit `tiere.yaml`, `Beutel.ts`, `Tierkarten`, `BeutelSimulation`,
       `BeutelAufgabe` und Tests, de und en; Entwurfs-PR `work` → `main` für die Vorschau.
@@ -311,7 +330,8 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
 
 ### Tasks
 
-<!-- archetype: commit-start -->
+- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+      decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
 - [ ] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
@@ -349,4 +369,6 @@ Der Auftrag lernapps/apps#493 und die Antworten des Orchestrators stehen für de
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- `init` war bis zur Freigabe gesperrt; Explore und Plan liefen nach dem Weg ohne npx. `lernapps skills` hat danach
+  vier Aufgaben früherer Phasen nachgetragen. Sie waren schon erledigt (Engagement nachgetragen); ich habe sie von Hand
+  abgehakt, weil `plan done` nur die Aufgabe der aktuellen Phase abhakt.
