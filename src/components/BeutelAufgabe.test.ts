@@ -1,6 +1,17 @@
 import { expect, test } from "vite-plus/test";
 import { sorteVon, type Tier } from "./Beutel.ts";
-import { anzahlLoesungen, check, describe, generate, MAX, mistakes, reason, solution, wrong } from "./BeutelAufgabe.ts";
+import {
+  anzahlLoesungen,
+  check,
+  describe,
+  generate,
+  MAX,
+  mistakes,
+  reason,
+  solution,
+  unanswered,
+  wrong,
+} from "./BeutelAufgabe.ts";
 
 const WERTE = [
   ["hängende Ohren", "spitze Ohren"],
@@ -108,4 +119,8 @@ test("describe states the task and a right bag", () => {
       "Luna (Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen); Rex (Hund: spitze Ohren, lange Schnauze, groß, runde Pupillen)",
   );
   expect(describe(task, props, "de").solution).toContain("Tiger (Katze), Sammy (Hund)");
+});
+
+test("an empty bag is no answer yet: Prüfen asks for cards in the app's words", () => {
+  expect(unanswered(props)).toBe("Der Beutel ist leer.");
 });
