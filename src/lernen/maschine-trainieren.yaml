@@ -21,19 +21,22 @@ blocks:
           de: Jona und Mia stehen links, Selin rechts. In der Mitte steht ein blauer Stoffbeutel mit gelber Pfote auf einem Tisch. Oben schauen zwei Tierkarten heraus.
           en: Jona and Mia stand on the left, Selin on the right. In the middle there is a blue cloth bag with a yellow paw on a table. Two animal cards stick out of the top.
         caption:
-          de: Der Trainingsbeutel der Klasse 6b. Jede Karte darin ist ein Beispiel mit Etikett.
-          en: The training bag of class 6b. Each card in it is an example with a label.
+          de: Der Trainingsbeutel der Klasse 6b mit Tierkarten.
+          en: The training bag of class 6b with animal cards.
       - type: text
         text:
           de: |
-            Beim Kartenspiel habt ihr selbst eine Regel gefunden. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie
-            soll für das Tierheim sagen, ob ein neues Tier ein Hund oder eine Katze ist.
+            Beim Kartenspiel habt ihr selbst eine Regel gefunden. Jede Karte im Beutel ist ein **Beispiel**: ein Tier mit
+            einem **Etikett**, Hund oder Katze. Auf jeder Karte stehen vier **Merkmale**: Ohren, Schnauze, Größe und
+            Pupillen. Jetzt bekommt eine Maschine den Trainingsbeutel. Sie soll für das Tierheim sagen, ob ein neues
+            Tier ein Hund oder eine Katze ist.
 
             Auf dieser Seite lernst du, wie die Maschine aus den Karten im Beutel entscheidet. Danach füllst du den
             Beutel selbst so, dass sie richtig entscheidet.
           en: |
-            In the card game you found a rule yourselves. Now a machine gets the training bag. It should tell the
-            animal shelter whether a new animal is a dog or a cat.
+            In the card game you found a rule yourselves. Each card in the bag is an **example**: an animal with a
+            **label**, dog or cat. Each card shows four **features**: ears, snout, size and pupils. Now a machine gets
+            the training bag. It should tell the animal shelter whether a new animal is a dog or a cat.
 
             On this page you learn how the machine decides from the cards in the bag. Then you fill the bag yourself
             so that it decides correctly.
@@ -59,8 +62,8 @@ blocks:
               de: "Zähl nach: Mit Luna sind es drei gleiche Merkmale, mit Bruno nur eins."
               en: "Count again: with Luna there are three features in common, with Bruno only one."
         explanation:
-          de: "Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Merk dir das, es kommt gleich wieder."
-          en: "Krümel is more similar to Luna. But Krümel is a dog! Remember this, it comes back soon."
+          de: "Krümel ist Luna ähnlicher. Aber Krümel ist ein Hund! Das ist gleich wichtig."
+          en: "Krümel is more similar to Luna. But Krümel is a dog! Keep this in mind: it matters in a moment."
   - type: section
     id: idee
     title:
@@ -108,14 +111,20 @@ blocks:
             Luna ist das ähnlichste Beispiel. Also sagt die Maschine: **Katze**. Das ist falsch, Krümel ist ein Hund. Die
             Maschine hat nichts falsch gerechnet. Im Beutel fehlt nur ein Beispiel wie Krümel: ein kleiner Hund mit
             spitzen Ohren.
+
+            Manchmal sind eine Katze und ein Hund im Beutel gleich ähnlich. Dann weiß die Maschine nicht, welches Etikett
+            sie nehmen soll.
           en: |
             Luna is the most similar example. So the machine says: **cat**. That is wrong, Krümel is a dog. The machine
             did not count wrong. The bag is just missing an example like Krümel: a small dog with pointed ears.
+
+            Sometimes a cat and a dog in the bag are equally similar. Then the machine does not know which label to
+            take.
       - type: definition
         term: { de: nächster Nachbar, en: nearest neighbour }
         explanation:
-          de: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
-          en: The example in the bag that is most similar to a new animal. A machine that decides like this uses the “nearest neighbour” method.
+          de: Das Beispiel im Beutel, das einem neuen Tier am ähnlichsten ist. Es steht ihm am nächsten, so wie dein Sitznachbar dir am nächsten sitzt. Eine Maschine, die so entscheidet, arbeitet nach dem Verfahren „nächster Nachbar“.
+          en: The example in the bag that is most similar to a new animal. It is the closest one, like the person who sits next to you in class. A machine that decides like this uses the “nearest neighbour” method.
       - type: note
         title: { de: Merke, en: Remember }
         blocks:
@@ -140,17 +149,17 @@ blocks:
           de: |
             Mit **In den Beutel** legst du eine Karte hinein, mit **Heraus** nimmst du sie wieder heraus. Bei **Neues
             Tier** wählst du das Tier, das die Maschine erkennen soll. Die Tabelle zeigt für jede Karte im Beutel die
-            gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel.
+            gleichen Merkmale. Der Stern ★ zeigt das ähnlichste Beispiel, bei Gleichstand mehrere.
 
-            Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus und
-            lege Tiger hinein.
+            Probier es aus: Lege Sammy in den Beutel. Was sagt die Maschine jetzt über Krümel? Nimm dann Luna heraus. Lege
+            zum Schluss die Katze Tiger hinein: Bleibt die Antwort gleich?
           en: |
             With **Put in bag** you put a card in, with **Take out** you take it out again. At **New animal** you choose
             the animal the machine should recognise. The table shows, for each card in the bag, the features in common
-            with the new animal. The star ★ marks the most similar example.
+            with the new animal. The star ★ marks the most similar example, or several if there is a tie.
 
-            Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out and put Tiger
-            in.
+            Try it: put Sammy into the bag. What does the machine say about Krümel now? Then take Luna out. Last, put the
+            cat Tiger in: does the answer stay the same?
       - type: vue-component
         component: BeutelSimulation
         props:
@@ -184,6 +193,7 @@ blocks:
               de: "Das Tierheim weiß, was {tier} wirklich ist: {sorte}.",
               en: "The shelter knows what {tier} really is: {sorte}.",
             }
+          istNeu: { de: "ist gerade das neue Tier", en: "is the new animal right now" }
           zuruecksetzen: { de: Zurück zum Anfang, en: Back to the start }
         nojs:
           de: |
@@ -220,7 +230,7 @@ blocks:
         task:
           text:
             de: "Zwei Karten aus dem Tierheim. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. Wie viele Merkmale sind gleich?"
-            en: "Two cards from the shelter. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. How many features are the same?"
+            en: "Two cards from the shelter. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}. How many features do they have in common?"
         answer:
           value: "4 - (a.ohren - b.ohren) * (a.ohren - b.ohren) - (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) - (a.groesse - b.groesse) * (a.groesse - b.groesse) - (a.pupille - b.pupille) * (a.pupille - b.pupille)"
           compare: { number: { format: integer } }
@@ -228,15 +238,15 @@ blocks:
           - value: "(a.ohren - b.ohren) * (a.ohren - b.ohren) + (a.schnauze - b.schnauze) * (a.schnauze - b.schnauze) + (a.groesse - b.groesse) * (a.groesse - b.groesse) + (a.pupille - b.pupille) * (a.pupille - b.pupille)"
             message:
               de: Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen.
-              en: You counted the features that are different. The question asks for the ones that are the same.
+              en: You counted the features that are different. The question asks for the ones they have in common.
         hint:
           de: "Geh die vier Merkmale der Reihe nach durch: Ohren, Schnauze, Größe, Pupillen. Mach für jedes gleiche Merkmal einen Strich."
           en: "Go through the four features one by one: ears, snout, size, pupils. Make a mark for each feature that is the same."
         steps:
           - de: "Vergleiche Merkmal für Merkmal. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
             en: "Compare feature by feature. {{a.name}}: {{a.merkmale}}. {{b.name}}: {{b.merkmale}}."
-          - de: "Gleich sind {{answer}} von 4 Merkmalen."
-            en: "{{answer}} of the 4 features are the same."
+          - de: "Anzahl der gleichen Merkmale: {{answer}} von 4."
+            en: "Features in common: {{answer}} of 4."
       - type: single-choice
         id: was-sagt-die-maschine
         text:
@@ -248,12 +258,12 @@ blocks:
             info:
               de: "Tiger und Rex haben je 3 Merkmale mit Sammy gleich. Eine Katze und ein Hund sind gleich ähnlich."
               en: "Tiger and Rex each have 3 features in common with Sammy. A cat and a dog are equally similar."
-          - text: { de: Katze, en: cat }
+          - text: { de: Katze, en: Cat }
             correct: false
             info:
               de: "Tiger hat 3 gleiche Merkmale, aber Rex auch. Kein Beispiel ist allein am ähnlichsten."
               en: "Tiger has 3 features in common, but so does Rex. No single example is the most similar."
-          - text: { de: Hund, en: dog }
+          - text: { de: Hund, en: Dog }
             correct: false
             info:
               de: "Rex hat 3 gleiche Merkmale, aber Tiger auch. Dass Sammy ein Hund ist, weiß die Maschine nicht: Sie sieht nur die Merkmale."
@@ -266,15 +276,18 @@ blocks:
         props:
           tiere: { data: tiere }
           task:
-            de: "Das Tierheim testet die Maschine mit drei Tieren. Lege höchstens {max} der anderen Karten in den Beutel, sodass die Maschine alle drei richtig erkennt."
-            en: "The shelter tests the machine with three animals. Put at most {max} of the other cards into the bag so that the machine recognises all three correctly."
+            de: "Das Tierheim testet die Maschine mit drei Testtieren (gestrichelter Rahmen). Sie kommen nicht in den Beutel. Lege höchstens {max} der anderen Karten in den Beutel, sodass die Maschine alle drei richtig erkennt. Tipp: Oben bei „Ausprobieren“ kannst du deinen Beutel vorher testen."
+            en: "The shelter tests the machine with three test animals (dashed frame). They do not go into the bag. Put at most {max} of the other cards into the bag so that the machine recognises all three correctly. Tip: you can test your bag first in “Try it” above."
           katze: { de: Katze, en: cat }
           hund: { de: Hund, en: dog }
           testTitel: { de: Testtiere, en: Test animals }
           kartenTitel: { de: "Karten für den Beutel", en: "Cards for the bag" }
           hinein: { de: In den Beutel, en: Put in bag }
           heraus: { de: Heraus, en: Take out }
-          zaehler: { de: "{n} von {max} Karten im Beutel", en: "{n} of {max} cards in the bag" }
+          zaehler: { de: "Im Beutel ({n} von {max}): {karten}", en: "In the bag ({n} of {max}): {karten}" }
+          voll:
+            { de: "Der Beutel ist voll. Nimm erst eine Karte heraus.", en: "The bag is full. Take a card out first." }
+          keine: { de: noch nichts, en: nothing yet }
           leeren: { de: Beutel leeren, en: Empty the bag }
           leer:
             {
@@ -309,8 +322,8 @@ blocks:
           en: "The bag holds only cats. Even so, the machine can recognise a dog as a dog."
         answer: false
         explanation:
-          de: "Falsch. Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt."
-          en: "False. The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out."
+          de: "Die Maschine gibt immer das Etikett einer Karte aus dem Beutel. Sind dort nur Katzen, sagt sie immer „Katze“. Was in den Beutel kommt, bestimmt, was herauskommt."
+          en: "The machine always gives the label of a card from the bag. If there are only cats in it, it always says “cat”. What goes into the bag decides what comes out."
   - type: section
     id: rueckblick
     title:

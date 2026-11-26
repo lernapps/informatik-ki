@@ -10,7 +10,7 @@ export type Merkmale = Pick<Tier, "ohren" | "schnauze" | "groesse" | "pupille" |
 
 /** The shapes of one drawing, in the coordinates of a 120 × 120 box. */
 export interface Form {
-  /** Scale of the head about the centre (60, 64): 1 for a large animal, 0.72 for a small one. */
+  /** Scale of the head about the centre (60, 64): 1 for a large animal, 0.62 for a small one. */
   skala: number;
   /** The ears: two paths. */
   ohren: string[];
@@ -53,11 +53,11 @@ export function form(tier: Merkmale): Form {
   const kurz = tier.schnauze === 1;
   const schnauze = kurz ? { cx: 60, cy: 80, rx: 13, ry: 9 } : { cx: 60, cy: 88, rx: 15, ry: 20 };
   return {
-    skala: tier.groesse === 1 ? 0.72 : 1,
+    skala: tier.groesse === 1 ? 0.62 : 1,
     ohren: tier.ohren === 1 ? SPITZ : HAENGEND,
     schnauze,
     nase: { cx: 60, cy: kurz ? 76 : 100 },
-    pupille: tier.pupille === 1 ? { rx: 1.6, ry: 6 } : { rx: 3.6, ry: 3.6 },
+    pupille: tier.pupille === 1 ? { rx: 2.2, ry: 9 } : { rx: 5.5, ry: 5.5 },
     iris: tier.pupille === 1 ? "#c9c23a" : "#8a5a2b",
     fell: FELL[tier.fell] ?? "#9a9a9a",
   };

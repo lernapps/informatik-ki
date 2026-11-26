@@ -83,6 +83,13 @@ test("a wrong bag is told which test animal goes wrong and with which card it is
   expect(reason(task, ["Mimi", "Tiger"], props)).toBe("Kein Hund im Beutel, aber Krümel ist einer.");
   expect(reason(task, ["Bruno", "Sammy"], props)).toBe("Keine Katze im Beutel, aber Luna ist eine.");
   expect(reason(task, ["Tiger", "Sammy"], props)).toBeUndefined();
+  // every test animal that goes wrong is named, a missing kind only once
+  expect(reason(task, ["Luna", "Mimi"].filter((n) => n !== "Luna").concat("Tiger"), props)).toBe(
+    "Kein Hund im Beutel, aber Krümel ist einer.",
+  );
+  expect(reason(task, ["Mimi", "Waldi"], props)).toBe(
+    "Krümel wird Katze: am ähnlichsten ist Mimi mit 3 gleichen Merkmalen.",
+  );
   expect(reason(task, [], props)).toBe("Der Beutel ist leer.");
 });
 

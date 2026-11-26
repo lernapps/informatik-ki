@@ -35,6 +35,8 @@ const props = defineProps<{
   antwortLeer: string;
   /** What the shelter knows about the new animal, with {tier} and {sorte}. */
   wahrheit: string;
+  /** Beside the button of the card that is the new animal now, which cannot go into the bag. */
+  istNeu: string;
   /** Back to the start bag. */
   zuruecksetzen: string;
 }>();
@@ -57,12 +59,8 @@ const satz = computed(() => {
 
 function umschalten(tier: Tier): void {
   if (imBeutel.value.includes(tier.name)) imBeutel.value = imBeutel.value.filter((n) => n !== tier.name);
-  else {
-    imBeutel.value = [...imBeutel.value, tier.name];
-    // the new animal cannot be an example in the bag at the same time: choose the first card outside the bag
-    if (tier.name === neuName.value)
-      neuName.value = props.tiere.find((t) => !imBeutel.value.includes(t.name))?.name ?? "";
-  }
+  // the new animal has no button: it cannot be an example in the bag at the same time
+  else if (tier.name !== neuName.value) imBeutel.value = [...imBeutel.value, tier.name];
 }
 
 function zurueck(): void {
@@ -81,7 +79,8 @@ function zurueck(): void {
           <span class="beutel-sim-name">{{ tier.name }} · {{ sorte(tier) }}</span>
           <span class="beutel-sim-merkmale">{{ tier.merkmale }}</span>
         </span>
-        <button type="button" :aria-pressed="imBeutel.includes(tier.name)" @click="umschalten(tier)">
+        <span v-if="tier.name === neuName" class="beutel-sim-istneu">{{ istNeu }}</span>
+        <button v-else type="button" :aria-pressed="imBeutel.includes(tier.name)" @click="umschalten(tier)">
           {{ imBeutel.includes(tier.name) ? heraus : hinein }}<span class="sr-name"> {{ tier.name }}</span>
         </button>
       </li>
@@ -149,7 +148,7 @@ function zurueck(): void {
 
 .beutel-sim-karten li {
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
+  grid-template-columns: 6rem 1fr;
   grid-template-areas: "bild text" "knopf knopf";
   gap: 0.25rem 0.75rem;
   align-items: start;
@@ -241,6 +240,12 @@ button[aria-pressed="true"] {
   display: flex;
   flex-direction: column;
   grid-area: text;
+}
+
+.beutel-sim-istneu {
+  grid-area: knopf;
+  color: var(--page-muted);
+  font-style: italic;
 }
 
 li > button {

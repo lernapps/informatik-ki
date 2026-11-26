@@ -139,30 +139,49 @@ export function mistakes(task: Task, _props?: Props): (Answer | undefined)[] {
 
 const sorteName = (props: Props, sorte: string) => (sorte === "katze" ? props.katze : props.hund);
 
-/** The app's message for a wrong bag: what is missing, or the first test animal it labels wrong and why. */
+/** The message for one test animal the bag labels wrong, or undefined when it labels it right. */
+function fehler(tier: Tier, bag: readonly Tier[], props: Props): string | undefined {
+  const v = vergleiche(bag, tier);
+  if (v.antwort === sorteVon(tier)) return undefined;
+  if (!bag.some((t) => sorteVon(t) === sorteVon(tier)))
+    return fuelle(sorteVon(tier) === "katze" ? props.keineKatze : props.keinHund, { tier: tier.name });
+  if (v.antwort === WEISS_NICHT) {
+    const katzeKarte = v.naechste.find((t) => sorteVon(t) === "katze")?.name ?? "";
+    const hundKarte = v.naechste.find((t) => sorteVon(t) === "hund")?.name ?? "";
+    return fuelle(props.gleichstand, { tier: tier.name, katzeKarte, hundKarte, n: v.bestes });
+  }
+  return fuelle(props.verwechselt, {
+    tier: tier.name,
+    falsch: sorteName(props, v.antwort),
+    karte: v.naechste[0]?.name ?? "",
+    n: v.bestes,
+  });
+}
+
+/**
+ * The app's message for a wrong bag: that it is empty or too full, else every test animal it labels wrong, each with
+ * the card it is mixed up with, so that the learner can fix the bag without guessing. A missing kind is named once.
+ */
 export function reason(task: Task, answer: Answer, props: Props, _lang?: string): string | undefined {
   const bag = beutel(task, answer);
   if (bag === undefined) return undefined;
   if (bag.length === 0) return props.leer;
   if (bag.length > MAX) return fuelle(props.zuViele, { max: MAX });
-  for (const tier of task.testtiere) {
-    const v = vergleiche(bag, tier);
-    if (v.antwort === sorteVon(tier)) continue;
-    if (!bag.some((t) => sorteVon(t) === sorteVon(tier)))
-      return fuelle(sorteVon(tier) === "katze" ? props.keineKatze : props.keinHund, { tier: tier.name });
-    if (v.antwort === WEISS_NICHT) {
-      const katzeKarte = v.naechste.find((t) => sorteVon(t) === "katze")?.name ?? "";
-      const hundKarte = v.naechste.find((t) => sorteVon(t) === "hund")?.name ?? "";
-      return fuelle(props.gleichstand, { tier: tier.name, katzeKarte, hundKarte, n: v.bestes });
-    }
-    return fuelle(props.verwechselt, {
-      tier: tier.name,
-      falsch: sorteName(props, v.antwort),
-      karte: v.naechste[0]?.name ?? "",
-      n: v.bestes,
-    });
-  }
-  return undefined;
+  const meldungen = [...new Set(task.testtiere.map((tier) => fehler(tier, bag, props)))].filter(
+    (m): m is string => m !== undefined,
+  );
+  // a missing kind is said once, for its first test animal
+  const ohne = (text: string) => text.split("{tier}")[0] ?? text;
+  const gesehen = new Set<string>();
+  const eindeutig = meldungen.filter((m) => {
+    for (const art of [props.keineKatze, props.keinHund])
+      if (m.startsWith(ohne(art))) {
+        if (gesehen.has(art)) return false;
+        gesehen.add(art);
+      }
+    return true;
+  });
+  return eindeutig.length === 0 ? undefined : eindeutig.join(" ");
 }
 
 /** The test animals as text: name, label and features. */

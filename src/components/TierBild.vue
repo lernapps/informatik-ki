@@ -27,10 +27,10 @@ const f = computed(() => form(props));
       <path v-for="(d, i) in f.ohren" :key="i" :d="d" :fill="f.fell" />
       <ellipse cx="60" cy="62" rx="32" ry="30" :fill="f.fell" />
       <ellipse v-bind="f.schnauze" fill="#f6eee4" />
-      <circle cx="47" cy="56" r="7" :fill="f.iris" />
-      <circle cx="73" cy="56" r="7" :fill="f.iris" />
-      <ellipse cx="47" cy="56" v-bind="f.pupille" fill="#111" stroke="none" />
-      <ellipse cx="73" cy="56" v-bind="f.pupille" fill="#111" stroke="none" />
+      <circle cx="46" cy="55" r="10" :fill="f.iris" />
+      <circle cx="74" cy="55" r="10" :fill="f.iris" />
+      <ellipse cx="46" cy="55" v-bind="f.pupille" fill="#111" stroke="none" />
+      <ellipse cx="74" cy="55" v-bind="f.pupille" fill="#111" stroke="none" />
       <ellipse :cx="f.nase.cx" :cy="f.nase.cy" rx="5" ry="3.5" fill="#333" stroke="none" />
     </g>
   </svg>

@@ -22,8 +22,12 @@ const props = defineProps<{
   /** The buttons that put a card in and take it out. */
   hinein: string;
   heraus: string;
-  /** How full the bag is, with {n} and {max}. */
+  /** How full the bag is and what is in it, with {n}, {max} and {karten}. */
   zaehler: string;
+  /** The text for {karten} while the bag is empty. */
+  keine: string;
+  /** Said when the bag is full and the other buttons are off. */
+  voll: string;
   /** Empties the bag. */
   leeren: string;
   /** The messages of BeutelAufgabe.ts, for "Prüfen". */
@@ -43,15 +47,16 @@ const emit = defineEmits<{ answer: [string[] | undefined] }>();
 const aufgabe = computed(() => generate(props.seed, props));
 const sorte = (t: Tier) => (sorteVon(t) === "katze" ? props.katze : props.hund);
 const imBeutel = ref<string[]>([]);
-const voll = computed(() => imBeutel.value.length >= MAX);
+const istVoll = computed(() => imBeutel.value.length >= MAX);
 
+// an empty bag is an answer too: "Prüfen" then says that the bag is empty
 function senden(): void {
-  emit("answer", imBeutel.value.length === 0 ? undefined : [...imBeutel.value]);
+  emit("answer", [...imBeutel.value]);
 }
 
 function umschalten(tier: Tier): void {
   if (imBeutel.value.includes(tier.name)) imBeutel.value = imBeutel.value.filter((n) => n !== tier.name);
-  else if (!voll.value) imBeutel.value = [...imBeutel.value, tier.name];
+  else if (!istVoll.value) imBeutel.value = [...imBeutel.value, tier.name];
   senden();
 }
 
@@ -89,14 +94,17 @@ function leerenKlick(): void {
         <button
           type="button"
           :aria-pressed="imBeutel.includes(tier.name)"
-          :disabled="voll && !imBeutel.includes(tier.name)"
+          :disabled="istVoll && !imBeutel.includes(tier.name)"
           @click="umschalten(tier)"
         >
           {{ imBeutel.includes(tier.name) ? heraus : hinein }}<span class="sr-name"> {{ tier.name }}</span>
         </button>
       </li>
     </ul>
-    <p aria-live="polite">{{ fuelle(zaehler, { n: imBeutel.length, max: MAX }) }}</p>
+    <p aria-live="polite">
+      {{ fuelle(zaehler, { n: imBeutel.length, max: MAX, karten: imBeutel.length ? imBeutel.join(", ") : keine }) }}
+      <span v-if="istVoll"><br />{{ voll }}</span>
+    </p>
     <p>
       <button type="button" @click="leerenKlick">{{ leeren }}</button>
     </p>
@@ -116,7 +124,7 @@ function leerenKlick(): void {
 .beutel-aufgabe-tests li,
 .beutel-aufgabe-karten li {
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
+  grid-template-columns: 6rem 1fr;
   grid-template-areas: "bild text" "knopf knopf";
   gap: 0.25rem 0.75rem;
   align-items: start;
