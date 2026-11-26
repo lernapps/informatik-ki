@@ -6,3 +6,15 @@ summary:
   de: Du findest KI in deinem Alltag, suchst selbst eine Regel in Tierkarten und füllst den Trainingsbeutel einer Maschine.
   en: You find AI in your everyday life, look for a rule in animal cards yourself and fill a machine's training bag.
 pages: [das-brauchst-du, ki-im-alltag, regeln-aus-beispielen, maschine-trainieren]
+selfAssessment:
+  pages:
+    - exercises:
+        - /lernen/ki-im-alltag/#was-die-ki-tut
+        - /lernen/ki-im-alltag/#wo-steckt-ki
+    - exercises:
+        - /lernen/regeln-aus-beispielen/#was-jonas-regel-sagt
+        - /lernen/regeln-aus-beispielen/#schritte-lernen
+    - exercises:
+        - /lernen/maschine-trainieren/#gleiche-merkmale-zaehlen
+        - /lernen/maschine-trainieren/#gleiche-merkmale-zaehlen
+        - /lernen/maschine-trainieren/#was-sagt-die-maschine

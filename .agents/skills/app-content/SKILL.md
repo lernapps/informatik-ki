@@ -190,7 +190,10 @@ der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch durc
    - `BeutelSimulation` mit `start` (ein absichtlich einseitiger Beutel) und `neu`.
    - Der Fall läuft als Nachrichtenverlauf eines Schulprojekts, ohne gezeichnete Kinder.
    - Die Jugendlichen suchen den Fehler in den Daten, nicht im Programm.
-6. `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
+6. 1 bis 3 ihrer Übungen in `selfAssessment` des Kapitels aufnehmen, wie Skill `lernapps-explainer-self-assessment`
+   sagt. Nur Übungen, die ohne Seite verständlich sind (nicht `wie-viele-mit-ki`, `was-alle-katzen-haben` und
+   `BeutelAufgabe`: sie verweisen auf Bilder oder „oben“).
+7. `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
 
 ## Rules learned from mistakes
 
