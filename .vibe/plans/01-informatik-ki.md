@@ -311,7 +311,7 @@ page, which a link. -->
       change: change the pattern first.
       Creator: Ja, die anderen Seiten folgen diesem Muster. Die Rückmeldung mit jedem verwechselten Testtier ist genau richtig.
 - [x] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
-- [ ] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
+- [x] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
 - [ ] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
 - [ ] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
 <!-- tasks: pages (4 added): the other pages or screens, after the pattern -->

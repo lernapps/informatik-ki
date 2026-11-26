@@ -1,0 +1,216 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: KI im Alltag
+  en: AI in everyday life
+description:
+  de: "Künstliche Intelligenz im Alltag erkennen: Sprachassistent, Bilderkennung, Empfehlungen und Übersetzer."
+  en: "Spotting artificial intelligence in everyday life: voice assistants, image recognition, recommendations and translators."
+competencies: [ki-im-alltag]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Mias Wandzeitung
+      en: Mia's wall poster
+    blocks:
+      - type: labelled-figure
+        image: images/wandzeitung.svg
+        source: { de: eigene Zeichnung, en: own drawing }
+        licence: CC-BY-4.0
+        alt:
+          de: Mia steht links neben einer Pinnwand mit sechs Bildern, A bis F.
+          en: Mia stands on the left next to a pinboard with six pictures, A to F.
+        caption:
+          de: Mias Wandzeitung „KI bei uns“. Steckt in allem davon KI?
+          en: Mia's wall poster “AI around us”. Is there AI in all of these?
+        labels:
+          - { x: 27, y: 18, marker: A, text: { de: Sprachassistent, en: voice assistant } }
+          - {
+              x: 52,
+              y: 18,
+              marker: B,
+              text: { de: Foto-App sortiert Fotos nach Tieren, en: photo app sorts photos by animal },
+            }
+          - { x: 77, y: 18, marker: C, text: { de: Video-App schlägt Videos vor, en: video app suggests videos } }
+          - { x: 27, y: 58, marker: D, text: { de: Übersetzer-App, en: translator app } }
+          - { x: 52, y: 58, marker: E, text: { de: Taschenrechner, en: calculator } }
+          - { x: 77, y: 58, marker: F, text: { de: Wecker, en: alarm clock } }
+      - type: text
+        text:
+          de: |
+            Das Tierheim will eine Maschine, die Bilder von Hunden und Katzen sortiert. Dafür braucht es **künstliche
+            Intelligenz**, kurz KI. Mia will zuerst wissen, wo KI schon in ihrem Alltag steckt. Sie sammelt Dinge für eine
+            Wandzeitung.
+
+            Auf dieser Seite lernst du, KI in deinem Alltag zu erkennen.
+          en: |
+            The animal shelter wants a machine that sorts pictures of dogs and cats. For this it needs **artificial
+            intelligence**, or AI for short. First, Mia wants to know where AI is already part of her everyday life. She
+            collects things for a wall poster.
+
+            On this page you learn to spot AI in your everyday life.
+      - type: single-choice
+        id: lautsprecher
+        text:
+          de: "Mia fragt den Sprachassistenten (A): „Wie wird das Wetter morgen?“ Er antwortet. Was muss er dafür können?"
+          en: "Mia asks the voice assistant (A): “What will the weather be like tomorrow?” It answers. What must it be able to do?"
+        options:
+          - text: { de: gesprochene Wörter erkennen, en: recognise spoken words }
+            correct: true
+            info:
+              de: Er muss aus dem Klang von Mias Stimme die Wörter heraushören. Das ist Spracherkennung.
+              en: It has to pick out the words from the sound of Mia's voice. This is speech recognition.
+          - text: { de: Zahlen zusammenrechnen, en: add up numbers }
+            correct: false
+            info:
+              de: Rechnen allein hilft nicht. Erst muss er verstehen, was Mia gesagt hat.
+              en: Adding up alone does not help. First it has to understand what Mia said.
+          - text: { de: zu einer festen Uhrzeit klingeln, en: ring at a set time }
+            correct: false
+            info:
+              de: Das kann ein Wecker. Mias Frage kommt aber nicht zu einer festen Zeit.
+              en: An alarm clock can do that. But Mia's question does not come at a set time.
+        explanation:
+          de: Gesprochene Wörter erkennen ist eine typische Aufgabe für KI.
+          en: Recognising spoken words is a typical job for AI.
+  - type: section
+    id: idee
+    title:
+      de: Woran du KI erkennst
+      en: How to spot AI
+    blocks:
+      - type: text
+        text:
+          de: |
+            KI-Anwendungen **erkennen** etwas, zum Beispiel gesprochene Wörter oder Tiere auf Fotos. Oder sie **schlagen
+            etwas vor**, zum Beispiel Videos, die dir gefallen könnten. Oder sie **übersetzen** in eine andere Sprache.
+            Das konnten früher nur Menschen.
+
+            Ein Taschenrechner oder ein Wecker macht immer dasselbe nach festen Regeln: 3 + 4 ergibt immer 7, der
+            Wecker klingelt um 7 Uhr. Dafür braucht es keine KI.
+          en: |
+            AI apps **recognise** something, such as spoken words or animals in photos. Or they **suggest** something,
+            such as videos you might like. Or they **translate** into another language. Only people used to be able to
+            do this.
+
+            A calculator or an alarm clock always does the same thing by fixed rules: 3 + 4 always makes 7, the alarm
+            rings at 7 o'clock. No AI is needed for that.
+      - type: definition
+        term: { de: künstliche Intelligenz (KI), en: artificial intelligence (AI) }
+        explanation:
+          de: Computerprogramme, die Aufgaben lösen, für die Menschen Intelligenz brauchen, zum Beispiel Sprache verstehen, Bilder erkennen oder Vorschläge machen.
+          en: Computer programs that do tasks people need intelligence for, such as understanding speech, recognising pictures or making suggestions.
+      - type: table
+        caption:
+          de: KI auf Mias Wandzeitung
+          en: AI on Mia's wall poster
+        header:
+          - { de: Anwendung, en: App }
+          - { de: Was die KI tut, en: What the AI does }
+        rowHeaders: true
+        rows:
+          - - { de: Sprachassistent, en: voice assistant }
+            - { de: erkennt gesprochene Wörter, en: recognises spoken words }
+          - - { de: Foto-App, en: photo app }
+            - { de: erkennt Tiere auf Fotos, en: recognises animals in photos }
+          - - { de: Video-App, en: video app }
+            - { de: "schlägt Videos vor, die dir gefallen könnten", en: "suggests videos you might like" }
+          - - { de: Übersetzer-App, en: translator app }
+            - { de: übersetzt Sätze in eine andere Sprache, en: translates sentences into another language }
+      - type: note
+        title: { de: Merke, en: Remember }
+        blocks:
+          - type: text
+            text:
+              de: KI steckt oft unsichtbar in einer App auf dem Handy oder Tablet. Ein Roboter muss dafür nicht da sein.
+              en: AI is often hidden inside an app on a phone or tablet. There does not have to be a robot.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: matching
+        id: was-die-ki-tut
+        text:
+          de: Was tut die KI in diesen Anwendungen? Ordne zu.
+          en: What does the AI do in these apps? Match them up.
+        pairs:
+          - left: { de: Sprachassistent, en: voice assistant }
+            right: { de: erkennt gesprochene Fragen, en: recognises spoken questions }
+          - left: { de: Foto-App, en: photo app }
+            right: { de: erkennt Tiere auf Bildern, en: recognises animals in pictures }
+          - left: { de: Musik-App, en: music app }
+            right: { de: schlägt Lieder vor, en: suggests songs }
+          - left: { de: Übersetzer-App, en: translator app }
+            right: { de: überträgt Text in eine andere Sprache, en: puts text into another language }
+        distractors:
+          - { de: rechnet 3 + 4 nach festen Regeln, en: works out 3 + 4 by fixed rules }
+        explanation:
+          de: "Jede dieser Anwendungen erkennt etwas oder macht einen Vorschlag. Rechnen nach festen Regeln braucht keine KI."
+          en: "Each of these apps recognises something or makes a suggestion. Working out sums by fixed rules does not need AI."
+      - type: multiple-choice
+        id: wo-steckt-ki
+        text:
+          de: Wo steckt KI? Wähle alle passenden aus.
+          en: Where is there AI? Choose all that fit.
+        options:
+          - text: { de: Ein Handy erkennt beim Entsperren das Gesicht., en: A phone recognises a face when it unlocks. }
+            correct: true
+            info:
+              de: Das Handy erkennt ein Gesicht auf dem Kamerabild. Das ist Bilderkennung.
+              en: The phone recognises a face in the camera picture. That is image recognition.
+          - text: { de: Eine Musik-App schlägt neue Lieder vor., en: A music app suggests new songs. }
+            correct: true
+            info:
+              de: Die App macht Vorschläge, die zu dir passen sollen. Das ist eine Empfehlung durch KI.
+              en: The app makes suggestions that should suit you. That is a recommendation by AI.
+          - text: { de: Ein Wecker klingelt jeden Tag um 7 Uhr., en: An alarm clock rings at 7 o'clock every day. }
+            correct: false
+            info:
+              de: Der Wecker folgt einer festen Regel. Er erkennt nichts und schlägt nichts vor.
+              en: The alarm clock follows a fixed rule. It recognises nothing and suggests nothing.
+          - text: { de: Ein Taschenrechner rechnet 12 · 3., en: A calculator works out 12 × 3. }
+            correct: false
+            info:
+              de: Der Taschenrechner rechnet nach festen Regeln. 12 · 3 ergibt immer 36.
+              en: The calculator works by fixed rules. 12 × 3 always makes 36.
+        explanation:
+          de: "KI erkennt etwas oder schlägt etwas vor. Geräte mit festen Regeln tun immer dasselbe."
+          en: "AI recognises something or suggests something. Devices with fixed rules always do the same thing."
+      - type: true-false
+        id: ki-nur-roboter
+        text:
+          de: KI gibt es nur in Robotern.
+          en: AI is only found in robots.
+        answer: false
+        explanation:
+          de: KI steckt oft in Apps, zum Beispiel im Sprachassistenten oder in der Foto-App. Ein Roboter ist dafür nicht nötig.
+          en: AI is often inside apps, for example in a voice assistant or a photo app. A robot is not needed for it.
+      - type: number
+        id: wie-viele-mit-ki
+        text:
+          de: Auf Mias Wandzeitung sind sechs Dinge, A bis F. In wie vielen davon steckt KI?
+          en: There are six things on Mia's wall poster, A to F. How many of them use AI?
+        answer: 4
+        tolerance: 0
+        mistakes:
+          - answer: 6
+            message:
+              de: Taschenrechner und Wecker arbeiten nach festen Regeln. Sie erkennen nichts und schlagen nichts vor.
+              en: The calculator and the alarm clock work by fixed rules. They recognise nothing and suggest nothing.
+          - answer: 5
+            message:
+              de: Schau noch einmal auf E und F. Erkennt eines davon etwas oder schlägt etwas vor?
+              en: Look again at E and F. Does either of them recognise or suggest anything?
+          - answer: 3
+            message:
+              de: "Schau noch einmal auf A bis D: Jedes davon erkennt etwas, schlägt etwas vor oder übersetzt."
+              en: "Look again at A to D: each of them recognises, suggests or translates something."
+        explanation:
+          de: "In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. E und F arbeiten nach festen Regeln."
+          en: "A, B, C and D use AI: they recognise, suggest or translate. E and F work by fixed rules."
+      - type: text
+        text:
+          de: Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus, mit Tierkarten und dem Trainingsbeutel.
+          en: How does an AI learn to recognise animals in photos? You try it yourself on the next page, with animal cards and the training bag.
