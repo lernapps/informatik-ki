@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { plan-file: 2 }
+failedChecks: { checks-pass: 1, plan-file: 2 }
 ---
 
 # Plan: informatik-ki, first version
@@ -313,7 +313,7 @@ page, which a link. -->
 - [x] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
 - [x] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
 - [x] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
-- [ ] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
+- [x] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
 <!-- tasks: pages (4 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.

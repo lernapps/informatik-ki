@@ -38,15 +38,15 @@ blocks:
       - type: text
         text:
           de: |
-            Das Tierheim will eine Maschine, die Bilder von Hunden und Katzen sortiert. Dafür braucht es **künstliche
-            Intelligenz**, kurz KI. Mia will zuerst wissen, wo KI schon in ihrem Alltag steckt. Sie sammelt Dinge für eine
-            Wandzeitung.
+            Jona, Selin und Mia sind 11 und gehen in die Klasse 6b. Ihre Klasse hilft dem Tierheim: Es will eine
+            Maschine, die Bilder von Hunden und Katzen sortiert. Dafür braucht es **künstliche Intelligenz**, kurz KI.
+            Mia will zuerst wissen, wo KI schon in ihrem Alltag steckt. Sie sammelt Dinge für eine Wandzeitung.
 
             Auf dieser Seite lernst du, KI in deinem Alltag zu erkennen.
           en: |
-            The animal shelter wants a machine that sorts pictures of dogs and cats. For this it needs **artificial
-            intelligence**, or AI for short. First, Mia wants to know where AI is already part of her everyday life. She
-            collects things for a wall poster.
+            Jona, Selin and Mia are 11 and in class 6b. Their class is helping the animal shelter: it wants a machine
+            that sorts pictures of dogs and cats. For this it needs **artificial intelligence**, or AI for short. First,
+            Mia wants to know where AI is already part of her everyday life. She collects things for a wall poster.
 
             On this page you learn to spot AI in your everyday life.
       - type: single-choice
@@ -86,7 +86,7 @@ blocks:
             etwas vor**, zum Beispiel Videos, die dir gefallen könnten. Oder sie **übersetzen** in eine andere Sprache.
             Das konnten früher nur Menschen.
 
-            Beim Taschenrechner und beim Wecker hat ein Mensch jede Regel genau aufgeschrieben: 3 + 4 ergibt 7, der
+            Taschenrechner und Wecker hat ein Mensch **programmiert**: Er hat jede Regel als Befehl aufgeschrieben. 3 + 4 ergibt 7, der
             Wecker klingelt um 7 Uhr. Dafür braucht es keine KI. KI-Anwendungen haben ihr Können dagegen meist aus
             vielen Beispielen gelernt.
           en: |
@@ -94,14 +94,14 @@ blocks:
             such as videos you might like. Or they **translate** into another language. Only people used to be able to
             do this.
 
-            For a calculator and an alarm clock, a person wrote down every rule exactly: 3 + 4 makes 7, the alarm rings
+            A person **programmed** the calculator and the alarm clock: they wrote down every rule as an instruction. 3 + 4 makes 7, the alarm rings
             at 7 o'clock. No AI is needed for that. AI apps, on the other hand, mostly learned what they can do from many
             examples.
       - type: definition
         term: { de: künstliche Intelligenz (KI), en: artificial intelligence (AI) }
         explanation:
-          de: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel aufgeschrieben hat.
-          en: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone writing down every rule.
+          de: Computerprogramme, die etwas erkennen, vorschlagen oder übersetzen. Ihr Können haben sie meist aus vielen Beispielen gelernt, statt dass jemand jede Regel programmiert hat.
+          en: Computer programs that recognise, suggest or translate things. They mostly learned this from many examples, instead of someone programming every rule.
       - type: table
         caption:
           de: KI auf Mias Wandzeitung
@@ -145,12 +145,15 @@ blocks:
           - left: { de: Musik-App, en: music app }
             right: { de: schlägt Lieder vor, en: suggests songs }
           - left: { de: Übersetzer-App, en: translator app }
-            right: { de: überträgt Text in eine andere Sprache, en: puts text into another language }
+            right: { de: überträgt Text in eine andere Sprache, en: translates text into another language }
         distractors:
-          - { de: rechnet 3 + 4 nach aufgeschriebenen Regeln, en: works out 3 + 4 by written-down rules }
+          - { de: rechnet 3 + 4 nach programmierten Regeln, en: adds 3 + 4 by programmed rules }
+        hint:
+          de: "Frag bei jeder Anwendung: Was erkennt sie, was schlägt sie vor, was übersetzt sie?"
+          en: "For each app, ask: what does it recognise, suggest or translate?"
         explanation:
-          de: "Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach aufgeschriebenen Regeln braucht keine KI."
-          en: "Each of these apps recognises something, makes a suggestion or translates. Working out sums by written-down rules does not need AI."
+          de: "Jede dieser Anwendungen erkennt etwas, macht einen Vorschlag oder übersetzt. Rechnen nach programmierten Regeln braucht keine KI."
+          en: "Each of these apps recognises something, makes a suggestion or translates. Adding up by programmed rules does not need AI."
       - type: multiple-choice
         id: wo-steckt-ki
         text:
@@ -170,22 +173,25 @@ blocks:
           - text: { de: Ein Wecker klingelt jeden Tag um 7 Uhr., en: An alarm clock rings at 7 o'clock every day. }
             correct: false
             info:
-              de: Beim Wecker hat ein Mensch die Regel aufgeschrieben. Er erkennt nichts und schlägt nichts vor.
-              en: For the alarm clock a person wrote down the rule. It recognises nothing and suggests nothing.
+              de: Den Wecker hat ein Mensch programmiert. Er erkennt nichts und schlägt nichts vor.
+              en: A person programmed the alarm clock. It recognises nothing and suggests nothing.
           - text: { de: Ein Taschenrechner rechnet 12 · 3., en: A calculator works out 12 × 3. }
             correct: false
             info:
-              de: Der Taschenrechner rechnet nach Regeln, die ein Mensch aufgeschrieben hat. 12 · 3 ergibt 36.
-              en: The calculator works by rules a person wrote down. 12 × 3 makes 36.
+              de: Der Taschenrechner rechnet nach Regeln, die ein Mensch programmiert hat. 12 · 3 ergibt 36.
+              en: The calculator works by rules a person programmed. 12 × 3 makes 36.
         explanation:
-          de: "KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel aufgeschrieben hat, brauchen keine KI."
-          en: "AI recognises something or suggests something. Devices where someone wrote down every rule do not need AI."
+          de: "KI erkennt etwas oder schlägt etwas vor. Geräte, bei denen jemand jede Regel programmiert hat, brauchen keine KI."
+          en: "AI recognises something or suggests something. Devices where someone programmed every rule do not need AI."
       - type: true-false
         id: ki-nur-roboter
         text:
           de: KI gibt es nur in Robotern.
           en: AI is only found in robots.
         answer: false
+        hint:
+          de: "Denk an den Sprachassistenten und die Foto-App: Sind das Roboter?"
+          en: "Think of the voice assistant and the photo app: are they robots?"
         explanation:
           de: KI steckt oft in Apps, zum Beispiel im Sprachassistenten oder in der Foto-App. Ein Roboter ist dafür nicht nötig.
           en: AI is often inside apps, for example in a voice assistant or a photo app. A robot is not needed for it.
@@ -199,8 +205,8 @@ blocks:
         mistakes:
           - answer: 6
             message:
-              de: Bei Taschenrechner und Wecker hat ein Mensch jede Regel aufgeschrieben. Sie erkennen nichts und schlagen nichts vor.
-              en: For the calculator and the alarm clock a person wrote down every rule. They recognise nothing and suggest nothing.
+              de: Bei Taschenrechner und Wecker hat ein Mensch jede Regel programmiert. Sie erkennen nichts und schlagen nichts vor.
+              en: For the calculator and the alarm clock a person programmed every rule. They recognise nothing and suggest nothing.
           - answer: 5
             message:
               de: Schau noch einmal auf E und F. Erkennt eines davon etwas oder schlägt etwas vor?
@@ -210,9 +216,9 @@ blocks:
               de: "Schau noch einmal auf A bis D: Jedes davon erkennt etwas, schlägt etwas vor oder übersetzt."
               en: "Look again at A to D: each of them recognises, suggests or translates something."
         explanation:
-          de: "In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel aufgeschrieben."
-          en: "A, B, C and D use AI: they recognise, suggest or translate. For E and F a person wrote down every rule."
+          de: "In A, B, C und D steckt KI: Sie erkennen, schlagen vor oder übersetzen. Bei E und F hat ein Mensch jede Regel programmiert."
+          en: "A, B, C and D use AI: they recognise, suggest or translate. For E and F a person programmed every rule."
       - type: text
         text:
-          de: Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus, mit Tierkarten und dem Trainingsbeutel.
-          en: How does an AI learn to recognise animals in photos? You try it yourself on the next page, with animal cards and the training bag.
+          de: "Wie lernt eine KI, Tiere auf Fotos zu erkennen? Das probierst du auf der nächsten Seite selbst aus: mit Tierkarten in einem Stoffbeutel, dem Trainingsbeutel."
+          en: "How does an AI learn to recognise animals in photos? You try it yourself on the next page: with animal cards in a cloth bag, the training bag."
