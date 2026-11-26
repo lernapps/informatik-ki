@@ -52,7 +52,7 @@ Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat jetzt e
 
 **Mia:** Der Helfer hat Fotos von der Katzenstation und aus der Hundeschule genommen. Hier ist der Beutel.
 
-Finde heraus, woher die Fehler kommen und was hilft.
+Woher kommen die Fehler?
 
 Interaktiv: Die sechs Karten im Beutel des Tierheims: - Luna, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Mimi, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen - Flocke, Katze: hängende Ohren, kurze Schnauze, klein, schmale Pupillen - Minka, Katze: spitze Ohren, lange Schnauze, klein, schmale Pupillen - Bruno, Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen - Rex, Hund: spitze Ohren, lange Schnauze, groß, runde Pupillen
 
@@ -72,25 +72,24 @@ Interaktiv: Mit JavaScript kannst du hier den Beutel des Tierheims ändern und n
 
 ### Verzerrung: Der Fehler steckt in den Daten
 
-Das Programm zählt richtig. Der Beutel zeigt die Welt aber einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
+Das Programm zählt richtig, aber der Beutel ist einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
 Schnauze werden zu Katzen.
 
-Mit Otto im Beutel wird aus „Katze“ bei Krümel „Ich weiß es nicht“: Die Maschine irrt nicht mehr, sie ist
-unsicher. Richtig erkennt sie Krümel erst mit einem kleinen Hund mit spitzen Ohren als Beispiel. So eine Karte fehlt dem Tierheim noch.
+Mit Otto im Beutel ist die Maschine bei Krümel nur noch unsicher. Richtig erkennt sie Krümel erst, wenn ein Hund im Beutel liegt, der genauso aussieht: klein, spitze Ohren, kurze Schnauze. So eine Karte fehlt dem Tierheim noch.
 
 - **Verzerrung (Bias)**: Die Trainingsdaten zeigen die Welt einseitig. Das System übernimmt ein Muster, das nur in den Daten gilt.
 
 **Merke: Merke**
 
-Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen?
+Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen, welche sind einseitig ausgewählt?
 
 ### Auch bei echten Systemen
 
-Joy Buolamwini und Timnit Gebru untersuchten 2018 drei Programme, die aus einem Foto das Geschlecht eines
-Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche Programme prüft,
-bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Die Fehlerquote bei der Bestimmung des
-Geschlechts lag bei Frauen mit dunkler Haut bei bis zu 34,7 % (etwa jedes dritte Foto), bei Männern mit
-heller Haut bei höchstens 0,8 %. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
+Joy Buolamwini und Timnit Gebru untersuchten 2018 drei kommerzielle Programme, die aus einem Foto das
+Geschlecht eines Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche
+Programme prüft, bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Sie prüften deshalb mit einer eigenen, ausgewogenen Sammlung. Die Fehlerquote lag
+bei Frauen mit dunkler Haut bei bis zu 34,7 % (beim schlechtesten Programm etwa jedes dritte Foto), bei
+Männern mit heller Haut bei höchstens 0,8 %. Ihre Trainingsdaten nennt die Studie nicht. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
 
 ### Übung
 
@@ -104,7 +103,7 @@ heller Haut bei höchstens 0,8 %. ([Gender Shades, 2018, englisch](https://proce
 
 ### Rückblick
 
-Die Auswahl der Trainingsdaten bestimmt, was ein lernendes System kann. Fehlen Beispiele, irrt es immer wieder auf dieselbe Weise. **Was in den
+Sind die Beispiele einseitig ausgewählt, irrt ein lernendes System immer wieder auf dieselbe Weise. **Was in den
 Beutel kommt, bestimmt, was herauskommt.**
 
 ### Aufgabe kruemel-luna
@@ -128,7 +127,7 @@ Beutel kommt, bestimmt, was herauskommt.**
   - ✗ die Schnauze – Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde.
 - Lösung: die Größe; die Pupillen
 - Erklärung: Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.
-- Tipp der App: Geh die Merkmale einzeln durch: Haben alle Katzen denselben Wert und alle Hunde den anderen?
+- Tipp der App: Haben alle Katzen denselben Wert und alle Hunde den anderen?
 - Link: [../?via=tutor#was-trennt-im-beutel](../?via=tutor#was-trennt-im-beutel)
 
 ### Aufgabe warum-katze
@@ -136,10 +135,10 @@ Beutel kommt, bestimmt, was herauskommt.**
 - Aufgabe: Welche dieser beiden Trennungen gilt nur in diesem Beutel, aber nicht bei echten Hunden und Katzen?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Katzen sind klein, Hunde groß. – Es gibt viele kleine Hunde. Hier sind sie nur zufällig alle groß.
-  - ✗ Katzen haben schmale Pupillen, Hunde runde. – Nein: Das gilt bei allen zwölf Karten.
+  - ✓ Katzen sind klein, Hunde groß. – Es gibt viele kleine Hunde. Hier sind alle groß, weil die Fotos aus der Hundeschule stammen.
+  - ✗ Katzen haben schmale Pupillen, Hunde runde. – Nein: Das gilt bei allen zwölf Karten, und Hauskatzen haben wirklich Schlitzpupillen.
 - Lösung: Katzen sind klein, Hunde groß.
-- Erklärung: Die Größe trennt die Sorten nur durch Zufall. Die Maschine zählt sie trotzdem mit.
+- Erklärung: Die Größe trennt die Sorten nur in diesem Beutel. Die Maschine zählt sie trotzdem mit.
 - Tipp der App: Denk an Hunde, die du kennst. Sind alle groß?
 - Link: [../?via=tutor#warum-katze](../?via=tutor#warum-katze)
 
@@ -148,7 +147,7 @@ Beutel kommt, bestimmt, was herauskommt.**
 - Aufgabe: Legt man einfach mehr Karten in den Beutel, verschwindet die Verzerrung.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Mehr Karten derselben Art machen das Muster nur stärker.
+- Erklärung: Mehr Karten derselben Art ändern nichts: Das Muster bleibt.
 - Tipp der App: Was ändert sich, wenn du zehn weitere kleine Katzen in den Beutel legst?
 - Link: [../?via=tutor#mehr-karten](../?via=tutor#mehr-karten)
 
@@ -156,9 +155,9 @@ Beutel kommt, bestimmt, was herauskommt.**
 
 - Aufgabe: Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Eine Foto-App erkennt Hunde im Schnee schlecht. – Bilder aus der kalten Jahreszeit; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Sprechern unter zwölf Jahren; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Bilder außerhalb der Blütezeit; Die Maschine des Tierheims hält kleine Hunde für Katzen. – Hunde in Katzengröße
+- Lösung: Eine Foto-App erkennt Hunde im Schnee schlecht. – Bilder aus der kalten Jahreszeit; Ein Sprachassistent versteht Kinder schlecht. – Aufnahmen von Sprechern unter zwölf Jahren; Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht. – Bilder außerhalb der Blütezeit; Die Maschine des Tierheims hält kleine Hunde mit kurzer Schnauze für Katzen. – Hunde in Katzengröße
 - Erklärung: In jedem Fall fehlt eine Art von Beispielen.
-- Tipp der App: Frag bei jedem Fall, welche Situation das System nie als Beispiel gesehen hat.
+- Tipp der App: Was hat das System nie gesehen?
 - Link: [../?via=tutor#was-fehlt](../?via=tutor#was-fehlt)
 
 ### Aufgabe datenfehler-finden
@@ -167,12 +166,12 @@ Beutel kommt, bestimmt, was herauskommt.**
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
 - Lösung: 1. Falsch erkannte Tiere sammeln, 2. Gemeinsamkeiten der Fehler suchen, 3. In den Trainingsdaten nach Lücken suchen, 4. Beispiele ergänzen und neu testen
 - Erklärung: Erst das Muster der Fehler zeigt, welche Beispiele fehlen.
-- Tipp der App: Erst brauchst du die Fehler, dann ihr Muster, dann den Blick in die Daten.
+- Tipp der App: Erst die Fehler, dann ihr Muster, dann die Daten.
 - Link: [../?via=tutor#datenfehler-finden](../?via=tutor#datenfehler-finden)
 
 ### Aufgabe was-ergaenzen
 
-- Aufgabe: Welche Karten brechen im Beutel das Muster „klein ist Katze, groß ist Hund“?
+- Aufgabe: Welche Karten würden das Muster „klein ist Katze, groß ist Hund“ brechen, wenn sie in den Beutel kämen?
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Waldi, ein kleiner Hund – Ein kleiner Hund.
@@ -180,6 +179,6 @@ Beutel kommt, bestimmt, was herauskommt.**
   - ✗ Bella, ein großer Hund – Nein: Bella ist groß und ein Hund, sie passt ins Muster.
   - ✗ Sammy, ein großer Hund – Nein: Auch Sammy ist groß und ein Hund.
 - Lösung: Waldi, ein kleiner Hund; Tiger, eine große Katze
-- Erklärung: Solche Karten nehmen der Größe ihre Rolle.
+- Erklärung: Mit solchen Karten entscheidet die Größe nicht mehr allein.
 - Tipp der App: Gesucht sind Tiere, deren Größe nicht zu ihrem Etikett im Muster passt.
 - Link: [../?via=tutor#was-ergaenzen](../?via=tutor#was-ergaenzen)

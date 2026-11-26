@@ -50,9 +50,9 @@ example cards with labels that the machine learns from.
 
 **Jona:** Is the program broken? It's the same as our bag program from Year 7.
 
-**Mia:** The volunteer used photos from the cattery and from a dog training class. Here is the bag.
+**Mia:** The volunteer used photos from the shelter's cat section and from a dog training class. Here is the bag.
 
-Find out where the mistakes come from and what helps.
+Where do the mistakes come from?
 
 Interactive: The six cards in the shelter's bag: - Luna, cat: pointed ears, short snout, small, narrow pupils - Mimi, cat: pointed ears, short snout, small, narrow pupils - Flocke, cat: floppy ears, short snout, small, narrow pupils - Minka, cat: pointed ears, long snout, small, narrow pupils - Bruno, dog: floppy ears, long snout, big, round pupils - Rex, dog: pointed ears, long snout, big, round pupils
 
@@ -71,26 +71,25 @@ Interactive: With JavaScript you can change the shelter's bag here and test new 
 
 ### Bias: the fault is in the data
 
-The program counts correctly. But the bag shows the world in a one-sided way: cats only small, dogs only
+The program counts correctly, but the bag is one-sided: cats only small, dogs only
 big. The machine takes on this pattern and makes **the same mistake again and again**: small dogs with a
 short snout become cats.
 
-With Otto in the bag, Krümel goes from “cat” to “I don't know”: the machine is no longer wrong, just unsure.
-It only gets Krümel right with a small dog with pointed ears as an example. The shelter has no such card yet.
+With Otto in the bag, the machine is only unsure about Krümel.
+It only gets Krümel right if the bag holds a dog that looks just like Krümel: small, pointed ears, short snout. The shelter has no such card yet.
 
 - **bias**: The training data shows the world in a one-sided, skewed way. The system takes on a pattern that only holds in the data.
 
 **Remember: Remember**
 
-If a learning system keeps making the same mistake, look at the training data first. Which examples are missing?
+If a learning system keeps making the same mistake, look at the training data first. Which examples are missing, and which were chosen one-sidedly?
 
 ### In real systems too
 
-In 2018, Joy Buolamwini and Timnit Gebru studied three programs that work out a person's gender from a
-photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of the
-people had lighter skin. The error rate in working out the gender was up to 34.7% for women with darker
-skin (about one photo in three), and at most 0.8% for men with lighter skin.
-([Gender Shades, 2018](https://proceedings.mlr.press/v81/buolamwini18a.html))
+In 2018, Joy Buolamwini and Timnit Gebru studied three commercial programs that work out a person's gender
+from a photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of
+the people had lighter skin. So they tested with their own balanced collection. The error rate was up to 34.7% for women with darker skin (about one photo in three for the
+worst program), and at most 0.8% for men with lighter skin. The study does not name their training data. ([Gender Shades, 2018](https://proceedings.mlr.press/v81/buolamwini18a.html))
 
 ### Practice
 
@@ -104,7 +103,7 @@ skin (about one photo in three), and at most 0.8% for men with lighter skin.
 
 ### Looking back
 
-The choice of training data decides what a learning system can do. If examples are missing, it keeps getting things wrong in the same way.
+If the examples are chosen one-sidedly, a learning system keeps getting things wrong in the same way.
 **What goes into the bag decides what comes out.**
 
 ### Exercise kruemel-luna
@@ -128,7 +127,7 @@ The choice of training data decides what a learning system can do. If examples a
   - ✗ the snout – No: Minka is a cat with a long snout, like the dogs.
 - Solution: the size; the pupils
 - Explanation: Krümel and Otto match the dogs in their pupils and the cats in their size.
-- The app's hint: Go through the features one by one: do all the cats have the same value and all the dogs the other one?
+- The app's hint: Do all the cats have one value and all the dogs the other?
 - Link: [../?via=tutor#was-trennt-im-beutel](../?via=tutor#was-trennt-im-beutel)
 
 ### Exercise warum-katze
@@ -136,10 +135,10 @@ The choice of training data decides what a learning system can do. If examples a
 - Task: Which of these two separations only holds in this bag, but not for real dogs and cats?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ Cats are small, dogs are big. – There are lots of small dogs. Here they just happen to be big.
-  - ✗ Cats have narrow pupils, dogs round ones. – No: this holds for all twelve cards.
+  - ✓ Cats are small, dogs are big. – There are lots of small dogs. Here all the dogs are big because of where the photos came from.
+  - ✗ Cats have narrow pupils, dogs round ones. – No: this holds for all twelve cards, and house cats really do have slit pupils.
 - Solution: Cats are small, dogs are big.
-- Explanation: Size only separates the kinds by chance. The machine still counts it.
+- Explanation: Size only separates the kinds in this bag. The machine still counts it.
 - The app's hint: Think of dogs you know. Are they all big?
 - Link: [../?via=tutor#warum-katze](../?via=tutor#warum-katze)
 
@@ -148,7 +147,7 @@ The choice of training data decides what a learning system can do. If examples a
 - Task: If you simply put more cards into the bag, the bias goes away.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: More cards of the same kind only make the pattern stronger.
+- Explanation: More cards of the same kind change nothing: the pattern stays.
 - The app's hint: What changes if you put ten more small cats into the bag?
 - Link: [../?via=tutor#mehr-karten](../?via=tutor#mehr-karten)
 
@@ -156,23 +155,23 @@ The choice of training data decides what a learning system can do. If examples a
 
 - Task: These cases are made up. Which examples are missing from the training data?
 - Answer format: match each item on the left with one on the right
-- Solution: A photo app is bad at recognising dogs in snow. – pictures from the cold season; A voice assistant is bad at understanding children. – recordings of speakers under twelve; A plant app does not recognise plants without flowers. – pictures outside the flowering season; The shelter's machine thinks small dogs are cats. – dogs the size of cats
+- Solution: A photo app is bad at recognising dogs in snow. – pictures from the cold season; A voice assistant is bad at understanding children. – recordings of speakers under twelve; A plant app does not recognise plants without flowers. – pictures outside the flowering season; The shelter's machine thinks small dogs with a short snout are cats. – dogs the size of cats
 - Explanation: In each case one kind of example is missing.
-- The app's hint: For each case, ask which situation the system never saw as an example.
+- The app's hint: What did the system never see?
 - Link: [../?via=tutor#was-fehlt](../?via=tutor#was-fehlt)
 
 ### Exercise datenfehler-finden
 
 - Task: In which order do you find and fix a fault in the training data?
 - Answer format: put the items in the right order (the app shows them shuffled)
-- Solution: 1. Collect the animals that were recognised wrongly, 2. Look for what the mistakes have in common, 3. Search the training data for gaps, 4. Add examples and test again
+- Solution: 1. Collect the animals that were wrongly identified, 2. Look for what the mistakes have in common, 3. Search the training data for gaps, 4. Add examples and test again
 - Explanation: Only the pattern of the mistakes shows which examples are missing.
-- The app's hint: First you need the mistakes, then their pattern, then a look at the data.
+- The app's hint: First the mistakes, then their pattern, then the data.
 - Link: [../?via=tutor#datenfehler-finden](../?via=tutor#datenfehler-finden)
 
 ### Exercise was-ergaenzen
 
-- Task: Which cards break the pattern “small means cat, big means dog” in the bag?
+- Task: Which cards would break the pattern “small means cat, big means dog” if they went into the bag?
 - Answer format: choose all right answers
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ Waldi, a small dog – A small dog.
@@ -180,6 +179,6 @@ The choice of training data decides what a learning system can do. If examples a
   - ✗ Bella, a big dog – No: Bella is big and a dog, so she fits the pattern.
   - ✗ Sammy, a big dog – No: Sammy is big and a dog too.
 - Solution: Waldi, a small dog; Tiger, a big cat
-- Explanation: Cards like these take away the role of size.
+- Explanation: Cards like these stop size from deciding.
 - The app's hint: You are looking for animals whose size does not match their label in the pattern.
 - Link: [../?via=tutor#was-ergaenzen](../?via=tutor#was-ergaenzen)
