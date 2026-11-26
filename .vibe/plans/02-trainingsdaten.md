@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -155,7 +155,7 @@ Seite `schief/verzerrte-daten`, Abschnitte wie im Leitfaden:
       Creator: Ja, die nächsten Schritte folgen so: Fachprüfer, Selbsteinschätzung, Inhaltsleitfaden, dann Veröffentlichen. 360 px bitte im selben PR angehen, Kapitel 1 bei 360 px mitprüfen. Tabelle so lassen.
 - [x] Update the content guide so that it describes the app as it is now (`app-content-matches`).
 - [x] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every changed screen, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Look at every changed screen, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
 
 ## Commit
 
@@ -166,7 +166,7 @@ Seite `schief/verzerrte-daten`, Abschnitte wie im Leitfaden:
 
 ### Tasks
 
-- [ ] If pages or exercises changed, load skill `lernapps-explainer-self-assessment` and update the self-assessment
+- [x] If pages or exercises changed, load skill `lernapps-explainer-self-assessment` and update the self-assessment
       as it says. Commit.
 - [ ] Load skill `lernapps-github`. Push the branch, open the preview pull request and see its checks to green, as it
       says.
