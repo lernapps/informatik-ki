@@ -1,10 +1,17 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
-languages: [de]
-chapters: [thema]
+strand: informatik/daten
+title:
+  de: Wie Maschinen aus Daten lernen
+  en: How machines learn from data
+intro:
+  de: >-
+    Das Tierheim bekommt jeden Tag Bilder von Fundtieren. Jona, Selin und Mia aus der Klasse 6b wollen eine Maschine
+    bauen, die sagt: Hund oder Katze? Du findest künstliche Intelligenz in deinem Alltag, sortierst Tierkarten nach
+    einer Regel und trainierst die Maschine mit dem Trainingsbeutel.
+  en: >-
+    Every day the animal shelter gets pictures of animals that were found. Jona, Selin and Mia from class 6b want to
+    build a machine that says: dog or cat? You find artificial intelligence in your everyday life, sort animal cards
+    with a rule and train the machine with the training bag.
+languages: [de, en]
+chapters: [lernen]

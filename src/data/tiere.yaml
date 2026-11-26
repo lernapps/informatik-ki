@@ -1,0 +1,149 @@
+# Die Tierkarten des Trainingsbeutels: erfundene, gezeichnete Tiere aus dem Tierheim. Jede Karte gibt es nur hier.
+# Merkmale mit je zwei Werten, 1 ist der Wert, den auf unseren Karten die meisten Katzen haben:
+#   ohren 1 spitz, 0 hängend; schnauze 1 kurz, 0 lang; groesse 1 klein, 0 groß; pupille 1 schmal, 0 rund.
+# katze: das Etikett der Karte, 1 Katze, 0 Hund. merkmale: die vier Merkmale als Text, in derselben Reihenfolge; sie
+# müssen zu den Zahlen passen. fell: Nummer der Fellfarbe in FELL von TierBild.ts. Namen bleiben in jeder Sprache gleich.
+- name:
+    de: Luna
+    en: Luna
+  katze: 1
+  ohren: 1
+  schnauze: 1
+  groesse: 1
+  pupille: 1
+  merkmale:
+    de: "spitze Ohren, kurze Schnauze, klein, schmale Pupillen"
+    en: "pointed ears, short snout, small, narrow pupils"
+  fell: 0
+- name:
+    de: Mimi
+    en: Mimi
+  katze: 1
+  ohren: 1
+  schnauze: 1
+  groesse: 1
+  pupille: 1
+  merkmale:
+    de: "spitze Ohren, kurze Schnauze, klein, schmale Pupillen"
+    en: "pointed ears, short snout, small, narrow pupils"
+  fell: 1
+- name:
+    de: Tiger
+    en: Tiger
+  katze: 1
+  ohren: 1
+  schnauze: 1
+  groesse: 0
+  pupille: 1
+  merkmale:
+    de: "spitze Ohren, kurze Schnauze, groß, schmale Pupillen"
+    en: "pointed ears, short snout, big, narrow pupils"
+  fell: 2
+- name:
+    de: Flocke
+    en: Flocke
+  katze: 1
+  ohren: 0
+  schnauze: 1
+  groesse: 1
+  pupille: 1
+  merkmale:
+    de: "hängende Ohren, kurze Schnauze, klein, schmale Pupillen"
+    en: "floppy ears, short snout, small, narrow pupils"
+  fell: 3
+- name:
+    de: Minka
+    en: Minka
+  katze: 1
+  ohren: 1
+  schnauze: 0
+  groesse: 1
+  pupille: 1
+  merkmale:
+    de: "spitze Ohren, lange Schnauze, klein, schmale Pupillen"
+    en: "pointed ears, long snout, small, narrow pupils"
+  fell: 4
+- name:
+    de: Bruno
+    en: Bruno
+  katze: 0
+  ohren: 0
+  schnauze: 0
+  groesse: 0
+  pupille: 0
+  merkmale:
+    de: "hängende Ohren, lange Schnauze, groß, runde Pupillen"
+    en: "floppy ears, long snout, big, round pupils"
+  fell: 5
+- name:
+    de: Rex
+    en: Rex
+  katze: 0
+  ohren: 1
+  schnauze: 0
+  groesse: 0
+  pupille: 0
+  merkmale:
+    de: "spitze Ohren, lange Schnauze, groß, runde Pupillen"
+    en: "pointed ears, long snout, big, round pupils"
+  fell: 6
+- name:
+    de: Krümel
+    en: Krümel
+  katze: 0
+  ohren: 1
+  schnauze: 1
+  groesse: 1
+  pupille: 0
+  merkmale:
+    de: "spitze Ohren, kurze Schnauze, klein, runde Pupillen"
+    en: "pointed ears, short snout, small, round pupils"
+  fell: 7
+- name:
+    de: Waldi
+    en: Waldi
+  katze: 0
+  ohren: 0
+  schnauze: 0
+  groesse: 1
+  pupille: 0
+  merkmale:
+    de: "hängende Ohren, lange Schnauze, klein, runde Pupillen"
+    en: "floppy ears, long snout, small, round pupils"
+  fell: 8
+- name:
+    de: Otto
+    en: Otto
+  katze: 0
+  ohren: 0
+  schnauze: 1
+  groesse: 1
+  pupille: 0
+  merkmale:
+    de: "hängende Ohren, kurze Schnauze, klein, runde Pupillen"
+    en: "floppy ears, short snout, small, round pupils"
+  fell: 9
+- name:
+    de: Bella
+    en: Bella
+  katze: 0
+  ohren: 0
+  schnauze: 1
+  groesse: 0
+  pupille: 0
+  merkmale:
+    de: "hängende Ohren, kurze Schnauze, groß, runde Pupillen"
+    en: "floppy ears, short snout, big, round pupils"
+  fell: 10
+- name:
+    de: Sammy
+    en: Sammy
+  katze: 0
+  ohren: 1
+  schnauze: 1
+  groesse: 0
+  pupille: 0
+  merkmale:
+    de: "spitze Ohren, kurze Schnauze, groß, runde Pupillen"
+    en: "pointed ears, short snout, big, round pupils"
+  fell: 11

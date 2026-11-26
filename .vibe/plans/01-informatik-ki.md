@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { plan-file: 1 }
+failedChecks: { plan-file: 2 }
 ---
 
 # Plan: informatik-ki, first version
@@ -41,7 +41,8 @@ lernendes System seine Regeln aus Beispieldaten bildet, statt dass jemand jede R
   (NRW: „Entscheidungsbaum enaktiv“).
 - Sprachen `[de, en]`: Deutsch ist die Ausgangssprache in einfacher Sprache mit „du“. Englisch ist vollständig, in
   Plain English mit „you“.
-- Gerüst: `init` lehnt die Sicherheitsprüfung des Auto-Modus ab. Plan und Skills sind deshalb von Hand kopiert, wie
+- Kein `scope`: keine `open-task` und kein Material eines Erstellers; laut structure.md optional.
+- Gerüst: `init` lehnte die Sicherheitsprüfung des Auto-Modus ab. Plan und Skills sind deshalb von Hand kopiert, wie
   der Weg ohne `npx` in llms.txt es beschreibt. Gemeldet an den Orchestrator.
 
 ## Notes
@@ -293,26 +294,26 @@ page, which a link. -->
 
 - [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype <archetype>`.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-<archetype>`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-<archetype>`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
 - [ ] Musterseite `lernen/maschine-trainieren` mit `tiere.yaml`, `Beutel.ts`, `Tierkarten`, `BeutelSimulation`,
       `BeutelAufgabe` und Tests, de und en; Entwurfs-PR `work` → `main` für die Vorschau.
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
 - [ ] Seite `lernen/regeln-aus-beispielen` (Kartenspiel, Anleitung, Trainingsbeutel-Bild), de und en.
 - [ ] Seite `lernen/ki-im-alltag` mit `wandzeitung.svg`, de und en.
 - [ ] Sammel-Wiederholung `lernen/das-brauchst-du`, de und en.
 - [ ] Zwei Prüfer als Subagenten (Lernende 5-6 in beiden Sprachen; Fachprüfer Informatik/ML), Funde einarbeiten.
+<!-- tasks: pages (4 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
