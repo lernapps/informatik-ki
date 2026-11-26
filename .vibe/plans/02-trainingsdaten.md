@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: code
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -81,8 +81,9 @@ Fehlern eines lernenden Systems führen, und suchen den Fehler in den Daten, nic
 - [x] Write under "Notes" the didactic approach per competency and the scope (in, out, data range).
 - [x] The increment needs a kind of content the guide does not cover (a new page structure, screen, component or kind
       of exercise): load skills `lernapps-explainer-design` and `lernapps-exercise-patterns`. Else skip this task.
-- [ ] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
+- [x] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
       scope, every "(guess)", the sources and what is unchecked. Stop and wait. Changes: change them, then ask again.
+      Creator: Ja, so bauen. increment/9-10 passt. Gender Shades: Zahlen genau wie im Abstract, mit Jahr und Link, neutral formuliert. Den Schluss ziehen die Jugendlichen selbst. Im Browser prüfen, dass eine Änderung des Beutels die alte Rückmeldung entfernt.
 
 ### Answers
 
@@ -99,16 +100,17 @@ Fehlern eines lernenden Systems führen, und suchen den Fehler in den Daten, nic
 
 ### Tasks
 
-- [ ] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
+- [x] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
       order, one call each: `npx --no -- lernapps plan add --at slices "<task>"`. Say in each which sub-agent may
       write it in parallel, if any.
-- [ ] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
+- [x] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
       `lernapps-explainer-design` says, and say why the guide's patterns do not fit.
-- [ ] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
+- [x] (skipped: keine neue Komponente: BeutelSimulation mit Prop start; Skizze in .vibe/sketches/seiten.md (Kapitel 2)) Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
+- [x] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
       what is new. At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Ja, so bauen. increment/9-10 passt. Gender Shades: Zahlen genau wie im Abstract, mit Jahr und Link, neutral formuliert. Den Schluss ziehen die Jugendlichen selbst. Im Browser prüfen, dass eine Änderung des Beutels die alte Rückmeldung entfernt.
 
 ### Content method
 
@@ -135,17 +137,18 @@ Seite `schief/verzerrte-daten`, Abschnitte wie im Leitfaden:
 
 ### Tasks
 
-- [ ] `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
-- [ ] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
+- [x] `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
+- [x] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
       findings before any content. The update replaces the `lernapps-*` skills: read again those you use.
-- [ ] Load skill `lernapps-explainer` and the content guide.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer` and the content guide.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: slices: one per competency, as written in Plan -->
+- [ ] Kapitel schief, Seite schief/verzerrte-daten (trainingsdaten), de und en, mit BeutelSimulation (start), Chat, Gender-Shades-Absatz, 5 Übungen; ein Slice, kein Sub-Agent.
+<!-- tasks: slices (1 added): one per competency, as written in Plan -->
 - [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
       finds, then ask the creator whether the others may follow it, and wait.
