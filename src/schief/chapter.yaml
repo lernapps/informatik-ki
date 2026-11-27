@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Wenn die Daten schief sind
+  en: When the data is skewed (bias)
+summary:
+  de: Die Maschine des Tierheims macht immer wieder denselben Fehler. Du suchst den Fehler in den Trainingsdaten, nicht im Programm.
+  en: The shelter's machine keeps making the same mistake. You look for the fault in the training data, not in the program.
+pages: [verzerrte-daten]
+selfAssessment:
+  pages:
+    - exercises:
+        - /schief/verzerrte-daten/#was-fehlt
+        - /schief/verzerrte-daten/#datenfehler-finden
+        - /schief/verzerrte-daten/#was-ergaenzen

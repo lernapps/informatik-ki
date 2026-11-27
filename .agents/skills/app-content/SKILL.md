@@ -6,8 +6,8 @@ description: Use for any content work in this app - researching, writing, extend
 # Content guide of this app
 
 Explainer „Wie Maschinen aus Daten lernen“ (lernapps/apps#493, Epic Informatik #509), Strang `informatik/daten`,
-Format 2, Sprachen `[de, en]`. Welle 1 ist Kapitel `lernen` (Klasse 5-6). Kapitel 2 (9-10, `schief/`) kommt später
-auf dem Branch `increment/9-10`.
+Format 2, Sprachen `[de, en]`. Kapitel `lernen` (Klasse 5-6, Welle 1) und Kapitel `schief` (Klasse 9-10, Welle 3,
+Branch `increment/9-10`).
 
 ## Curriculum
 
@@ -42,8 +42,21 @@ Kapitel `lernen` „KI im Alltag: Lernen aus Beispielen“ (5-6), in dieser Reih
 4. `lernen/maschine-trainieren` (`maschinelles-lernen`, Simulation): „Ich kann an einem Beispiel erklären, dass ein
    KI-System aus Beispieldaten Muster lernt, statt dass jemand jede Regel programmiert.“
 
-Kapitel 2 (geplant): `schief/verzerrte-daten` (`trainingsdaten`): „Ich kann an einem Beispiel zeigen, wie die Auswahl
-der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch durch Verzerrungen.“
+Kapitel `schief` „Wenn die Daten schief sind“ (9-10), eine Seite `schief/verzerrte-daten` (`trainingsdaten`): „Ich kann
+an einem Beispiel zeigen, wie die Auswahl der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch
+durch Verzerrungen.“ Keine Wiederholungsseite: `maschinelles-lernen` übt Kapitel 1.
+
+- Übungen: `kruemel-luna` (number), `was-trennt-im-beutel` (multiple-choice), `warum-katze` (single-choice),
+  `mehr-karten` (true-false), `was-fehlt` (matching), `datenfehler-finden` (ordering), `was-ergaenzen`
+  (multiple-choice). Selbsteinschätzung: `was-fehlt`, `datenfehler-finden`, `was-ergaenzen`.
+- Fall (Klasse 9b, alle 14, kein Bild, Chat als Text mit Zeilen „**Selin:** …“): Die Tierheim-Maschine hält Krümel
+  und Otto für Katzen. Ihr Beutel: Luna, Mimi, Flocke, Minka (kleine Katzen), Bruno, Rex (große Hunde). Durchgerechnet:
+  Krümel und Otto werden „Katze“; mit Otto im Beutel wird Krümel „Ich weiß es nicht“. Solange Luna und Mimi im Beutel
+  bleiben, bringt keine Karte Krümel zu „Hund“; dafür fehlt ein Hund, der genauso aussieht wie Krümel (1110). Die
+  Seite sagt das ehrlich.
+- Die Jugendlichen ziehen den Schluss selbst: erst testen, dann „Welche Merkmale trennen im Beutel?“ (Größe,
+  Pupillen), dann „Welche Trennung gilt nur in diesem Beutel?“ (Größe). Erst danach Erklärung und Definition.
+- Echte Folgen in einem neutralen Absatz ohne Bild (Gender Shades); die Bewertung für die Gesellschaft steht in #505.
 
 Übungen je Seite (Ids):
 
@@ -176,6 +189,10 @@ der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch durc
   e1500391, doi:10.1126/sciadv.1500391. Volltext über Europe PMC gelesen: „vertical-slit pupil of the domestic cat“.
   Runde Hundepupillen sind dort nicht ausdrücklich belegt; die Texte sagen deshalb „auf unseren Karten“.
 - AI Unplugged (Lindner, Seegerer, FAU), Lizenz CC BY-NC 3.0, nur als Anregung. Nichts übernommen.
+- Kapitel 2: J. Buolamwini, T. Gebru, „Gender Shades“, PMLR 81:77-91, 2018,
+  https://proceedings.mlr.press/v81/buolamwini18a.html (Abstract gelesen). Zahlen genau wie im Abstract: 79,6 % und
+  86,2 % hellhäutig in den Prüfsammlungen IJB-A und Adience; Fehlerquote bis 34,7 % (Frauen, dunkle Haut), höchstens
+  0,8 % (Männer, helle Haut).
 
 ## Adding a chapter or round
 
@@ -186,16 +203,21 @@ der Trainingsdaten die Ergebnisse eines lernenden Systems beeinflusst, auch durc
    Map `{ de, en }`.
 4. Neue Tierkarten nur in `src/data/tiere.yaml`. Zahlen und Text `merkmale` müssen übereinstimmen.
    `BeutelAufgabe.test.ts` hat eine Kopie der 12 Karten, die mitgeändert werden muss.
-5. Kapitel 2 (9-10):
-   - `BeutelSimulation` mit `start` (ein absichtlich einseitiger Beutel) und `neu`.
-   - Der Fall läuft als Nachrichtenverlauf eines Schulprojekts, ohne gezeichnete Kinder.
-   - Die Jugendlichen suchen den Fehler in den Daten, nicht im Programm.
+5. Ab Klasse 7: kein gezeichnetes Kind; ein Fall als Chat (Textblock). `BeutelSimulation` mit `start` und `neu`
+   für einen festen Startbeutel. Jede Aussage über das Ergebnis eines Beutels vorher durchrechnen (alle Beutel, wenn
+   die Seite „geht nicht“ oder „hilft“ behauptet).
 6. 1 bis 3 ihrer Übungen in `selfAssessment` des Kapitels aufnehmen, wie Skill `lernapps-explainer-self-assessment`
    sagt. Nur Übungen, die ohne Seite verständlich sind (nicht `wie-viele-mit-ki`, `was-alle-katzen-haben` und
    `BeutelAufgabe`: sie verweisen auf Bilder oder „oben“).
 7. `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
 
 ## Rules learned from mistakes
+
+- Keine Wirkung eines Beutels behaupten, die die Simulation nicht zeigt (Kapitel 2: „weniger einseitig“ mit Tiger
+  passte nicht). Fragen nach dem Muster, nicht nach Ergebnissen einzelner Tiere.
+- Eine Einstiegsfrage verrät den Schluss nicht; die Frage nach dem Zufall kommt nach dem Ausprobieren.
+- Die Antwortzeile der `BeutelSimulation` klebt unten am Bildschirm (sticky), damit Klick und Wirkung bei 360 px
+  zusammen sichtbar sind.
 
 - Kein Artikel vor einem eingesetzten Etikett. Der erste Entwurf ergab „ist eine Hund“.
 - Ein Begriff wird vor seiner ersten Verwendung erklärt (Merkmal und Etikett standen erst nach der Spielanleitung).

@@ -49,9 +49,9 @@ const sorte = (t: Tier) => (sorteVon(t) === "katze" ? props.katze : props.hund);
 const imBeutel = ref<string[]>([]);
 const istVoll = computed(() => imBeutel.value.length >= MAX);
 
-// an empty bag is an answer too: "Prüfen" then says that the bag is empty
+// an empty bag is no answer yet: "Prüfen" then says so in the words of unanswered (BeutelAufgabe.ts)
 function senden(): void {
-  emit("answer", [...imBeutel.value]);
+  emit("answer", imBeutel.value.length === 0 ? undefined : [...imBeutel.value]);
 }
 
 function umschalten(tier: Tier): void {

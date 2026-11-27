@@ -195,6 +195,11 @@ export function reason(task: Task, answer: Answer, props: Props, _lang?: string)
   return eindeutig.length === 0 ? undefined : eindeutig.join(" ");
 }
 
+/** What "Prüfen" says while the bag is empty: the app's message for it. */
+export function unanswered(props: Props, _lang?: string): string {
+  return props.leer;
+}
+
 /** The test animals as text: name, label and features. */
 const testText = (task: Task, props: Props) =>
   task.testtiere.map((t) => `${t.name} (${sorteName(props, sorteVon(t))}: ${t.merkmale})`).join("; ");

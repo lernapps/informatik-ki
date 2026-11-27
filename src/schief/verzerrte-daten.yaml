@@ -1,0 +1,373 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Verzerrte Trainingsdaten
+  en: Skewed training data
+description:
+  de: "Einseitige Trainingsdaten führen zu immer gleichen Fehlern: den Fehler in den Daten finden."
+  en: "One-sided training data leads to the same mistakes again and again: finding the fault in the data."
+competencies: [trainingsdaten]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: "Im Chat der 9b: Die Maschine irrt"
+      en: "In the class chat: the machine gets it wrong"
+    blocks:
+      - type: text
+        text:
+          de: |
+            Jona, Selin und Mia sind jetzt 14 und in der Klasse 9b. Das Tierheim hat jetzt eine Maschine nach dem Verfahren „nächster Nachbar“. Ein Helfer hat ihren Trainingsbeutel gefüllt, also die
+            **Trainingsdaten**: Beispielkarten mit Etikett, aus denen die Maschine lernt.
+
+            **Selin:** Das Tierheim schreibt uns: Die Maschine hält Krümel für eine Katze. Otto auch!
+
+            **Jona:** Ist das Programm kaputt? Es ist dasselbe wie unser Beutel-Programm aus der 6. Klasse.
+
+            **Mia:** Der Helfer hat Fotos von der Katzenstation und aus der Hundeschule genommen. Hier ist der Beutel.
+
+            Woher kommen die Fehler?
+          en: |
+            Jona, Selin and Mia are now 14 and in Year 10. The shelter now has a “nearest neighbour” machine. A volunteer filled its training bag, in other words its **training data**:
+            example cards with labels that the machine learns from.
+
+            **Selin:** The shelter has messaged us: the machine thinks Krümel is a cat. Otto too!
+
+            **Jona:** Is the program broken? It's the same as our bag program from Year 7.
+
+            **Mia:** The volunteer used photos from the shelter's cat section and from a dog training class. Here is the bag.
+
+            Where do the mistakes come from?
+      - type: vue-component
+        component: Tierkarten
+        props:
+          tiere: { data: tiere }
+          nummern: [1, 2, 4, 5, 6, 7]
+          etikett: true
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+        nojs:
+          de: |
+            Die sechs Karten im Beutel des Tierheims:
+
+            - Luna, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen
+            - Mimi, Katze: spitze Ohren, kurze Schnauze, klein, schmale Pupillen
+            - Flocke, Katze: hängende Ohren, kurze Schnauze, klein, schmale Pupillen
+            - Minka, Katze: spitze Ohren, lange Schnauze, klein, schmale Pupillen
+            - Bruno, Hund: hängende Ohren, lange Schnauze, groß, runde Pupillen
+            - Rex, Hund: spitze Ohren, lange Schnauze, groß, runde Pupillen
+          en: |
+            The six cards in the shelter's bag:
+
+            - Luna, cat: pointed ears, short snout, small, narrow pupils
+            - Mimi, cat: pointed ears, short snout, small, narrow pupils
+            - Flocke, cat: floppy ears, short snout, small, narrow pupils
+            - Minka, cat: pointed ears, long snout, small, narrow pupils
+            - Bruno, dog: floppy ears, long snout, big, round pupils
+            - Rex, dog: pointed ears, long snout, big, round pupils
+      - type: number
+        id: kruemel-luna
+        text:
+          de: "Krümel ist ein Hund: spitze Ohren, kurze Schnauze, klein, runde Pupillen. Wie viele Merkmale hat Krümel mit Luna gemeinsam?"
+          en: "Krümel is a dog: pointed ears, short snout, small, round pupils. How many features does Krümel have in common with Luna?"
+        answer: 3
+        tolerance: 0
+        mistakes:
+          - answer: 1
+            message:
+              de: Du hast die Merkmale gezählt, die verschieden sind. Gesucht sind die gleichen.
+              en: You counted the features that are different. The question asks for the ones in common.
+        explanation:
+          de: "Ohren, Schnauze und Größe sind gleich, nur die Pupillen nicht: 3 von 4."
+          en: "Ears, snout and size are the same, only the pupils are not: 3 of 4."
+  - type: section
+    id: ausprobieren
+    title:
+      de: "Ausprobieren: Krümel und Otto testen"
+      en: "Try it: testing Krümel and Otto"
+    blocks:
+      - type: text
+        text:
+          de: |
+            Wähle bei **Neues Tier** erst Krümel, dann Otto, und lies die Tabelle:
+            Welche Karte ist am ähnlichsten? Lege dann mit **In den
+            Beutel** Otto dazu und teste Krümel noch einmal.
+          en: |
+            At **New animal**, choose Krümel first, then Otto, and read the table: which card is most similar? Then use **Put in bag** to add Otto and test
+            Krümel again.
+      - type: vue-component
+        component: BeutelSimulation
+        props:
+          tiere: { data: tiere }
+          start:
+            - { de: Luna, en: Luna }
+            - { de: Mimi, en: Mimi }
+            - { de: Flocke, en: Flocke }
+            - { de: Minka, en: Minka }
+            - { de: Bruno, en: Bruno }
+            - { de: Rex, en: Rex }
+          neu: { de: Krümel, en: Krümel }
+          katze: { de: Katze, en: cat }
+          hund: { de: Hund, en: dog }
+          kartenTitel: { de: "Alle Tierkarten mit Etikett", en: "All animal cards with their labels" }
+          beutelTitel: { de: "Im Trainingsbeutel des Tierheims", en: "In the shelter's training bag" }
+          hinein: { de: In den Beutel, en: Put in bag }
+          heraus: { de: Heraus, en: Take out }
+          leer: { de: Der Beutel ist leer., en: The bag is empty. }
+          neuTitel: { de: "Neues Tier:", en: "New animal:" }
+          spalten:
+            - { de: Karte im Beutel, en: Card in the bag }
+            - { de: Etikett, en: Label }
+            - { de: gleiche Merkmale, en: features in common }
+          naechste: { de: ähnlichstes Beispiel, en: most similar example }
+          antwort: { de: "Die Maschine sagt über {tier}: {antwort}.", en: "The machine says about {tier}: {antwort}." }
+          weissNicht:
+            de: "Die Maschine sagt: Ich weiß es nicht. Die ähnlichste Katze und der ähnlichste Hund sind {tier} gleich ähnlich."
+            en: "The machine says: I don't know. The most similar cat and the most similar dog are equally similar to {tier}."
+          antwortLeer:
+            de: "Die Maschine sagt nichts: Ohne Beispiele im Beutel kann sie nichts vergleichen."
+            en: "The machine says nothing: with no examples in the bag it cannot compare anything."
+          wahrheit:
+            {
+              de: "Das Tierheim weiß, was {tier} wirklich ist: {sorte}.",
+              en: "The shelter knows what {tier} really is: {sorte}.",
+            }
+          istNeu: { de: "ist gerade das neue Tier", en: "is the new animal right now" }
+          zuruecksetzen: { de: Zurück zum Beutel des Tierheims, en: Back to the shelter's bag }
+        nojs:
+          de: |
+            Mit JavaScript kannst du hier den Beutel des Tierheims ändern und neue Tiere testen. Im Beutel liegen Luna,
+            Mimi, Flocke und Minka (Katzen, alle klein) sowie Bruno und Rex (Hunde, beide groß). Krümel (Hund: spitze
+            Ohren, kurze Schnauze, klein, runde Pupillen) hat mit Luna und Mimi je 3 gleiche Merkmale, mit Rex 2: Die
+            Maschine sagt „Katze“. Otto (Hund: hängende Ohren, kurze Schnauze, klein, runde Pupillen) hat mit Flocke 3
+            gleiche Merkmale: wieder „Katze“. Legt man Otto in den Beutel, haben Luna, Mimi und Otto mit Krümel je 3
+            gleiche Merkmale: Die Maschine weiß es nicht.
+          en: |
+            With JavaScript you can change the shelter's bag here and test new animals. The bag holds Luna, Mimi,
+            Flocke and Minka (cats, all small) and Bruno and Rex (dogs, both big). Krümel (dog: pointed ears, short
+            snout, small, round pupils) has 3 features in common with Luna and with Mimi, and 2 with Rex: the machine
+            says “cat”. Otto (dog: floppy ears, short snout, small, round pupils) has 3 in common with Flocke: “cat”
+            again. If you put Otto into the bag, Luna, Mimi and Otto each have 3 features in common with Krümel: the
+            machine does not know.
+      - type: multiple-choice
+        id: was-trennt-im-beutel
+        text:
+          de: Krümel und Otto wurden zu Katzen. Welche Merkmale trennen im Beutel alle Katzen von allen Hunden?
+          en: Krümel and Otto became cats. Which features separate all the cats from all the dogs in the bag?
+        options:
+          - text: { de: die Größe, en: the size }
+            correct: true
+            info:
+              de: Alle vier Katzen im Beutel sind klein, beide Hunde groß.
+              en: All four cats in the bag are small, both dogs are big.
+          - text: { de: die Pupillen, en: the pupils }
+            correct: true
+            info:
+              de: Alle Katzen im Beutel haben schmale Pupillen, beide Hunde runde.
+              en: All the cats in the bag have narrow pupils, both dogs have round ones.
+          - text: { de: die Ohren, en: the ears }
+            correct: false
+            info:
+              de: "Nein: Flocke ist eine Katze mit hängenden Ohren, Rex ein Hund mit spitzen Ohren."
+              en: "No: Flocke is a cat with floppy ears, Rex is a dog with pointed ears."
+          - text: { de: die Schnauze, en: the snout }
+            correct: false
+            info:
+              de: "Nein: Minka ist eine Katze mit langer Schnauze, wie die Hunde."
+              en: "No: Minka is a cat with a long snout, like the dogs."
+        hint:
+          de: "Haben alle Katzen denselben Wert und alle Hunde den anderen?"
+          en: "Do all the cats have one value and all the dogs the other?"
+        explanation:
+          de: Krümel und Otto passen bei den Pupillen zu den Hunden, bei der Größe zu den Katzen.
+          en: Krümel and Otto match the dogs in their pupils and the cats in their size.
+      - type: single-choice
+        id: warum-katze
+        text:
+          de: Welche dieser beiden Trennungen gilt nur in diesem Beutel, aber nicht bei echten Hunden und Katzen?
+          en: Which of these two separations only holds in this bag, but not for real dogs and cats?
+        options:
+          - text: { de: "Katzen sind klein, Hunde groß.", en: "Cats are small, dogs are big." }
+            correct: true
+            info:
+              de: Es gibt viele kleine Hunde. Hier sind alle groß, weil die Fotos aus der Hundeschule stammen.
+              en: There are lots of small dogs. Here all the dogs are big because of where the photos came from.
+          - text: { de: "Katzen haben schmale Pupillen, Hunde runde.", en: "Cats have narrow pupils, dogs round ones." }
+            correct: false
+            info:
+              de: "Nein: Das gilt bei allen zwölf Karten, und Hauskatzen haben wirklich Schlitzpupillen."
+              en: "No: this holds for all twelve cards, and house cats really do have slit pupils."
+        hint:
+          de: Denk an Hunde, die du kennst. Sind alle groß?
+          en: Think of dogs you know. Are they all big?
+        explanation:
+          de: Die Größe trennt die Sorten nur in diesem Beutel. Die Maschine zählt sie trotzdem mit.
+          en: Size only separates the kinds in this bag. The machine still counts it.
+  - type: section
+    id: idee
+    title:
+      de: "Verzerrung: Der Fehler steckt in den Daten"
+      en: "Bias: the fault is in the data"
+    blocks:
+      - type: text
+        text:
+          de: |
+            Das Programm zählt richtig, aber der Beutel ist einseitig: Katzen nur klein, Hunde nur groß. Die Maschine übernimmt das Muster und macht **immer wieder denselben Fehler**: Kleine Hunde mit kurzer
+            Schnauze werden zu Katzen.
+
+            Mit Otto im Beutel ist die Maschine bei Krümel nur noch unsicher. Richtig erkennt sie Krümel erst, wenn ein Hund im Beutel liegt, der genauso aussieht: klein, spitze Ohren, kurze Schnauze. So eine Karte fehlt dem Tierheim noch.
+          en: |
+            The program counts correctly, but the bag is one-sided: cats only small, dogs only
+            big. The machine takes on this pattern and makes **the same mistake again and again**: small dogs with a
+            short snout become cats.
+
+            With Otto in the bag, the machine is only unsure about Krümel.
+            It only gets Krümel right if the bag holds a dog that looks just like Krümel: small, pointed ears, short snout. The shelter has no such card yet.
+      - type: definition
+        term: { de: Verzerrung (Bias), en: bias }
+        explanation:
+          de: Die Trainingsdaten zeigen die Welt einseitig. Das System übernimmt ein Muster, das nur in den Daten gilt.
+          en: The training data shows the world in a one-sided, skewed way. The system takes on a pattern that only holds in the data.
+      - type: note
+        title: { de: Merke, en: Remember }
+        blocks:
+          - type: text
+            text:
+              de: Macht ein lernendes System immer wieder denselben Fehler, untersuche zuerst die Trainingsdaten. Welche Beispiele fehlen, welche sind einseitig ausgewählt?
+              en: If a learning system keeps making the same mistake, look at the training data first. Which examples are missing, and which were chosen one-sidedly?
+  - type: section
+    id: beispiel
+    title:
+      de: Auch bei echten Systemen
+      en: In real systems too
+    blocks:
+      - type: text
+        text:
+          de: |
+            Joy Buolamwini und Timnit Gebru untersuchten 2018 drei kommerzielle Programme, die aus einem Foto das
+            Geschlecht eines Menschen bestimmen. Zwei viel genutzte Sammlungen von Gesichtsfotos, mit denen man solche
+            Programme prüft, bestanden zu 79,6 % und zu 86,2 % aus Menschen mit heller Haut. Sie prüften deshalb mit einer eigenen, ausgewogenen Sammlung. Die Fehlerquote lag
+            bei Frauen mit dunkler Haut bei bis zu 34,7 % (beim schlechtesten Programm etwa jedes dritte Foto), bei
+            Männern mit heller Haut bei höchstens 0,8 %. Ihre Trainingsdaten nennt die Studie nicht. ([Gender Shades, 2018, englisch](https://proceedings.mlr.press/v81/buolamwini18a.html))
+          en: |
+            In 2018, Joy Buolamwini and Timnit Gebru studied three commercial programs that work out a person's gender
+            from a photo. In two widely used collections of face photos for testing such programs, 79.6% and 86.2% of
+            the people had lighter skin. So they tested with their own balanced collection. The error rate was up to 34.7% for women with darker skin (about one photo in three for the
+            worst program), and at most 0.8% for men with lighter skin. The study does not name their training data. ([Gender Shades, 2018](https://proceedings.mlr.press/v81/buolamwini18a.html))
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: true-false
+        id: mehr-karten
+        text:
+          de: Legt man einfach mehr Karten in den Beutel, verschwindet die Verzerrung.
+          en: If you simply put more cards into the bag, the bias goes away.
+        answer: false
+        hint:
+          de: Was ändert sich, wenn du zehn weitere kleine Katzen in den Beutel legst?
+          en: What changes if you put ten more small cats into the bag?
+        explanation:
+          de: "Mehr Karten derselben Art ändern nichts: Das Muster bleibt."
+          en: "More cards of the same kind change nothing: the pattern stays."
+      - type: matching
+        id: was-fehlt
+        text:
+          de: Diese Fälle sind erfunden. Welche Beispiele fehlen in den Trainingsdaten?
+          en: These cases are made up. Which examples are missing from the training data?
+        pairs:
+          - left:
+              {
+                de: "Eine Foto-App erkennt Hunde im Schnee schlecht.",
+                en: "A photo app is bad at recognising dogs in snow.",
+              }
+            right: { de: Bilder aus der kalten Jahreszeit, en: pictures from the cold season }
+          - left:
+              {
+                de: "Ein Sprachassistent versteht Kinder schlecht.",
+                en: "A voice assistant is bad at understanding children.",
+              }
+            right: { de: Aufnahmen von Sprechern unter zwölf Jahren, en: recordings of speakers under twelve }
+          - left:
+              {
+                de: "Ein Pflanzen-Erkenner erkennt Pflanzen ohne Blüten nicht.",
+                en: "A plant app does not recognise plants without flowers.",
+              }
+            right: { de: Bilder außerhalb der Blütezeit, en: pictures outside the flowering season }
+          - left:
+              {
+                de: "Die Maschine des Tierheims hält kleine Hunde mit kurzer Schnauze für Katzen.",
+                en: "The shelter's machine thinks small dogs with a short snout are cats.",
+              }
+            right: { de: Hunde in Katzengröße, en: dogs the size of cats }
+        distractors:
+          - { de: ein schnellerer Computer, en: a faster computer }
+        hint:
+          de: Was hat das System nie gesehen?
+          en: What did the system never see?
+        explanation:
+          de: In jedem Fall fehlt eine Art von Beispielen.
+          en: In each case one kind of example is missing.
+      - type: ordering
+        id: datenfehler-finden
+        text:
+          de: In welcher Reihenfolge findest und behebst du einen Fehler in den Trainingsdaten?
+          en: In which order do you find and fix a fault in the training data?
+        items:
+          - { de: Falsch erkannte Tiere sammeln, en: Collect the animals that were wrongly identified }
+          - { de: Gemeinsamkeiten der Fehler suchen, en: Look for what the mistakes have in common }
+          - { de: In den Trainingsdaten nach Lücken suchen, en: Search the training data for gaps }
+          - { de: Beispiele ergänzen und neu testen, en: Add examples and test again }
+        hint:
+          de: Erst die Fehler, dann ihr Muster, dann die Daten.
+          en: First the mistakes, then their pattern, then the data.
+        explanation:
+          de: Erst das Muster der Fehler zeigt, welche Beispiele fehlen.
+          en: Only the pattern of the mistakes shows which examples are missing.
+      - type: multiple-choice
+        id: was-ergaenzen
+        text:
+          de: "Welche Karten würden das Muster „klein ist Katze, groß ist Hund“ brechen, wenn sie in den Beutel kämen?"
+          en: "Which cards would break the pattern “small means cat, big means dog” if they went into the bag?"
+        options:
+          - text: { de: "Waldi, ein kleiner Hund", en: "Waldi, a small dog" }
+            correct: true
+            info:
+              de: Ein kleiner Hund.
+              en: A small dog.
+          - text: { de: "Tiger, eine große Katze", en: "Tiger, a big cat" }
+            correct: true
+            info:
+              de: Eine große Katze.
+              en: A big cat.
+          - text: { de: "Bella, ein großer Hund", en: "Bella, a big dog" }
+            correct: false
+            info:
+              de: "Nein: Bella ist groß und ein Hund, sie passt ins Muster."
+              en: "No: Bella is big and a dog, so she fits the pattern."
+          - text: { de: "Sammy, ein großer Hund", en: "Sammy, a big dog" }
+            correct: false
+            info:
+              de: "Nein: Auch Sammy ist groß und ein Hund."
+              en: "No: Sammy is big and a dog too."
+        hint:
+          de: Gesucht sind Tiere, deren Größe nicht zu ihrem Etikett im Muster passt.
+          en: You are looking for animals whose size does not match their label in the pattern.
+        explanation:
+          de: Mit solchen Karten entscheidet die Größe nicht mehr allein.
+          en: Cards like these stop size from deciding.
+  - type: section
+    id: rueckblick
+    title:
+      de: Rückblick
+      en: Looking back
+    blocks:
+      - type: text
+        text:
+          de: |
+            Sind die Beispiele einseitig ausgewählt, irrt ein lernendes System immer wieder auf dieselbe Weise. **Was in den
+            Beutel kommt, bestimmt, was herauskommt.**
+          en: |
+            If the examples are chosen one-sidedly, a learning system keeps getting things wrong in the same way.
+            **What goes into the bag decides what comes out.**
